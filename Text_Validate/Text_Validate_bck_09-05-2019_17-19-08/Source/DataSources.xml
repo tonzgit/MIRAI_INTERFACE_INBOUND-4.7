@@ -1,0 +1,1199 @@
+ <Application>
+ 
+<Header>
+
+  <Version val="11009"/>
+
+  <WithIsn val="Y"/>
+
+  <Exe comp="-1"/>
+
+  <LastIsn val="12"/>
+
+  <LastIsnFolder val="0"/>
+
+  <Folders/>
+
+</Header>
+ <DataSourceRepository>
+  <DataObjects>
+ 
+<DataObject PhysicalName="error_text.xml" Resident="N" data_source="Default XML Database" id="1" name="error_text.error_section">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="P"/>
+
+  <HasHint val="Y"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <PositionIndex val="-1"/>
+
+  <SchemaDoc val="D:\Magic xpi 4.1\projects\MiRAI_Interface_OUB\text_validate\error_text.xsd"/>
+
+  <RootName val="error_text"/>
+
+  <RowLength val="1084"/>
+
+  <ColumnsLastIsn val="8"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <CompoundInViewIsn val="4"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <MetaTreeBuffer val="AgABAAAAAQAAAEwAC2Vycm9yX3RleHQAAQCAAAEAAAACAAAAAAAHTm9kZUlkAAEAgAACAAAAAwAAAAAACVBhcmVudElkAAEARgEDAAAABAAAAEwADmVycm9yX3NlY3Rpb24AAQBAAAMAAAAFAAAAAAAQZXJyb3JfdGV4dF9saW5lAAEAQAAEAAAABgAAAAAADGVycm9yX3ZhbHVlAAEAQAAFAAAABwAAAAAAC2Vycm9yX2Rlc2MAAQABAAEA"/>
+
+  <Resource/>
+
+  <SchemaPreFields>
+    <SchemaField FldType="1"/>
+    <SchemaField FldType="1"/>
+    <SchemaField DataTypeIdx="37"/>
+    <SchemaField/>
+    <SchemaField/>
+  </SchemaPreFields>
+
+  <ViewFieldsMap>
+    <Field Index="1"/>
+    <Field Index="2"/>
+    <Field Index="3"/>
+    <Field Index="4"/>
+    <Field Index="5"/>
+  </ViewFieldsMap>
+
+  <Columns>
+    <Column id="1" name="NodeId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53"/>
+        <Picture id="157" valUnicode="12"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="NodeId"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="12"/>
+        <_Negative id="192"/>
+        <_FieldPhysical Name="NodeId" PIC_U="12" Size="8" allowed_null="N" attribute="N" context_cookies="N" database_definition="2" id="231" storage="6" translate="1"/>
+        <DefaultStorage id="274" val="Y"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="ParentId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53"/>
+        <Picture id="157" valUnicode="12"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ParentId"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="12"/>
+        <_Negative id="192"/>
+        <_FieldPhysical Name="ParentId" PIC_U="12" Size="8" allowed_null="N" attribute="N" context_cookies="N" database_definition="2" id="231" storage="6" translate="1"/>
+        <DefaultStorage id="274" val="Y"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="error_text_line">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="error_text_line2"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192"/>
+        <_FieldPhysical Name="error_text_line2" PIC_U="10" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+        <DefaultStorage id="274" val="Y"/>
+        <XsdType id="292" val="int"/>
+        <Name id="297" val="error_text_line"/>
+        <_XsdUnderViewCompound id="423" val="Y"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="error_value">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="error_value3"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="error_value3" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
+        <DefaultStorage id="274" val="Y"/>
+        <XsdType id="292" val="string"/>
+        <Name id="297" val="error_value"/>
+        <_XsdUnderViewCompound id="423" val="Y"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="error_desc">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="error_desc4"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="error_desc4" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
+        <DefaultStorage id="274" val="Y"/>
+        <XsdType id="292" val="string"/>
+        <Name id="297" val="error_desc"/>
+        <_XsdUnderViewCompound id="423" val="Y"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="ByNode">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="ByNode"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="8"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+</DataObject> 
+<DataObject PhysicalName="Interface_Tablename" Resident="N" data_source="ISUZU" id="5" name="Interface_Tablename">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="N"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <RowLength val="666"/>
+
+  <ColumnsLastIsn val="3"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="InterfaceId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="InterfaceId"/>
+        <Type id="179" val="VARCHAR(10)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="ChildNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="ChildNo"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="TableChildname">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="TableChildname"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="PK_Interface_Tablename">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="PK_Interface_Tablename"/>
+      <HasHint val="N"/>
+      <Clustered val="Y"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="10"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+</DataObject> 
+<DataObject PhysicalName="Interface_Log" Resident="N" data_source="ISUZU" id="9" name="Interface_Log">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="N"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <RowLength val="5376"/>
+
+  <ColumnsLastIsn val="24"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="Operation_Date">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="8"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Operation_Date"/>
+        <Type id="179" val="VARCHAR(8)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Start_Time">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="6"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Start_Time"/>
+        <Type id="179" val="VARCHAR(6)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="Transaction_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="5"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Transaction_ID"/>
+        <Type id="179" val="VARCHAR(5)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Method">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="1"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Method"/>
+        <Type id="179" val="VARCHAR(1)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="Interface_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Interface_ID"/>
+        <Type id="179" val="VARCHAR(10)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Branch_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Branch_ID"/>
+        <Type id="179" val="VARCHAR(10)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Step1_Get">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step1_Get"/>
+        <Type id="179" val="VARCHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="Step1_Total_Transaction_Get">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step1_Total_Transaction_Get"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="Step2_Validate_wo_Condition">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step2_Validate_wo_Condition"/>
+        <Type id="179" val="VARCHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="Step3_Validate_by_Trans">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step3_Validate_by_Trans"/>
+        <Type id="179" val="VARCHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="Step3_Total_Transaction_Complet">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step3_Total_Transaction_Complete"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="Step3_Total_Transaction_Failur">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step3_Total_Transaction_Failur"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="Step4_Validate_w_Condition">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step4_Validate_w_Condition"/>
+        <Type id="179" val="VARCHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="Step4_Total_Transaction_Complet">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step4_Total_Transaction_Complete"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="Step4_Total_Transaction_Failur">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step4_Total_Transaction_Failur"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="Step5_Conversion">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step5_Conversion"/>
+        <Type id="179" val="VARCHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="Step5_Total_Transaction_Convers">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step5_Total_Transaction_Conversion"/>
+        <Type id="179" val="INTEGER"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="Step6_Send">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Step6_Send"/>
+        <Type id="179" val="VARCHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="19" name="Link_ID_Source_Backup">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="5"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Link_ID_Source_Backup"/>
+        <Type id="179" val="VARCHAR(5)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="20" name="Link_ID_Target_Backup">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="5"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Link_ID_Target_Backup"/>
+        <Type id="179" val="VARCHAR(5)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="21" name="IDOC_Transaction_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="IDOC_Transaction_ID"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="22" name="IDOC_NUMBER">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="IDOC_NUMBER"/>
+        <Type id="179" val="VARCHAR(30)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="23" name="Interface_Flow_Status">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Interface_Flow_Status"/>
+        <Type id="179" val="VARCHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="24" name="End_Time">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="6"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="End_Time"/>
+        <Type id="179" val="VARCHAR(6)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="PK_Interface_Log">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="PK_Interface_Log"/>
+      <HasHint val="N"/>
+      <Clustered val="Y"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="8"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="6"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="5"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="1"/>
+          <Column val="4"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="10"/>
+          <Column val="5"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+</DataObject> 
+<DataObject PhysicalName="Link_To_Physical_File" Resident="N" data_source="ISUZU" id="10" name="Link_To_Physical_File">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="N"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <RowLength val="1826"/>
+
+  <ColumnsLastIsn val="7"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="Physical_File_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="5"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Physical_File_ID"/>
+        <Type id="179" val="VARCHAR(5)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Physical_File_ID" PIC_U="5" Size="5" SqlType="VARCHAR(5)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Folder">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Folder"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Folder" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="FileName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="FileName"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="FileName" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Date_Create">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="8"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Date_Create"/>
+        <Type id="179" val="VARCHAR(8)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Date_Create" PIC_U="8" Size="8" SqlType="VARCHAR(8)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="status">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="status"/>
+        <Type id="179" val="VARCHAR(1)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="status" PIC_U="1" Size="1" SqlType="VARCHAR(1)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Date_Delete">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="8"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Date_Delete"/>
+        <Type id="179" val="VARCHAR(8)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Date_Delete" PIC_U="8" Size="8" SqlType="VARCHAR(8)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Original_Filename">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Original_Filename"/>
+        <Type id="179" val="VARCHAR(100)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Original_Filename" PIC_U="100" Size="100" SqlType="VARCHAR(100)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="PK_Link_To_Physical_File">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="PK_Link_To_Physical_File"/>
+      <HasHint val="N"/>
+      <Clustered val="Y"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="5"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="8"/>
+          <Column val="4"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+</DataObject> 
+<DataObject PhysicalName="error_text.xml" Resident="N" data_source="Default XML Database" id="12" name="error_text.Root">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="P"/>
+
+  <HasHint val="Y"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <PositionIndex val="-1"/>
+
+  <SchemaDoc val="D:\Magic xpi 4.1\projects\MiRAI_Interface_OUB\text_validate\error_text.xsd"/>
+
+  <RootName val="error_text"/>
+
+  <RowLength val="382"/>
+
+  <ColumnsLastIsn val="8"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <CompoundInViewIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <MetaTreeBuffer val="QgABAAAAAQAAAEwAC2Vycm9yX3RleHQAAQBAAAEAAAACAAAAAAAHTm9kZUlkAAEAQAACAAAAAwAAAAAACVBhcmVudElkAAEABgADAAAABAAAAAAADmVycm9yX3NlY3Rpb24AAQAAAAMAAAAFAAAAAAAQZXJyb3JfdGV4dF9saW5lAAEAAAAEAAAABgAAAAAADGVycm9yX3ZhbHVlAAEAAAAFAAAABwAAAAAAC2Vycm9yX2Rlc2MAAQABAAEA"/>
+
+  <Resource/>
+
+  <SchemaPreFields>
+    <SchemaField FldType="1"/>
+    <SchemaField FldType="1"/>
+    <SchemaField DataTypeIdx="37"/>
+    <SchemaField/>
+    <SchemaField/>
+  </SchemaPreFields>
+
+  <ViewFieldsMap>
+    <Field Index="1"/>
+    <Field Index="2"/>
+  </ViewFieldsMap>
+
+  <Columns>
+    <Column id="1" name="NodeId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53"/>
+        <Picture id="157" valUnicode="12"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="NodeId"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="12"/>
+        <_Negative id="192"/>
+        <_FieldPhysical Name="NodeId" PIC_U="12" Size="8" allowed_null="N" attribute="N" context_cookies="N" database_definition="2" id="231" storage="6" translate="1"/>
+        <DefaultStorage id="274" val="Y"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="ParentId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53"/>
+        <Picture id="157" valUnicode="12"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ParentId"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="12"/>
+        <_Negative id="192"/>
+        <_FieldPhysical Name="ParentId" PIC_U="12" Size="8" allowed_null="N" attribute="N" context_cookies="N" database_definition="2" id="231" storage="6" translate="1"/>
+        <DefaultStorage id="274" val="Y"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="ByNode">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="ByNode"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="8"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+</DataObject>  </DataObjects>
+ </DataSourceRepository>
+  </Application>

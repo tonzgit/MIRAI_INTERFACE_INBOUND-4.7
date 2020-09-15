@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Flow id="BP4_Flow44">
+   <Properties>
+      <PropertiesGroup id="General" name="General">
+         <Property id="id" name="ID" value="44" />
+         <Property id="name" name="Name" value="Put to FTP" />
+         <Property id="istwophase" name="Two Phase Processing" value="No" />
+         <Property id="hasdbtransaction" name="DB transaction" value="No" />
+         <Property id="isdisabled" name="Disable" value="No" />
+         <Property id="isinactive" name="Inactive" value="No" />
+         <Property id="maxinstances" name="Max Instances" value="0" />
+         <Property id="timeoutpolicy" name="Timeout Policy" value="None" />
+         <Property id="timeoutval" name="Timeout Value" value="0" />
+         <Property id="recoverypolicy" name="Recovery Policy" value="None" />
+         <Property id="enablement" name="Enablement" value="Always" />
+      </PropertiesGroup>
+      <PropertiesGroup id="FlowInvokers" name="Flow Invokers">
+         <Property id="isautostart" name="Auto Start" value="No" />
+         <Property id="isautorepeat" name="Auto Repeat" value="No" />
+      </PropertiesGroup>
+      <PropertiesGroup id="External" name="External">
+         <Property id="psssubscribeonce" name="PSS Subscribe Once" value="No" />
+         <Property id="psssubscribename" name="PSS Subscribe Name" value="" />
+      </PropertiesGroup>
+   </Properties>
+   <Repository Name="Flow Variables" id="flowvariables">
+      <Structure>
+         <Field fieldId="name" widthHint="FitToContent">Name</Field>
+         <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+         <Field fieldId="id" widthHint="FitToContent">ID</Field>
+         <Field fieldId="variabletype" widthHint="FitToContent">Type</Field>
+         <Field fieldId="picturelength" widthHint="FitToContent">Length</Field>
+         <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+         <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+      </Structure>
+      <Items>
+         <RepositoryItem>
+            <Property fieldId="name" value="F.SourceFilePath" />
+            <Property fieldId="description" value="" />
+            <Property fieldId="id" value="1" />
+            <Property fieldId="variabletype" value="Alpha" />
+            <Property fieldId="picturelength" value="255" />
+            <Property fieldId="defaultvalue" value="" />
+            <Property fieldId="guid" value="{EC03EAA6-B6E7-4B90-ADED-68236105FEF5}" />
+         </RepositoryItem>
+         <RepositoryItem>
+            <Property fieldId="name" value="F.DestFilePath" />
+            <Property fieldId="description" value="" />
+            <Property fieldId="id" value="2" />
+            <Property fieldId="variabletype" value="Alpha" />
+            <Property fieldId="picturelength" value="255" />
+            <Property fieldId="defaultvalue" value="" />
+            <Property fieldId="guid" value="{B534217E-0E72-4E30-82D7-6DA3C431F870}" />
+         </RepositoryItem>
+      </Items>
+   </Repository>
+   <Triggers />
+   <Steps>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="1" />
+               <Property id="name" name="Name" value="FTP" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="interface" name="Interface" value="Method" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="ressername" name="Resource Name" value="AE_Config" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Logging" name="Logging">
+               <Property id="displayloggingscope" name="Logging Scope" value="No" />
+               <Property id="displayloggingoptions" name="Step Logging Options" value="Before" />
+               <Property id="message" name="Message" value="" />
+               <Property id="blob" name="BLOB" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\FTP.png" />
+            </PropertiesGroup>
+         </Properties>
+         <DAM>
+            <Structure>
+               <Field fieldId="name" widthHint="FitToContent">DAM Method</Field>
+               <Field fieldId="condition" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="name" value="Put File" />
+                  <Property fieldId="condition" value="" />
+                  <SubItems>
+                     <Repository>
+                        <Structure>
+                           <Field fieldId="parametername" widthHint="FitToContent">Parameter Name</Field>
+                           <Field fieldId="parametertype" widthHint="FitToContent">Type</Field>
+                           <Field fieldId="parameterpicture" widthHint="FitToContent">Picture</Field>
+                           <Field fieldId="direction" widthHint="FitToContent">In/Out</Field>
+                           <Field fieldId="parameterexp" widthHint="FitToContent">Value</Field>
+                        </Structure>
+                        <Items>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="ErrorCode (4)" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="12" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="SourceFileName (5)" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="260" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="F.SourceFilePath" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="DestinationFileName (6)" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="260" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="F.DestFilePath" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="TransferMode (7)" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="1" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="Binary" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Overwrite (8)" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="1" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="Yes" />
+                           </RepositoryItem>
+                        </Items>
+                     </Repository>
+                  </SubItems>
+               </RepositoryItem>
+            </Items>
+         </DAM>
+      </Step>
+   </Steps>
+   <LocalizationTable>
+      <FlowDiagram>Graphical View</FlowDiagram>
+      <Trigger>Trigger</Trigger>
+      <Step>Step</Step>
+   </LocalizationTable>
+</Flow>

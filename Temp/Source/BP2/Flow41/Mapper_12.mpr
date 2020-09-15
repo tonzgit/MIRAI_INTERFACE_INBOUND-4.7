@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper>
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>7</SchemaID>
+      <Order>1</Order>
+      <Name>S_ErrorSequence</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>Record</Identifier>
+          <Description />
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>Record/NextErrorRunning</Identifier>
+          <Description />
+          <FieldName>NextErrorRunning</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>5</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>5</ExternalFieldPicture>
+          <UserPicture>5</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>NextErrorRunning</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>c2VsZWN0IHJpZ2h0KCcwMDAwMCcgKyBjb252ZXJ0KHZhcmNoYXIoNSksIE5FWFQgVkFMVUUgRk9SIEVycm9yU2VxdWVuY2UpLCA1KSBhcyBOZXh0RXJyb3JSdW5uaW5n</ExpressionVal>
+          <RuntimeExpression>c2VsZWN0IHJpZ2h0KCcwMDAwMCcgKyBjb252ZXJ0KHZhcmNoYXIoNSksIE5FWFQgVkFMVUUgRk9SIEVycm9yU2VxdWVuY2UpLCA1KSBhcyBOZXh0RXJyb3JSdW5uaW5n</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName />
+      </DB>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>4</SchemaID>
+      <Order>1</Order>
+      <Name>I_ErrorLog</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Error_Log</Identifier>
+          <Description />
+          <FieldName>dbo.Error_Log</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Error_ID</Identifier>
+          <Description />
+          <FieldName>Error_Log.Error_ID</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>INTEGER</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture>N10</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>4</StorageSize>
+          <StorageNum>4</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Error_ID</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Error_Date</Identifier>
+          <Description />
+          <FieldName>Error_Log.Error_Date</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezU5RjFGMkQzLTE2RTctNDBFRS1CNzAwLUQ2MkJCRjdDRDlCMH0nLDAsMCk8IyElQCQ+</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLk9wZXJhdGlvbkRhdGUnKQ==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>8</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>8</ExternalFieldPicture>
+          <UserPicture>8</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Error_Date</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Error_Time</Identifier>
+          <Description />
+          <FieldName>Error_Log.Error_Time</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VFN0ciAoVGltZSAoKSwnSEhNTVNTJyk=</ExpressionVal>
+            <RuntimeExpression>VFN0ciAoVGltZSAoKSwnSEhNTVNTJyk=</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>6</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>6</ExternalFieldPicture>
+          <UserPicture>6</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Error_Time</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Error_Group</Identifier>
+          <Description />
+          <FieldName>Error_Log.Error_Group</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J0kn</ExpressionVal>
+            <RuntimeExpression>J0kn</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>1</ExternalFieldPicture>
+          <UserPicture>1</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Error_Group</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Method</Identifier>
+          <Description />
+          <FieldName>Error_Log.Method</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J0kn</ExpressionVal>
+            <RuntimeExpression>J0kn</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>1</ExternalFieldPicture>
+          <UserPicture>1</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Method</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Error_Source_System</Identifier>
+          <Description />
+          <FieldName>Error_Log.Error_Source_System</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzAzJw==</ExpressionVal>
+            <RuntimeExpression>JzAzJw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Error_Source_System</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Interface_ID</Identifier>
+          <Description />
+          <FieldName>Error_Log.Interface_ID</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezNGMkM1REVDLUIwMzItNERGOC04OUE1LUMzQkIzOTMxNDk0OX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkVycm9yRmxvd05hbWUnKQ==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture>10</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Interface_ID</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Business_Process_ID</Identifier>
+          <Description />
+          <FieldName>Error_Log.Business_Process_ID</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>MQ==</ExpressionVal>
+            <RuntimeExpression>MQ==</RuntimeExpression>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>INTEGER</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture>N10</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>4</StorageSize>
+          <StorageNum>4</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Business_Process_ID</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Business_Process_Name</Identifier>
+          <Description />
+          <FieldName>Error_Log.Business_Process_Name</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIzJywwLDApPCMhJUAkPg==</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCdDLnN5cy5JbnZva2luZ0JQTmFtZScp</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>20</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>20</ExternalFieldPicture>
+          <UserPicture>20</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Business_Process_Name</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Integration_Flow_ID</Identifier>
+          <Description />
+          <FieldName>Error_Log.Integration_Flow_ID</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDE3JywwLDApPCMhJUAkPg==</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCdDLnN5cy5MYXN0Rmxvd0lEJyk=</RuntimeExpression>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>INTEGER</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture>N10</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>4</StorageSize>
+          <StorageNum>4</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Integration_Flow_ID</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Error_Message</Identifier>
+          <Description />
+          <FieldName>Error_Log.Error_Message</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0YyMjdGQzc3LTVGQTAtNDI0MC05ODc4LTE3N0NFOTA3NTk3MH0nLDAsMCk8IyElQCQ+</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkVycm9yRGVzY3JpcHRpb24nKQ==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>255</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>255</ExternalFieldPicture>
+          <UserPicture>255</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Error_Message</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Link_To_Error_Detail</Identifier>
+          <Description />
+          <FieldName>Error_Log.Link_To_Error_Detail</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture />
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Link_To_Error_Detail</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Action_Close_Problem</Identifier>
+          <Description />
+          <FieldName>Error_Log.Action_Close_Problem</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzAn</ExpressionVal>
+            <RuntimeExpression>JzAn</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>1</ExternalFieldPicture>
+          <UserPicture>1</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Action_Close_Problem</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.By_User</Identifier>
+          <Description />
+          <FieldName>Error_Log.By_User</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture />
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].By_User</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.By_Date</Identifier>
+          <Description />
+          <FieldName>Error_Log.By_Date</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>8</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>8</ExternalFieldPicture>
+          <UserPicture />
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].By_Date</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.By_Time</Identifier>
+          <Description />
+          <FieldName>Error_Log.By_Time</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>6</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>6</ExternalFieldPicture>
+          <UserPicture />
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].By_Time</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Cause_Of_Problem</Identifier>
+          <Description />
+          <FieldName>Error_Log.Cause_Of_Problem</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>50</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>50</ExternalFieldPicture>
+          <UserPicture />
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Cause_Of_Problem</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Solution_To_Solve_Issue</Identifier>
+          <Description />
+          <FieldName>Error_Log.Solution_To_Solve_Issue</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>100</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>100</ExternalFieldPicture>
+          <UserPicture />
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Solution_To_Solve_Issue</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Error_Log/Error_Log.Transaction_ID</Identifier>
+          <Description />
+          <FieldName>Error_Log.Transaction_ID</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwne0RBNDE4MTkwLTNGNzItNEM2RC1BOUJDLUQxNEY1ODA1RUNCMn0nLDAsMCk8IyElQCQ+</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCdDLlRyYW5zYWN0aW9uSUQnKQ==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>5</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>5</ExternalFieldPicture>
+          <UserPicture>5</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>[Error_Log].Transaction_ID</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>SU5TRVJUIElOVE8gZGJvLltFcnJvcl9Mb2ddIChbRXJyb3JfTG9nXS5FcnJvcl9JRCAsW0Vycm9yX0xvZ10uRXJyb3JfRGF0ZSAsW0Vycm9yX0xvZ10uRXJyb3JfVGltZSAsW0Vycm9yX0xvZ10uRXJyb3JfR3JvdXAgLFtFcnJvcl9Mb2ddLk1ldGhvZCAsW0Vycm9yX0xvZ10uRXJyb3JfU291cmNlX1N5c3RlbSAsW0Vycm9yX0xvZ10uSW50ZXJmYWNlX0lEICxbRXJyb3JfTG9nXS5CdXNpbmVzc19Qcm9jZXNzX0lEICxbRXJyb3JfTG9nXS5CdXNpbmVzc19Qcm9jZXNzX05hbWUgLFtFcnJvcl9Mb2ddLkludGVncmF0aW9uX0Zsb3dfSUQgLFtFcnJvcl9Mb2ddLkVycm9yX01lc3NhZ2UgLFtFcnJvcl9Mb2ddLkxpbmtfVG9fRXJyb3JfRGV0YWlsICxbRXJyb3JfTG9nXS5BY3Rpb25fQ2xvc2VfUHJvYmxlbSAsW0Vycm9yX0xvZ10uQnlfVXNlciAsW0Vycm9yX0xvZ10uQnlfRGF0ZSAsW0Vycm9yX0xvZ10uQnlfVGltZSAsW0Vycm9yX0xvZ10uQ2F1c2VfT2ZfUHJvYmxlbSAsW0Vycm9yX0xvZ10uU29sdXRpb25fVG9fU29sdmVfSXNzdWUgLFtFcnJvcl9Mb2ddLlRyYW5zYWN0aW9uX0lEKQ==</ExpressionVal>
+          <RuntimeExpression>SU5TRVJUIElOVE8gZGJvLltFcnJvcl9Mb2ddIChbRXJyb3JfTG9nXS5FcnJvcl9JRCAsW0Vycm9yX0xvZ10uRXJyb3JfRGF0ZSAsW0Vycm9yX0xvZ10uRXJyb3JfVGltZSAsW0Vycm9yX0xvZ10uRXJyb3JfR3JvdXAgLFtFcnJvcl9Mb2ddLk1ldGhvZCAsW0Vycm9yX0xvZ10uRXJyb3JfU291cmNlX1N5c3RlbSAsW0Vycm9yX0xvZ10uSW50ZXJmYWNlX0lEICxbRXJyb3JfTG9nXS5CdXNpbmVzc19Qcm9jZXNzX0lEICxbRXJyb3JfTG9nXS5CdXNpbmVzc19Qcm9jZXNzX05hbWUgLFtFcnJvcl9Mb2ddLkludGVncmF0aW9uX0Zsb3dfSUQgLFtFcnJvcl9Mb2ddLkVycm9yX01lc3NhZ2UgLFtFcnJvcl9Mb2ddLkxpbmtfVG9fRXJyb3JfRGV0YWlsICxbRXJyb3JfTG9nXS5BY3Rpb25fQ2xvc2VfUHJvYmxlbSAsW0Vycm9yX0xvZ10uQnlfVXNlciAsW0Vycm9yX0xvZ10uQnlfRGF0ZSAsW0Vycm9yX0xvZ10uQnlfVGltZSAsW0Vycm9yX0xvZ10uQ2F1c2VfT2ZfUHJvYmxlbSAsW0Vycm9yX0xvZ10uU29sdXRpb25fVG9fU29sdmVfSXNzdWUgLFtFcnJvcl9Mb2ddLlRyYW5zYWN0aW9uX0lEKQ==</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Error_Log]</GenerateTableName>
+      </DB>
+    </Schema>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>6</SchemaID>
+      <Order>2</Order>
+      <Name>U_Last_Status_Master</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Last_Status_Master</Identifier>
+          <Description />
+          <FieldName>dbo.Last_Status_Master</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Last_Status_Master/LastErrorDate</Identifier>
+          <Description />
+          <FieldName>LastErrorDate</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>RFN0ciAoRGF0ZSAoKSwnWVlZWU1NREQnKQ==</ExpressionVal>
+            <RuntimeExpression>RFN0ciAoRGF0ZSAoKSwnWVlZWU1NREQnKQ==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>8</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>8</ExternalFieldPicture>
+          <UserPicture>8</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>LastErrorDate</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Last_Status_Master/LastErrorTime</Identifier>
+          <Description />
+          <FieldName>LastErrorTime</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VFN0ciAoVGltZSAoKSwnSEhNTVNTJyk=</ExpressionVal>
+            <RuntimeExpression>VFN0ciAoVGltZSAoKSwnSEhNTVNTJyk=</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>6</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>6</ExternalFieldPicture>
+          <UserPicture>6</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>LastErrorTime</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>VVBEQVRFIGRiby5bTGFzdF9TdGF0dXNfTWFzdGVyXSBTRVQgTGFzdEVycm9yRGF0ZT08IT9MYXN0RXJyb3JEYXRlPyE+ICwgTGFzdEVycm9yVGltZT08IT9MYXN0RXJyb3JUaW1lPyE+IFdIRVJFIEludGVyZmFjZV9JRD0nPD9GLkVycm9yRmxvd05hbWU/Pic=</ExpressionVal>
+          <RuntimeExpression>VVBEQVRFIGRiby5bTGFzdF9TdGF0dXNfTWFzdGVyXSBTRVQgTGFzdEVycm9yRGF0ZT08IT9MYXN0RXJyb3JEYXRlPyE+ICwgTGFzdEVycm9yVGltZT08IT9MYXN0RXJyb3JUaW1lPyE+IFdIRVJFIEludGVyZmFjZV9JRD0nPD9GLkVycm9yRmxvd05hbWU/Pic=</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Last_Status_Master]</GenerateTableName>
+      </DB>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>7</SourceSchemaID>
+      <DestinationIdentifier>dbo.Error_Log</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/NextErrorRunning</SourceIdentifier>
+      <SourceSchemaID>7</SourceSchemaID>
+      <DestinationIdentifier>dbo.Error_Log/Error_Log.Error_ID</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+   <Properties>
+      <PropertiesGroup id="General" name="General">
+         <Property id="name" name="Name" value="MIRAI_INTERFACE_INBOUND" />
+         <Property id="description" name="Description" value="" />
+         <Property id="last_edited" name="Last Modified" value="5/14/2019 4:24:05 PM" />
+         <Property id="owner" name="Owner" value="Magic Software Enterprises Ltd" />
+         <Property id="internalver" name="InternalVer" value="1.0" />
+         <Property id="encoding" name="Encoding" value="West European" />
+         <Property id="resourcefile" name="ResourceFile" value="resources.xml" />
+         <Property id="servicefile" name="ServiceFile" value="services.xml" />
+         <Property id="clearods" name="Clear ODS Information" value="Yes" />
+      </PropertiesGroup>
+      <PropertiesGroup id="AdministratorDetails" name="Administrator Details">
+         <Property id="email" name="Send Error Email To" value="MST_MiraiWeb@magicsoftware.co.th,mirai_xpi_if@tripetch-it.co.th" />
+         <Property id="resourcename" name="Mail Resource Name" value="MailServer" />
+      </PropertiesGroup>
+   </Properties>
+   <Repositories>
+      <Repository Name="User Global Variables" id="UserGlobalVariables">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">Name</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+            <Field fieldId="id" widthHint="FitToContent">ID</Field>
+            <Field fieldId="variabletype" widthHint="FitToContent">Type</Field>
+            <Field fieldId="picturelength" widthHint="FitToContent">Length</Field>
+            <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+            <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+         </Structure>
+         <Items>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASFM004" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="1" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASFM004'" />
+               <Property fieldId="guid" value="{B2716933-46D7-44CA-9477-987D26A2A41A}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASFM001" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="2" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASFM001'" />
+               <Property fieldId="guid" value="{415420B8-F01C-488F-86B2-E38F5BDDFE82}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASFM007" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="3" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASFM007'" />
+               <Property fieldId="guid" value="{37219859-62E1-4C84-8CD6-045601C54B27}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASFM006" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="4" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASFM006'" />
+               <Property fieldId="guid" value="{0E87874E-A2CD-4628-A1FF-68C6B284C053}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASFM002" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="5" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASFM002'" />
+               <Property fieldId="guid" value="{FB24B2D1-332D-4DE5-A191-568E34A8667D}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICM001" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="6" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICM001'" />
+               <Property fieldId="guid" value="{557BE1BA-BD58-4382-8743-F03B8410E932}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ProjectID" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="7" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="1.0" />
+               <Property fieldId="defaultvalue" value="1" />
+               <Property fieldId="guid" value="{6EA17D7D-2DA5-4798-973D-053B527F50D3}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASPI001" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="8" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASPI001'" />
+               <Property fieldId="guid" value="{888F1228-6E1B-4D55-B972-E76B3123BA29}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICM003" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="9" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICM003'" />
+               <Property fieldId="guid" value="{51B3BC11-910E-4DCD-AE71-863DD3023C18}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IVSM018" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="10" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IVSM018'" />
+               <Property fieldId="guid" value="{B41E672E-AEA3-4755-9E5A-9AAB89861AEA}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICRM015" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="11" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICRM015'" />
+               <Property fieldId="guid" value="{84AEF34B-DFF9-4DAC-B739-1D602C9144A6}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASFM005" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="12" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASFM005'" />
+               <Property fieldId="guid" value="{91AF31A6-CD80-4E67-8117-32B91851CC79}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICRM013" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="13" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICRM013'" />
+               <Property fieldId="guid" value="{40ECC9B0-70AF-4CF3-BB4F-C5BCE5B3509E}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICRM002" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="14" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICRM002'" />
+               <Property fieldId="guid" value="{FF61CCDE-D4AA-438E-92F7-18F4962F7498}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICRM017" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="15" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICRM017'" />
+               <Property fieldId="guid" value="{3558D58F-0C2A-423D-B9EC-3419C15D1720}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASPP009" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="16" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASPP009'" />
+               <Property fieldId="guid" value="{C46AC1A2-7365-4D91-A95D-C351BD463F5E}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASPP007" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="17" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASPP007'" />
+               <Property fieldId="guid" value="{CC4E4B6F-9621-4714-A6BC-40F6903FFD79}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASFR002" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="18" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASFR002'" />
+               <Property fieldId="guid" value="{AE2D0D80-94AD-4F50-97BA-CAB1D5739EAA}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASPI002" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="19" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASPI002'" />
+               <Property fieldId="guid" value="{1B68003D-4101-432B-8261-8C0526D27F4F}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.IASPP008" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="20" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'IASPP008'" />
+               <Property fieldId="guid" value="{05E64635-0D5B-440D-960A-A7B13DA92A78}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICRM012" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="21" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICRM012'" />
+               <Property fieldId="guid" value="{5DC1C553-46B8-4364-946C-BE60DAEF86E5}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.ICM002" />
+               <Property fieldId="description" value="Stores the Process name" />
+               <Property fieldId="id" value="22" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'ICM002'" />
+               <Property fieldId="guid" value="{E6CB70C4-7431-466E-BE4B-A2C38E798021}" />
+            </RepositoryItem>
+         </Items>
+      </Repository>
+      <Repository Name="User Context Variables" id="UserContextVariables">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">Name</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+            <Field fieldId="id" widthHint="FitToContent">ID</Field>
+            <Field fieldId="variabletype" widthHint="FitToContent">Type</Field>
+            <Field fieldId="picturelength" widthHint="FitToContent">Length</Field>
+            <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+            <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+         </Structure>
+         <Items>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.DestFilePath" />
+               <Property fieldId="description" value="XML File Path received from Trigger" />
+               <Property fieldId="id" value="1" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{74F70689-1D96-49B0-AC77-0D30B0E8AA7E}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.OutputPathFileName" />
+               <Property fieldId="description" value=".Net Validation OutPutfile Path" />
+               <Property fieldId="id" value="2" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{A84EE6D5-F5C1-40D5-A4B2-45C21773065B}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ErrorO_FilePath" />
+               <Property fieldId="description" value="Error Validation Output File Path" />
+               <Property fieldId="id" value="3" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{16A69BA2-F5B7-4471-AD2D-7D8972E972CE}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ErrorC_FilePath" />
+               <Property fieldId="description" value="Error  Conversion Output File Path" />
+               <Property fieldId="id" value="4" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{C1C21330-25AA-49A3-B295-10D7F7018292}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Total_XML_Header_Count" />
+               <Property fieldId="description" value="This Variable will store Total Header elements in received XML" />
+               <Property fieldId="id" value="5" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{7C681835-E459-4A9B-A447-57F4A66D40A8}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Total_XML_InvalidHeader_O" />
+               <Property fieldId="description" value="This Variable will store Total Header elements failed in Validation" />
+               <Property fieldId="id" value="6" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{93063835-8351-4D9D-AF69-69D3CB317D7E}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Total_XML_InvalidHeader_C" />
+               <Property fieldId="description" value="This Variable will store Total Header elements failed in Conversion" />
+               <Property fieldId="id" value="7" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{252A62D7-3619-49F7-8672-E8A32F9C0301}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ErrorStatus" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="8" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{F12E3549-D650-4510-AF59-C61055B7CD10}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.TransactionID" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="9" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="{DA418190-3F72-4C6D-A9BC-D14F5805ECB2}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserString" />
+               <Property fieldId="description" value="Passes alpha-numeric information between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="1000" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000005" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserCode" />
+               <Property fieldId="description" value="Passes only numeric information between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000006" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserBlob" />
+               <Property fieldId="description" value="Passes undefined types of information between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000007" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserXML" />
+               <Property fieldId="description" value="Passes information in XML format between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000008" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.HTTP_Body" />
+               <Property fieldId="description" value="Body of HTTP request." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000009" />
+            </RepositoryItem>
+         </Items>
+      </Repository>
+      <Repository Name="Default Data Format" id="XMLDataTypes">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">External Data Type</Field>
+            <Field fieldId="variabletype" widthHint="FitToContent">Internal Data Type</Field>
+            <Field fieldId="formatproxy" widthHint="FitToContent">Format</Field>
+         </Structure>
+         <Items />
+      </Repository>
+      <Repository Name="Data Converter" id="DataConverter">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">Name</Field>
+            <Field fieldId="isdynamic" widthHint="FitToContent">Dynamic Table</Field>
+            <Field fieldId="filepath" widthHint="FitToContent">File Name</Field>
+            <Field fieldId="delimiter" widthHint="FitToContent">Columns Delimiter</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+            <Field fieldId="id" widthHint="FitToContent">ID</Field>
+            <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+         </Structure>
+         <Items>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.RECORDTYPE" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%RecordType.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="1" />
+               <Property fieldId="guid" value="{58E94226-1804-4DA6-9506-2AA5778E45F3}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.ACTION" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%ACTION.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="2" />
+               <Property fieldId="guid" value="{020A7DA7-E8BB-427B-81EF-62C1F48BFAF6}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.ACTION2" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%ACTION2.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="3" />
+               <Property fieldId="guid" value="{0E1CE54D-ADC2-48D3-AE6D-8A64FCAE3A30}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.TISVIPSTATUS" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%TISVIPStatus.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="4" />
+               <Property fieldId="guid" value="{8834D059-2F96-4090-8048-174AFF8833D2}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.PREFIX" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%Prefix.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="5" />
+               <Property fieldId="guid" value="{4B003257-58D9-47AA-B879-6823B810503B}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.PRIMARYCONTACT" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%PrimaryContact.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="6" />
+               <Property fieldId="guid" value="{4C63A2D2-C42E-4124-9F12-28C4B259FFC1}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.ADDRESSTYPE" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%AddressType.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="7" />
+               <Property fieldId="guid" value="{58E0C261-50C2-41ED-B2EC-DE630847B5DF}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.SHIPPINGBY" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%ShippingBy.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="8" />
+               <Property fieldId="guid" value="{0F67AC69-644E-4E7D-988A-71FBD74D6D1A}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.VENDOR" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%Vendor.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="9" />
+               <Property fieldId="guid" value="{2B822438-A0EB-42DC-B1B5-78C2E90593B2}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.TISCOMPCODE" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%TISCOMPCODE.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="10" />
+               <Property fieldId="guid" value="{5E387854-CD19-49DA-ACE3-D3C5A1989473}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.CUSTOMERCODE" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%CUSTOMERCODE.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="11" />
+               <Property fieldId="guid" value="{E58403AE-45A4-4F57-9E87-848E3CC8B8F7}" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.CUSTOMERPREFIX" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="%currentprojectdir%Conversion%sl%CUSTOMERPREFIX.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="12" />
+               <Property fieldId="guid" value="{FEE13B84-EDE8-4A07-AEE8-FC078C0E4B72}" />
+            </RepositoryItem>
+         </Items>
+      </Repository>
+      <Repository Name="User Errors" id="UserErrors">
+         <Structure>
+            <Field fieldId="errorcode" widthHint="FitToContent">ErrorCode</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+         </Structure>
+         <Items />
+      </Repository>
+   </Repositories>
+   <Resources name="Resources" element="Resource">
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="MailServer" />
+            <Property id="type" name="Type" value="Email" />
+            <Property id="description" name="Description" value="relaymain.magicsoftware.com" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="Server Type" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Incoming Mail Server" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Incoming Port" />
+               <Property id="format" name="Format" value="8" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Incoming Secure Connection" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="No" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Outgoing Mail Server" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="172.30.92.100" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Outgoing Port" />
+               <Property id="format" name="Format" value="8" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="25" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Outgoing Secure Connection" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="No" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="From Address" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="IFBAM_DEV_Admin@isuzu-dealers.com" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="User" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="AE_Config" />
+            <Property id="type" name="Type" value="FTP" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="Server" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%FTP_Server%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Protocol" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="FTP" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Enable server validation" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="Yes" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Validate against" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="Public key file" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Server validation file" />
+               <Property id="format" name="Format" value="500" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Client authentication" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="User password" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="User" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%FTP_User%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Client private key file path" />
+               <Property id="format" name="Format" value="500" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Encoding" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="West European" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Locale Name" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Timeout in Miliseconds" />
+               <Property id="format" name="Format" value="12" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="0" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Connect Mode" />
+               <Property id="format" name="Format" value="10" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="PASSIVE" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Number of Login Retries" />
+               <Property id="format" name="Format" value="3" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="6" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Delay Between Login Retries" />
+               <Property id="format" name="Format" value="10" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="10" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Use Secured FTP" />
+               <Property id="format" name="Format" value="5" />
+               <Property id="type" name="Type" value="Logical" />
+               <Property id="value" name="Value" value="No" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Server Certificate Validation" />
+               <Property id="format" name="Format" value="5" />
+               <Property id="type" name="Type" value="Logical" />
+               <Property id="value" name="Value" value="No" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Server Certificate File" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Use Client Certificate" />
+               <Property id="format" name="Format" value="5" />
+               <Property id="type" name="Type" value="Logical" />
+               <Property id="value" name="Value" value="No" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Client Certificate File" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="SAP MiRAI Resource" />
+            <Property id="type" name="Type" value="SAP R3" />
+            <Property id="description" name="Description" value="`" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="Connection Type" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value=" Message Server" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Use Secure Network Connection" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="Off" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SNC Name" />
+               <Property id="format" name="Format" value="1000" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SNC Partner" />
+               <Property id="format" name="Format" value="1000" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SNC Security Level" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="3" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SNC Library Path" />
+               <Property id="format" name="Format" value="1000" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP Language" />
+               <Property id="format" name="Format" value="2" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="English" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP Codepage" />
+               <Property id="format" name="Format" value="4" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP Unicode System" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="No" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Unicode Support" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="Yes" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP Trace" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="No" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP Host Name" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%SAPHostName%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Connection Pool Size" />
+               <Property id="format" name="Format" value="3" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="5" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Port" />
+               <Property id="format" name="Format" value="12" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="3600" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Group" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="XPI" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP System Number" />
+               <Property id="format" name="Format" value="2" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="%SAPSysNo%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP Client Number" />
+               <Property id="format" name="Format" value="4" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%SAPCliNo%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP User Name" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%SAPUser%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP Router String" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="ISUZU_DB" />
+            <Property id="type" name="Type" value="Database" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="DBMS" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="Microsoft SQL Server" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Database name" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%ISUZU_DBName%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="DataB name - sort (Lowercase)" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Filter Owner" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="ODBC Driver Name" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Filters data" />
+               <Property id="format" name="Format" value="" />
+               <Property id="type" name="Type" value="Blob" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Library Details" />
+               <Property id="format" name="Format" value="" />
+               <Property id="type" name="Type" value="Blob" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Server" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%ISUZU_ServerName%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Data Source name" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Connect String" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Database alias" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="User" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%ISUZU_User%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Starting Owner" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="dbo" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Offline" />
+               <Property id="format" name="Format" value="" />
+               <Property id="type" name="Type" value="Logical" />
+               <Property id="value" name="Value" value="False" />
+            </Item>
+         </Configuration>
+      </Element>
+   </Resources>
+   <Services name="Services" element="Service">
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="HTTP_1" />
+            <Property id="type" name="Type" value="HTTP" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <PropertiesGroup id="Details" name="Details">
+            <Property id="webserver" name="WebServer" value="MQXPI14" />
+            <Property id="alias" name="Alias" value="Magicxpi4.7" />
+         </PropertiesGroup>
+         <OperationArguments>
+            <Structure>
+               <Field fieldId="operationid" widthHint="FitToContent">OperationId</Field>
+               <Field fieldId="argumentname" widthHint="FitToContent">Argument Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="picture" widthHint="FitToContent">Format</Field>
+               <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+               <Field fieldId="mandatory" widthHint="FitToContent">Mandatory</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="operationid" value="1" />
+                  <Property fieldId="argumentname" value="" />
+                  <Property fieldId="datatype" value="" />
+                  <Property fieldId="picture" value="" />
+                  <Property fieldId="defaultvalue" value="" />
+                  <Property fieldId="mandatory" value="" />
+               </RepositoryItem>
+            </Items>
+         </OperationArguments>
+         <OperationsWithArguments>
+            <Structure>
+               <Field fieldId="id" widthHint="FitToContent">Id</Field>
+               <Field fieldId="operationname" widthHint="FitToContent">OperationName</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="id" value="1" />
+                  <Property fieldId="operationname" value="Refresh" />
+               </RepositoryItem>
+            </Items>
+         </OperationsWithArguments>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="SAP MiRAI Service" />
+            <Property id="type" name="Type" value="SAP R3" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="SAP R/3 Resource" />
+               <Property id="format" name="Format" value="" />
+               <Property id="type" name="Type" value="Resource" />
+               <Property id="value" name="Value" value="SAP MiRAI Resource" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP GW Host Name" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%SAPHostName%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="SAP GW Service" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%SAPGWService%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Progid" />
+               <Property id="format" name="Format" value="100" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%SAPProgID%" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Connection Count" />
+               <Property id="format" name="Format" value="3" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="10" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+         </Configuration>
+      </Element>
+   </Services>
+   <BusinessProcesses>
+      <BPRef id="BP1" bpName="Inbound Interfaces">
+         <Flows>
+            <FlowRef id="BP1_Flow1" flowName="IASFM004" />
+            <FlowRef id="BP1_Flow2" flowName="IASFM001" />
+            <FlowRef id="BP1_Flow3" flowName="IASFM007" />
+            <FlowRef id="BP1_Flow4" flowName="ICM001" />
+            <FlowRef id="BP1_Flow5" flowName="IASFM002" />
+            <FlowRef id="BP1_Flow6" flowName="IASFM006" />
+            <FlowRef id="BP1_Flow7" flowName="ICRM003" />
+            <FlowRef id="BP1_Flow8" flowName="ICRM001" />
+            <FlowRef id="BP1_Flow9" flowName="ICRM012" />
+            <FlowRef id="BP1_Flow10" flowName="IASPI001" />
+            <FlowRef id="BP1_Flow11" flowName="ICM002" />
+            <FlowRef id="BP1_Flow12" flowName="ICRM015" />
+            <FlowRef id="BP1_Flow13" flowName="IVSM018" />
+            <FlowRef id="BP1_Flow14" flowName="IASPI008" />
+            <FlowRef id="BP1_Flow15" flowName="ICRM013" />
+            <FlowRef id="BP1_Flow16" flowName="ICRM002" />
+            <FlowRef id="BP1_Flow17" flowName="ICRM017" />
+            <FlowRef id="BP1_Flow18" flowName="IASPP007" />
+            <FlowRef id="BP1_Flow19" flowName="ICM003" />
+            <FlowRef id="BP1_Flow20" flowName="IASPP009" />
+            <FlowRef id="BP1_Flow21" flowName="IASFR002" />
+            <FlowRef id="BP1_Flow22" flowName="IAFSI003" />
+            <FlowRef id="BP1_Flow23" flowName="IVSP012" />
+            <FlowRef id="BP1_Flow24" flowName="IACCR004" />
+            <FlowRef id="BP1_Flow25" flowName="IVSM006" />
+            <FlowRef id="BP1_Flow26" flowName="IVSM012" />
+            <FlowRef id="BP1_Flow27" flowName="IVSI001" />
+            <FlowRef id="BP1_Flow28" flowName="IVSI002" />
+            <FlowRef id="BP1_Flow29" flowName="IASPI002" />
+            <FlowRef id="BP1_Flow30" flowName="IASPP008" />
+            <FlowRef id="BP1_Flow31" flowName="IACCP001" />
+            <FlowRef id="BP1_Flow32" flowName="IAFSC003" />
+            <FlowRef id="BP1_Flow33" flowName="IASPI009" />
+            <FlowRef id="BP1_Flow34" flowName="ICM008" />
+            <FlowRef id="BP1_Flow35" flowName="IASFM005" />
+            <FlowRef id="BP1_Flow36" flowName="IAFSI007" />
+            <FlowRef id="BP1_Flow37" flowName="IAFSR003" />
+            <FlowRef id="BP1_Flow38" flowName="IAFSI006" />
+            <FlowRef id="BP1_Flow39" flowName="ICRM018" />
+            <FlowRef id="BP1_Flow40" flowName="IAFSM008" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP2" bpName="Error Handling">
+         <Flows>
+            <FlowRef id="BP2_Flow41" flowName="Generic Error Handling" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP3" bpName="Intialize / maintenance">
+         <Flows>
+            <FlowRef id="BP3_Flow42" flowName="Initialize" />
+            <FlowRef id="BP3_Flow43" flowName="Conversion Table" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP4" bpName="Generic">
+         <Flows>
+            <FlowRef id="BP4_Flow44" flowName="Put to FTP" />
+         </Flows>
+      </BPRef>
+   </BusinessProcesses>
+</Project>

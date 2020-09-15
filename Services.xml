@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource_Settings type="service">
+  <Resource_Element>
+    <Main_Resource_ID>106</Main_Resource_ID>
+    <Main_Resource_Name>Email</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>109</Main_Resource_ID>
+    <Main_Resource_Name>FTP</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>110</Main_Resource_ID>
+    <Main_Resource_Name>HTTP</Main_Resource_Name>
+    <Default_Resource>HTTP_1</Default_Resource>
+    <Main_Resource_Defintion>
+      <Resource_Type_ID>24</Resource_Type_ID>
+      <Resource_Type_Name>HTTP_1</Resource_Type_Name>
+      <Resource_Type_Description />
+      <Resource_Type_Blob>TgB1AGwAbABCAGwAbwBiAA==</Resource_Type_Blob>
+      <Resource_Properties>
+        <ID>1</ID>
+        <Name>Web Server</Name>
+        <ExpressionValue>%MachineName%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>1</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>2</ID>
+        <Name>Alias</Name>
+        <ExpressionValue>%Alias%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>2</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>3</ID>
+        <Name>HTTP OperationData</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIiA/Pg0KPE9wZXJhdGlvbnNEYXRhPg0KDQogIDxPcGVyYXRpb24+DQogICAgPE9wZXJhdGlvbklEPjE8L09wZXJhdGlvbklEPg0KICAgIDxPcGVyYXRpb25OYW1lPlJlZnJlc2g8L09wZXJhdGlvbk5hbWU+DQogICAgPEhUTUxQYXRoPkQ6XE1hZ2ljIHhwaSA0LjFccHJvamVjdHNcTUlSQUlfSU5URVJGQUNFX0lOQk9VTkRcU2VydmljZVxIVFRQXzFcUmVmcmVzaC5odG1sPC9IVE1MUGF0aD4NCiAgPC9PcGVyYXRpb24+DQoNCjwvT3BlcmF0aW9uc0RhdGE+DQo=</ExpressionValueBlob>
+        <DisplaySequenceID>3</DisplaySequenceID>
+      </Resource_Properties>
+    </Main_Resource_Defintion>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>111</Main_Resource_ID>
+    <Main_Resource_Name>IBM i</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>115</Main_Resource_ID>
+    <Main_Resource_Name>JMS</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>117</Main_Resource_ID>
+    <Main_Resource_Name>WebSphere MQ</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>118</Main_Resource_ID>
+    <Main_Resource_Name>MSMQ</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>121</Main_Resource_ID>
+    <Main_Resource_Name>Web Services</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>128</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 2004</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>133</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 2005</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>140</Main_Resource_ID>
+    <Main_Resource_Name>SAP R3</Main_Resource_Name>
+    <Default_Resource>SAP MiRAI Service</Default_Resource>
+    <Main_Resource_Defintion>
+      <Resource_Type_ID>23</Resource_Type_ID>
+      <Resource_Type_Name>SAP MiRAI Service</Resource_Type_Name>
+      <Resource_Type_Description />
+      <Resource_Type_Blob>TgB1AGwAbABCAGwAbwBiAA==</Resource_Type_Blob>
+      <Resource_Properties>
+        <ID>1</ID>
+        <Name>SAP R/3 Resource</Name>
+        <ExpressionValue>SAP MiRAI Resource</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>1</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>2</ID>
+        <Name>SAP GW Host Name</Name>
+        <ExpressionValue>%SAPHostName%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>2</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>3</ID>
+        <Name>SAP GW Service</Name>
+        <ExpressionValue>%SAPGWService%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>3</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>4</ID>
+        <Name>Progid</Name>
+        <ExpressionValue>%SAPProgID%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>4</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>5</ID>
+        <Name>Connection Count</Name>
+        <ExpressionValue>10</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>5</DisplaySequenceID>
+      </Resource_Properties>
+    </Main_Resource_Defintion>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>141</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 2007</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>143</Main_Resource_ID>
+    <Main_Resource_Name>Salesforce</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>149</Main_Resource_ID>
+    <Main_Resource_Name>HL7</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>153</Main_Resource_ID>
+    <Main_Resource_Name>SAP A1</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>157</Main_Resource_ID>
+    <Main_Resource_Name>Exchange</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>158</Main_Resource_ID>
+    <Main_Resource_Name>TCPListener</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>160</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 88</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>162</Main_Resource_ID>
+    <Main_Resource_Name>Sugar</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>164</Main_Resource_ID>
+    <Main_Resource_Name>ServiceMax</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>20000</Main_Resource_ID>
+    <Main_Resource_Name>Scheduler</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>30000</Main_Resource_ID>
+    <Main_Resource_Name>Flow Enablement</Main_Resource_Name>
+  </Resource_Element>
+</Resource_Settings>

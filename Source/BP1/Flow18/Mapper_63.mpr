@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MapperOrigin>DataMapperService</MapperOrigin>
+	
+			<ErrorFlowExpressionVal>PCMhJUAkPmdldEZsb3dOYW1lKDQxKTwjISVAJD4=</ErrorFlowExpressionVal>
+		
+		<SourceSchemas>
+		
+		
+				
+		<Schema xsi:type="XSDSchema">
+		<SchemaID>3</SchemaID>
+		<Order>1</Order>
+		<Name>S1</Name>
+				<SchemaLocation>Source</SchemaLocation>
+		<SchemaType>XSD</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="XSDComplexField">
+							<Identifier>ZPORDSTAT01</Identifier>
+							<Description></Description>
+							<FieldName>ZPORDSTAT01</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>False</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																											</Field>
+																					<Field xsi:type="XSDComplexField">
+							<Identifier>ZPORDSTAT01/IDOC</Identifier>
+							<Description></Description>
+							<FieldName>IDOC</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>79228162514264337593543950335</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>False</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																											</Field>
+																					<Field xsi:type="XSDComplexField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH</Identifier>
+							<Description></Description>
+							<FieldName>ZSPORDSTATH</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/BRANCHCODE</Identifier>
+							<Description></Description>
+							<FieldName>BRANCHCODE</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture></ExternalFieldPicture>
+														<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/PONUMBER</Identifier>
+							<Description></Description>
+							<FieldName>PONUMBER</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture></ExternalFieldPicture>
+														<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/STATUS</Identifier>
+							<Description></Description>
+							<FieldName>STATUS</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture></ExternalFieldPicture>
+														<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="XSDComplexField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI</Identifier>
+							<Description></Description>
+							<FieldName>ZSPORDSTATI</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/PARTNUMBER</Identifier>
+							<Description></Description>
+							<FieldName>PARTNUMBER</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture></ExternalFieldPicture>
+														<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/STATUS</Identifier>
+							<Description></Description>
+							<FieldName>STATUS</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture></ExternalFieldPicture>
+														<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/ORDERQUANTITY</Identifier>
+							<Description></Description>
+							<FieldName>ORDERQUANTITY</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture></ExternalFieldPicture>
+														<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+																								<XSD>
+					<XSDSubType>File</XSDSubType>
+					<IFCModel></IFCModel>
+					<XsdFileName>%MiRAI_Interface%Schema\IASPP007\ZPORDSTAT01_S.xsd</XsdFileName>
+					<RootSelected>ZPORDSTAT01</RootSelected>
+					<isAppend>false</isAppend>
+					<isValidation>false</isValidation>
+					<RecursionDepth>1</RecursionDepth>
+					<AlwaysCreateNodes>false</AlwaysCreateNodes>
+					<DataDestination>File</DataDestination>
+					<DataExp>
+						<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezIwNDlGQkEyLUI2QjEtNDc5RC04RTlGLTkyMEYwRDI5QkNFQ30nLDAsMCk8IyElQCQ+</ExpressionVal>
+						<ExpectedType>A</ExpectedType>
+						<Direction>I</Direction>
+					</DataExp>
+					<UseStreamingParser>false</UseStreamingParser>
+					<xmlFileEncoding>Project Encoding</xmlFileEncoding>
+										<TargetNamespace></TargetNamespace>
+																			</XSD>
+																					
+										
+										</Schema>
+		
+				
+		
+		</SourceSchemas>
+				<DestinationSchemas>
+		
+		
+				
+		<Schema xsi:type="TemplateSchema">
+		<SchemaID>6</SchemaID>
+		<Order>1</Order>
+		<Name>Write_Errors_if_Any</Name>
+				<SchemaLocation>Destination</SchemaLocation>
+		<SchemaType>Template</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="ComplexField">
+							<Identifier>Root</Identifier>
+							<Description></Description>
+							<FieldName>Root</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>79228162514264337593543950335</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From></From>
+							<Length></Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																											</Field>
+																					<Field xsi:type="ComplexField">
+							<Identifier>Root/Repeat1</Identifier>
+							<Description></Description>
+							<FieldName>Repeat1</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<Condition>
+								<ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1NUQVRVUyk8IyElQCQ+KSApPD4nMCcgQU5EIFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9TVEFUVVMpPCMhJUAkPikgKTw+JzEn</ExpressionVal>
+								<ExpectedType>L</ExpectedType>
+								<Direction>I</Direction>
+							</Condition>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+															<MultiUpdates>
+																													<Update>
+												<ID>1</ID>
+												<VariableExp>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezQxNTQ3ODQ2LTIwMTQtNDMzRi1BMkFELTdFRjlENzY3RkQyNX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+													<ExpectedType>N</ExpectedType>
+													<Direction>O</Direction>
+												</VariableExp>
+												<Expression>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezQxNTQ3ODQ2LTIwMTQtNDMzRi1BMkFELTdFRjlENzY3RkQyNX0nLDAsMCk8IyElQCQ+ICsx</ExpressionVal>
+													<ExpectedType>N</ExpectedType>
+													<Direction>I</Direction>
+												</Expression>
+												<Condition>
+													<ExpressionVal>KFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9TVEFUVVMpPCMhJUAkPikgKTw+JzAnIEFORCBUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvU1RBVFVTKTwjISVAJD4pICk8PicxJykgIEFORCAoIEluU3RyKFRyaW0oIDwjISVAJD5nZXRWYXJOYW1lKDEsJ3tBNjc4QjA0Ni0zNDI3LTQ3QzAtOUJGQy1GNDdBQjEwRkMyMkV9JywwLDApPCMhJUAkPiApLCd8JyZUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvQlJBTkNIQ09ERSk8IyElQCQ+KSApJid8JyYgVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1BPTlVNQkVSKTwjISVAJD4pICkgJid8Jyk9MCkNCg0KDQo=</ExpressionVal>
+													<ExpectedType>L</ExpectedType>
+													<Direction>I</Direction>
+												</Condition>
+											</Update>
+																																							<Update>
+												<ID>2</ID>
+												<VariableExp>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+													<ExpectedType>A</ExpectedType>
+													<Direction>O</Direction>
+												</VariableExp>
+												<Expression>
+													<ExpressionVal>VHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+ICkmJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9CUkFOQ0hDT0RFKTwjISVAJD4pICkmJ3wnJiBUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvUE9OVU1CRVIpPCMhJUAkPikgKSYnfCc=</ExpressionVal>
+													<ExpectedType>A</ExpectedType>
+													<Direction>I</Direction>
+												</Expression>
+												<Condition>
+													<ExpressionVal>KFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9TVEFUVVMpPCMhJUAkPikgKTw+JzAnIEFORCBUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvU1RBVFVTKTwjISVAJD4pICk8PicxJykgQU5EICggSW5TdHIoVHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+ICksJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9CUkFOQ0hDT0RFKTwjISVAJD4pICkmJ3wnJiBUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvUE9OVU1CRVIpPCMhJUAkPikgKSAmJ3wnKT0wKQ0KDQoNCg0K</ExpressionVal>
+													<ExpectedType>L</ExpectedType>
+													<Direction>I</Direction>
+												</Condition>
+											</Update>
+																											</MultiUpdates>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/BranchCode</Identifier>
+							<Description></Description>
+							<FieldName>BranchCode</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/PONumber</Identifier>
+							<Description></Description>
+							<FieldName>PONumber</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/IF_STATUS</Identifier>
+							<Description></Description>
+							<FieldName>IF_STATUS</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>L</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1NUQVRVUyk8IyElQCQ+KSApPD4nMCcgQU5EIFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9TVEFUVVMpPCMhJUAkPikgKTw+JzEnDQoNCg0K</ExpressionVal>
+								<ExpectedType>L</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																												<UserPicture>1</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/STATUS</Identifier>
+							<Description></Description>
+							<FieldName>STATUS</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="ComplexField">
+							<Identifier>Root/Repeat2</Identifier>
+							<Description></Description>
+							<FieldName>Repeat2</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<Condition>
+								<ExpressionVal>KFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9aU1BPUkRTVEFUSS9TVEFUVVMpPCMhJUAkPikgKTw+JzAnIEFORCBUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvWlNQT1JEU1RBVEkvU1RBVFVTKTwjISVAJD4pICk8PicxJyApIE9SIExlbihUcmltKFN0clRva2VuKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvWlNQT1JEU1RBVEkvT1JERVJRVUFOVElUWSk8IyElQCQ+KSAsMSwnLicpKSApPjcNCg0KDQo=</ExpressionVal>
+								<ExpectedType>L</ExpectedType>
+								<Direction>I</Direction>
+							</Condition>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+															<MultiUpdates>
+																													<Update>
+												<ID>1</ID>
+												<VariableExp>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezQxNTQ3ODQ2LTIwMTQtNDMzRi1BMkFELTdFRjlENzY3RkQyNX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+													<ExpectedType>N</ExpectedType>
+													<Direction>O</Direction>
+												</VariableExp>
+												<Expression>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezQxNTQ3ODQ2LTIwMTQtNDMzRi1BMkFELTdFRjlENzY3RkQyNX0nLDAsMCk8IyElQCQ+ICsx</ExpressionVal>
+													<ExpectedType>N</ExpectedType>
+													<Direction>I</Direction>
+												</Expression>
+												<Condition>
+													<ExpressionVal>KChUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvWlNQT1JEU1RBVEkvU1RBVFVTKTwjISVAJD4pICk8PicwJyBBTkQgVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1pTUE9SRFNUQVRJL1NUQVRVUyk8IyElQCQ+KSApPD4nMScgKSBPUiBMZW4oVHJpbShTdHJUb2tlbiggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1pTUE9SRFNUQVRJL09SREVSUVVBTlRJVFkpPCMhJUAkPikgLDEsJy4nKSkgKT43KSBBTkQgKCBJblN0cihUcmltKCA8IyElQCQ+Z2V0VmFyTmFtZSgxLCd7QTY3OEIwNDYtMzQyNy00N0MwLTlCRkMtRjQ3QUIxMEZDMjJFfScsMCwwKTwjISVAJD4gKSwnfCcmVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL0JSQU5DSENPREUpPCMhJUAkPikgKSYnfCcmIFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9QT05VTUJFUik8IyElQCQ+KSApICYnfCcpPTApDQoNCg==</ExpressionVal>
+													<ExpectedType>L</ExpectedType>
+													<Direction>I</Direction>
+												</Condition>
+											</Update>
+																																							<Update>
+												<ID>2</ID>
+												<VariableExp>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+													<ExpectedType>A</ExpectedType>
+													<Direction>O</Direction>
+												</VariableExp>
+												<Expression>
+													<ExpressionVal>VHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+ICkmJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9CUkFOQ0hDT0RFKTwjISVAJD4pICkmIFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9QT05VTUJFUik8IyElQCQ+KSApJid8Jw==</ExpressionVal>
+													<ExpectedType>A</ExpectedType>
+													<Direction>I</Direction>
+												</Expression>
+												<Condition>
+													<ExpressionVal>KChUcmltKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1pQT1JEU1RBVDAxL0lET0MvWlNQT1JEU1RBVEgvWlNQT1JEU1RBVEkvU1RBVFVTKTwjISVAJD4pICk8PicwJyBBTkQgVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1pTUE9SRFNUQVRJL1NUQVRVUyk8IyElQCQ+KSApPD4nMScgKSBPUiBMZW4oVHJpbShTdHJUb2tlbiggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1pTUE9SRFNUQVRJL09SREVSUVVBTlRJVFkpPCMhJUAkPikgLDEsJy4nKSkgKT43KSBBTkQgKCBJblN0cihUcmltKCA8IyElQCQ+Z2V0VmFyTmFtZSgxLCd7QTY3OEIwNDYtMzQyNy00N0MwLTlCRkMtRjQ3QUIxMEZDMjJFfScsMCwwKTwjISVAJD4gKSwnfCcmVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL0JSQU5DSENPREUpPCMhJUAkPikgKSYnfCcmIFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9QT05VTUJFUik8IyElQCQ+KSApICYnfCcpPTApDQoNCg0K</ExpressionVal>
+													<ExpectedType>L</ExpectedType>
+													<Direction>I</Direction>
+												</Condition>
+											</Update>
+																											</MultiUpdates>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat2/cBranchCode</Identifier>
+							<Description></Description>
+							<FieldName>cBranchCode</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat2/cPONumber</Identifier>
+							<Description></Description>
+							<FieldName>cPONumber</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat2/cPartNumber</Identifier>
+							<Description></Description>
+							<FieldName>cPartNumber</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat2/IF_cSTATUS</Identifier>
+							<Description></Description>
+							<FieldName>IF_cSTATUS</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>L</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aUE9SRFNUQVQwMS9JRE9DL1pTUE9SRFNUQVRIL1pTUE9SRFNUQVRJL1NUQVRVUyk8IyElQCQ+KSApPD4nMCcgQU5EIFRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9aU1BPUkRTVEFUSS9TVEFUVVMpPCMhJUAkPikgKTw+JzEn</ExpressionVal>
+								<ExpectedType>L</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																												<UserPicture>1</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat2/cSTATUS</Identifier>
+							<Description></Description>
+							<FieldName>cSTATUS</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat2/IF_cOrderQuantity</Identifier>
+							<Description></Description>
+							<FieldName>IF_cOrderQuantity</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>L</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>TGVuKFRyaW0oU3RyVG9rZW4oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWlBPUkRTVEFUMDEvSURPQy9aU1BPUkRTVEFUSC9aU1BPUkRTVEFUSS9PUkRFUlFVQU5USVRZKTwjISVAJD4pICwxLCcuJykpICk+IDc=</ExpressionVal>
+								<ExpectedType>L</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																												<UserPicture>1</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat2/cOrderQuantity</Identifier>
+							<Description></Description>
+							<FieldName>cOrderQuantity</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+																																	
+										
+									<Template>
+					<TplFile>%MiRAI_Interface%Schema\AE_Common\IASPP007_V1.TPL</TplFile>
+					<DataDestination>File</DataDestination>
+					<DataExp>
+						<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnezE2QTY5QkEyLUY1QjctNDQ3MS1BRDJELTdEODk3MkU5NzJDRX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+						<ExpectedType>A</ExpectedType>
+						<Direction>I</Direction>
+					</DataExp>
+					<isUnicode>true</isUnicode>
+					<Append>false</Append>
+				</Template>
+													</Schema>
+		
+				
+		
+		</DestinationSchemas>
+			
+				<Connections>
+														<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/BRANCHCODE</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/BranchCode</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/PONUMBER</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/PONumber</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/STATUS</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/IF_STATUS</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/STATUS</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/STATUS</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/BRANCHCODE</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2/cBranchCode</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/PONUMBER</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2/cPONumber</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/PARTNUMBER</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2/cPartNumber</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/STATUS</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2/IF_cSTATUS</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/STATUS</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2/cSTATUS</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/ORDERQUANTITY</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2/IF_cOrderQuantity</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZPORDSTAT01/IDOC/ZSPORDSTATH/ZSPORDSTATI/ORDERQUANTITY</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat2/cOrderQuantity</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+												</Connections>
+	  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

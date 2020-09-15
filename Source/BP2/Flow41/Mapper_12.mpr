@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MapperOrigin>DataMapperService</MapperOrigin>
+	
+		
+		<SourceSchemas>
+		
+		
+				
+		<Schema xsi:type="DataBaseSchema">
+		<SchemaID>7</SchemaID>
+		<Order>1</Order>
+		<Name>S_ErrorSequence</Name>
+				<SchemaLocation>Source</SchemaLocation>
+		<SchemaType>DataBase</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="ComplexField">
+							<Identifier>Record</Identifier>
+							<Description></Description>
+							<FieldName>Record</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName></GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>Record/NextErrorRunning</Identifier>
+							<Description></Description>
+							<FieldName>NextErrorRunning</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>5</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>5</ExternalFieldPicture>
+														<UserPicture>5</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>NextErrorRunning</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+										<DB>
+					<DBResource>ISUZU_DB</DBResource>
+					<DynamicSQL>false</DynamicSQL>
+																									<SQLStatement>
+								<ExpressionVal>c2VsZWN0IHJpZ2h0KCcwMDAwMCcgKyBjb252ZXJ0KHZhcmNoYXIoNSksIE5FWFQgVkFMVUUgRk9SIEVycm9yU2VxdWVuY2UpLCA1KSBhcyBOZXh0RXJyb3JSdW5uaW5n</ExpressionVal>
+								<ExpectedType>B</ExpectedType>
+								<Direction>I</Direction>
+					</SQLStatement>
+					<GenerateTableName></GenerateTableName>
+				</DB>
+																																			
+										
+															</Schema>
+		
+				
+		
+		</SourceSchemas>
+				<DestinationSchemas>
+		
+		
+				
+		<Schema xsi:type="DataBaseSchema">
+		<SchemaID>4</SchemaID>
+		<Order>1</Order>
+		<Name>I_ErrorLog</Name>
+				<SchemaLocation>Destination</SchemaLocation>
+		<SchemaType>DataBase</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="ComplexField">
+							<Identifier>dbo.Error_Log</Identifier>
+							<Description></Description>
+							<FieldName>dbo.Error_Log</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName></GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Error_ID</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Error_ID</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>N</MagicFieldType>
+							<MagicPicture>N10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>INTEGER</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture>N10</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>4</StorageSize>	
+																						<StorageNum>4</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Error_ID</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Error_Date</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Error_Date</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>8</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezU5RjFGMkQzLTE2RTctNDBFRS1CNzAwLUQ2MkJCRjdDRDlCMH0nLDAsMCk8IyElQCQ+</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>8</ExternalFieldPicture>
+														<UserPicture>8</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Error_Date</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Error_Time</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Error_Time</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>6</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>VFN0ciAoVGltZSAoKSwnSEhNTVNTJyk=</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>6</ExternalFieldPicture>
+														<UserPicture>6</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Error_Time</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Error_Group</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Error_Group</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>J0kn</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>1</ExternalFieldPicture>
+														<UserPicture>1</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Error_Group</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Method</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Method</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>J0kn</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>1</ExternalFieldPicture>
+														<UserPicture>1</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Method</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Error_Source_System</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Error_Source_System</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>2</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>JzAzJw==</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>2</ExternalFieldPicture>
+														<UserPicture>2</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Error_Source_System</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Interface_ID</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Interface_ID</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezNGMkM1REVDLUIwMzItNERGOC04OUE1LUMzQkIzOTMxNDk0OX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture>10</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Interface_ID</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Business_Process_ID</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Business_Process_ID</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>N</MagicFieldType>
+							<MagicPicture>N10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>MQ==</ExpressionVal>
+								<ExpectedType>N</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>INTEGER</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture>N10</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>4</StorageSize>	
+																						<StorageNum>4</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Business_Process_ID</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Business_Process_Name</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Business_Process_Name</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>20</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIzJywwLDApPCMhJUAkPg==</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>20</ExternalFieldPicture>
+														<UserPicture>20</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Business_Process_Name</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Integration_Flow_ID</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Integration_Flow_ID</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>N</MagicFieldType>
+							<MagicPicture>N10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDE3JywwLDApPCMhJUAkPg==</ExpressionVal>
+								<ExpectedType>N</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>INTEGER</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture>N10</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>4</StorageSize>	
+																						<StorageNum>4</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Integration_Flow_ID</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Error_Message</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Error_Message</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>255</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0YyMjdGQzc3LTVGQTAtNDI0MC05ODc4LTE3N0NFOTA3NTk3MH0nLDAsMCk8IyElQCQ+</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>255</ExternalFieldPicture>
+														<UserPicture>255</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Error_Message</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Link_To_Error_Detail</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Link_To_Error_Detail</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture></UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>0</StorageSize>	
+																						<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Link_To_Error_Detail</GenerateColumnName>
+																											</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Action_Close_Problem</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Action_Close_Problem</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>JzAn</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>1</ExternalFieldPicture>
+														<UserPicture>1</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Action_Close_Problem</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.By_User</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.By_User</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture></UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>0</StorageSize>	
+																						<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].By_User</GenerateColumnName>
+																											</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.By_Date</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.By_Date</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>8</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>8</ExternalFieldPicture>
+														<UserPicture></UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>0</StorageSize>	
+																						<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].By_Date</GenerateColumnName>
+																											</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.By_Time</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.By_Time</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>6</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>6</ExternalFieldPicture>
+														<UserPicture></UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>0</StorageSize>	
+																						<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].By_Time</GenerateColumnName>
+																											</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Cause_Of_Problem</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Cause_Of_Problem</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>50</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>50</ExternalFieldPicture>
+														<UserPicture></UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>0</StorageSize>	
+																						<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Cause_Of_Problem</GenerateColumnName>
+																											</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Solution_To_Solve_Issue</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Solution_To_Solve_Issue</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>100</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>100</ExternalFieldPicture>
+														<UserPicture></UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																													<StorageSize>0</StorageSize>	
+																						<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Solution_To_Solve_Issue</GenerateColumnName>
+																											</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Error_Log/Error_Log.Transaction_ID</Identifier>
+							<Description></Description>
+							<FieldName>Error_Log.Transaction_ID</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>5</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwne0RBNDE4MTkwLTNGNzItNEM2RC1BOUJDLUQxNEY1ODA1RUNCMn0nLDAsMCk8IyElQCQ+</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>5</ExternalFieldPicture>
+														<UserPicture>5</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>[Error_Log].Transaction_ID</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+										<DB>
+					<DBResource>ISUZU_DB</DBResource>
+					<DynamicSQL>false</DynamicSQL>
+																									<SQLStatement>
+								<ExpressionVal>SU5TRVJUIElOVE8gZGJvLltFcnJvcl9Mb2ddIChbRXJyb3JfTG9nXS5FcnJvcl9JRCAsW0Vycm9yX0xvZ10uRXJyb3JfRGF0ZSAsW0Vycm9yX0xvZ10uRXJyb3JfVGltZSAsW0Vycm9yX0xvZ10uRXJyb3JfR3JvdXAgLFtFcnJvcl9Mb2ddLk1ldGhvZCAsW0Vycm9yX0xvZ10uRXJyb3JfU291cmNlX1N5c3RlbSAsW0Vycm9yX0xvZ10uSW50ZXJmYWNlX0lEICxbRXJyb3JfTG9nXS5CdXNpbmVzc19Qcm9jZXNzX0lEICxbRXJyb3JfTG9nXS5CdXNpbmVzc19Qcm9jZXNzX05hbWUgLFtFcnJvcl9Mb2ddLkludGVncmF0aW9uX0Zsb3dfSUQgLFtFcnJvcl9Mb2ddLkVycm9yX01lc3NhZ2UgLFtFcnJvcl9Mb2ddLkxpbmtfVG9fRXJyb3JfRGV0YWlsICxbRXJyb3JfTG9nXS5BY3Rpb25fQ2xvc2VfUHJvYmxlbSAsW0Vycm9yX0xvZ10uQnlfVXNlciAsW0Vycm9yX0xvZ10uQnlfRGF0ZSAsW0Vycm9yX0xvZ10uQnlfVGltZSAsW0Vycm9yX0xvZ10uQ2F1c2VfT2ZfUHJvYmxlbSAsW0Vycm9yX0xvZ10uU29sdXRpb25fVG9fU29sdmVfSXNzdWUgLFtFcnJvcl9Mb2ddLlRyYW5zYWN0aW9uX0lEKQ==</ExpressionVal>
+								<ExpectedType>B</ExpectedType>
+								<Direction>I</Direction>
+					</SQLStatement>
+					<GenerateTableName>dbo.[Error_Log]</GenerateTableName>
+				</DB>
+																																			
+										
+															</Schema>
+		
+				
+		<Schema xsi:type="DataBaseSchema">
+		<SchemaID>6</SchemaID>
+		<Order>2</Order>
+		<Name>U_Last_Status_Master</Name>
+				<SchemaLocation>Destination</SchemaLocation>
+		<SchemaType>DataBase</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="ComplexField">
+							<Identifier>dbo.Last_Status_Master</Identifier>
+							<Description></Description>
+							<FieldName>dbo.Last_Status_Master</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>   0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From></From>
+							<Length></Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																											</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Last_Status_Master/LastErrorDate</Identifier>
+							<Description></Description>
+							<FieldName>LastErrorDate</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>8</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>RFN0ciAoRGF0ZSAoKSwnWVlZWU1NREQnKQ==</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>8</ExternalFieldPicture>
+														<UserPicture>8</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>LastErrorDate</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>dbo.Last_Status_Master/LastErrorTime</Identifier>
+							<Description></Description>
+							<FieldName>LastErrorTime</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>6</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+														<Expression>
+								<ExpressionVal>VFN0ciAoVGltZSAoKSwnSEhNTVNTJyk=</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>6</ExternalFieldPicture>
+														<UserPicture>6</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>LastErrorTime</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+										<DB>
+					<DBResource>ISUZU_DB</DBResource>
+					<DynamicSQL>false</DynamicSQL>
+																									<SQLStatement>
+								<ExpressionVal>VVBEQVRFIGRiby5bTGFzdF9TdGF0dXNfTWFzdGVyXSBTRVQgTGFzdEVycm9yRGF0ZT08IT9MYXN0RXJyb3JEYXRlPyE+ICwgTGFzdEVycm9yVGltZT08IT9MYXN0RXJyb3JUaW1lPyE+IFdIRVJFIEludGVyZmFjZV9JRD0nPD9GLkVycm9yRmxvd05hbWU/Pic=</ExpressionVal>
+								<ExpectedType>B</ExpectedType>
+								<Direction>I</Direction>
+					</SQLStatement>
+					<GenerateTableName>dbo.[Last_Status_Master]</GenerateTableName>
+				</DB>
+																																			
+										
+															</Schema>
+		
+				
+		
+		</DestinationSchemas>
+			
+				<Connections>
+														<ConnectionData>
+						<SourceIdentifier>Record</SourceIdentifier>
+						<SourceSchemaID>7</SourceSchemaID>
+						<DestinationIdentifier>dbo.Error_Log</DestinationIdentifier>
+						<DestinationSchemaID>4</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>Record/NextErrorRunning</SourceIdentifier>
+						<SourceSchemaID>7</SourceSchemaID>
+						<DestinationIdentifier>dbo.Error_Log/Error_Log.Error_ID</DestinationIdentifier>
+						<DestinationSchemaID>4</DestinationSchemaID>
+					</ConnectionData>
+												</Connections>
+	  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

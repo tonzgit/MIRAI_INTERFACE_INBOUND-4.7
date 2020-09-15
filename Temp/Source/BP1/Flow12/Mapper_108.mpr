@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper>
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema d3p1:type="XSDSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>3</SchemaID>
+      <Order>1</Order>
+      <Name>S1</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>XSD</SchemaType>
+      <Fields>
+        <Field d3p1:type="XSDComplexField">
+          <Identifier>ZMIMAMORI01</Identifier>
+          <Description />
+          <FieldName>ZMIMAMORI01</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MinInstance>0</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="XSDComplexField">
+          <Identifier>ZMIMAMORI01/IDOC</Identifier>
+          <Description />
+          <FieldName>IDOC</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>79228162514264337593543950335</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MinInstance>0</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="XSDComplexField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE</Identifier>
+          <Description />
+          <FieldName>ZMIMAMORISETTINGDATE</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MinInstance>0</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="SimpleXSDField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/BRANCHCODE</Identifier>
+          <Description />
+          <FieldName>BRANCHCODE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>false</Required>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>0</MinInstance>
+          <DefaultFixedValue />
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="SimpleXSDField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/MIRAICUSTCODE</Identifier>
+          <Description />
+          <FieldName>MIRAICUSTCODE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>false</Required>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>0</MinInstance>
+          <DefaultFixedValue />
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="SimpleXSDField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/CONTRACT_STARTDATE</Identifier>
+          <Description />
+          <FieldName>CONTRACT_STARTDATE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>false</Required>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>0</MinInstance>
+          <DefaultFixedValue />
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="SimpleXSDField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/CONTRACT_ENDDATE</Identifier>
+          <Description />
+          <FieldName>CONTRACT_ENDDATE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>false</Required>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>0</MinInstance>
+          <DefaultFixedValue />
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="SimpleXSDField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/VIN</Identifier>
+          <Description />
+          <FieldName>VIN</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>false</Required>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>0</MinInstance>
+          <DefaultFixedValue />
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="SimpleXSDField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/ENGINENO</Identifier>
+          <Description />
+          <FieldName>ENGINENO</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>false</Required>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>0</MinInstance>
+          <DefaultFixedValue />
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field d3p1:type="SimpleXSDField">
+          <Identifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/CHASSISNO</Identifier>
+          <Description />
+          <FieldName>CHASSISNO</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>false</Required>
+          <NameSpacePrefix />
+          <NameSpace />
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>0</MinInstance>
+          <DefaultFixedValue />
+          <Document />
+          <Enumeration />
+        </Field>
+      </Fields>
+      <XSD>
+        <XSDSubType>File</XSDSubType>
+        <IFCModel />
+        <XsdFileName>%MiRAI_Interface%Schema\ICRM015\ZMIMAMORI01_S.xsd</XsdFileName>
+        <RootSelected>ZMIMAMORI01</RootSelected>
+        <isAppend>false</isAppend>
+        <isValidation>false</isValidation>
+        <RecursionDepth>1</RecursionDepth>
+        <AlwaysCreateNodes>false</AlwaysCreateNodes>
+        <DataDestination>File</DataDestination>
+        <DataExp>
+          <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezIwNDlGQkEyLUI2QjEtNDc5RC04RTlGLTkyMEYwRDI5QkNFQ30nLDAsMCk8IyElQCQ+</ExpressionVal>
+          <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMTJGLlRlbXBGaWxlUGF0aCcp</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </DataExp>
+        <xmlFileEncoding>Project Encoding</xmlFileEncoding>
+        <UseStreamingParser>false</UseStreamingParser>
+        <TargetNamespace />
+        <NameSpaces />
+        <DataFormats />
+      </XSD>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema d3p1:type="FlatFileSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>4</SchemaID>
+      <Order>1</Order>
+      <Name>D1</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>FlatFile</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>4</Identifier>
+          <Description />
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpressionVal>SW5TdHIoIDwjISVAJD5nZXRWYXJOYW1lKDEsJ3tBNjc4QjA0Ni0zNDI3LTQ3QzAtOUJGQy1GNDdBQjEwRkMyMkV9JywwLDApPCMhJUAkPiAsJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWk1JTUFNT1JJMDEvSURPQy9aTUlNQU1PUklTRVRUSU5HREFURS9WSU4pPCMhJUAkPikgKSYnfCcpPTANCg0K</ExpressionVal>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates>
+            <Update>
+              <ID>1</ID>
+              <IsDirty>false</IsDirty>
+              <VariableExp>
+                <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0NFNDlCQ0YyLTU2OEEtNEREMS1CNDc5LTQxQjYxM0JGRjBFN30nLDAsMCk8IyElQCQ+</ExpressionVal>
+                <RuntimeExpression>U2V0UGFyYW0gKCcwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMTJGLkxpbmVObycsPCRNR19WQUxVRSQ+KQ==</RuntimeExpression>
+                <ExpectedType>N</ExpectedType>
+                <Direction>O</Direction>
+              </VariableExp>
+              <Expression>
+                <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0NFNDlCQ0YyLTU2OEEtNEREMS1CNDc5LTQxQjYxM0JGRjBFN30nLDAsMCk8IyElQCQ+ICsgMQ==</ExpressionVal>
+                <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMTJGLkxpbmVObycpICsgMQ==</RuntimeExpression>
+                <ExpectedType>N</ExpectedType>
+                <Direction>I</Direction>
+              </Expression>
+              <Condition>
+                <ExpressionVal>SW5TdHIoIDwjISVAJD5nZXRWYXJOYW1lKDEsJ3tBNjc4QjA0Ni0zNDI3LTQ3QzAtOUJGQy1GNDdBQjEwRkMyMkV9JywwLDApPCMhJUAkPiAsJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWk1JTUFNT1JJMDEvSURPQy9aTUlNQU1PUklTRVRUSU5HREFURS9WSU4pPCMhJUAkPikgKSYnfCcpPTA=</ExpressionVal>
+                <RuntimeExpression>SW5TdHIoIEdldFBhcmFtICgnMDAwMDAwMDAwMDAxMDAwMDAwMDAwMDEyRi5TdG9yZV9JbnZhbGlkX0tleV9WYWx1ZXMnKSAsJ3wnJlRyaW0oIHhtbGdldCgwLDEsJy9aTUlNQU1PUkkwMVsnJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEnKSwnJykpJiddJyYnL0lET0NbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MnKSwnJykpJiddJyYnL1pNSU1BTU9SSVNFVFRJTkdEQVRFWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFJyksJycpKSYnXScmJy9WSU4nLCcnLFNoYXJlZFZhbEdldCgnSUJfTnVsbGlmWE1MU291cmNlTm9uRXhpc3RlbnRUYWdWYWx1ZScpKSApJid8Jyk9MA==</RuntimeExpression>
+                <ExpectedType>L</ExpectedType>
+                <Direction>I</Direction>
+              </Condition>
+            </Update>
+          </MultiUpdates>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>577013EF-F626-426C-AA41-6D1AAA04F815</Identifier>
+          <Description />
+          <FieldName>Header</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J2kn</ExpressionVal>
+            <RuntimeExpression>J2kn</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>76CDDFDF-39DF-4D2E-AE64-1BC778F5F5D6</Identifier>
+          <Description />
+          <FieldName>Root</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J3An</ExpressionVal>
+            <RuntimeExpression>J3An</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>F5E368EA-7913-4A89-B65D-391E75891817</Identifier>
+          <Description />
+          <FieldName>Line</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0NFNDlCQ0YyLTU2OEEtNEREMS1CNDc5LTQxQjYxM0JGRjBFN30nLDAsMCk8IyElQCQ+</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMTJGLkxpbmVObycp</RuntimeExpression>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>12</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Numeric</ExternalFieldType>
+          <UserPicture>12</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>CCA5A8E8-02A3-46BB-932D-8FE302ABF9A2</Identifier>
+          <Description />
+          <FieldName>BRANCHCODE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFL0JSQU5DSENPREUpPCMhJUAkPikgKQ==</ExpressionVal>
+            <RuntimeExpression>VHJpbSggeG1sZ2V0KDAsMSwnL1pNSU1BTU9SSTAxWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMScpLCcnKSkmJ10nJicvSURPQ1snJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEvSURPQycpLCcnKSkmJ10nJicvWk1JTUFNT1JJU0VUVElOR0RBVEVbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MvWk1JTUFNT1JJU0VUVElOR0RBVEUnKSwnJykpJiddJyYnL0JSQU5DSENPREUnLCcnLFNoYXJlZFZhbEdldCgnSUJfTnVsbGlmWE1MU291cmNlTm9uRXhpc3RlbnRUYWdWYWx1ZScpKSAp</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>C2723CE9-21DC-4CAD-A183-505703BC7EC5</Identifier>
+          <Description />
+          <FieldName>MIRAICUSTCODE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFL01JUkFJQ1VTVENPREUpPCMhJUAkPikgKQ==</ExpressionVal>
+            <RuntimeExpression>VHJpbSggeG1sZ2V0KDAsMSwnL1pNSU1BTU9SSTAxWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMScpLCcnKSkmJ10nJicvSURPQ1snJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEvSURPQycpLCcnKSkmJ10nJicvWk1JTUFNT1JJU0VUVElOR0RBVEVbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MvWk1JTUFNT1JJU0VUVElOR0RBVEUnKSwnJykpJiddJyYnL01JUkFJQ1VTVENPREUnLCcnLFNoYXJlZFZhbEdldCgnSUJfTnVsbGlmWE1MU291cmNlTm9uRXhpc3RlbnRUYWdWYWx1ZScpKSAp</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>462E9DDC-CA12-4531-B5A8-B3400D7CE77E</Identifier>
+          <Description />
+          <FieldName>CONTRACT_STARTDATE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFL0NPTlRSQUNUX1NUQVJUREFURSk8IyElQCQ+KSAp</ExpressionVal>
+            <RuntimeExpression>VHJpbSggeG1sZ2V0KDAsMSwnL1pNSU1BTU9SSTAxWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMScpLCcnKSkmJ10nJicvSURPQ1snJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEvSURPQycpLCcnKSkmJ10nJicvWk1JTUFNT1JJU0VUVElOR0RBVEVbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MvWk1JTUFNT1JJU0VUVElOR0RBVEUnKSwnJykpJiddJyYnL0NPTlRSQUNUX1NUQVJUREFURScsJycsU2hhcmVkVmFsR2V0KCdJQl9OdWxsaWZYTUxTb3VyY2VOb25FeGlzdGVudFRhZ1ZhbHVlJykpICk=</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>D09A0E33-9487-4AFA-820A-F3EEB485AC92</Identifier>
+          <Description />
+          <FieldName>CONTRACT_ENDDATE</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFL0NPTlRSQUNUX0VORERBVEUpPCMhJUAkPikgKQ==</ExpressionVal>
+            <RuntimeExpression>VHJpbSggeG1sZ2V0KDAsMSwnL1pNSU1BTU9SSTAxWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMScpLCcnKSkmJ10nJicvSURPQ1snJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEvSURPQycpLCcnKSkmJ10nJicvWk1JTUFNT1JJU0VUVElOR0RBVEVbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MvWk1JTUFNT1JJU0VUVElOR0RBVEUnKSwnJykpJiddJyYnL0NPTlRSQUNUX0VORERBVEUnLCcnLFNoYXJlZFZhbEdldCgnSUJfTnVsbGlmWE1MU291cmNlTm9uRXhpc3RlbnRUYWdWYWx1ZScpKSAp</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>AE84A08F-2F05-4026-819B-803D28D1F37E</Identifier>
+          <Description />
+          <FieldName>VIN</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFL1ZJTik8IyElQCQ+KSAp</ExpressionVal>
+            <RuntimeExpression>VHJpbSggeG1sZ2V0KDAsMSwnL1pNSU1BTU9SSTAxWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMScpLCcnKSkmJ10nJicvSURPQ1snJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEvSURPQycpLCcnKSkmJ10nJicvWk1JTUFNT1JJU0VUVElOR0RBVEVbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MvWk1JTUFNT1JJU0VUVElOR0RBVEUnKSwnJykpJiddJyYnL1ZJTicsJycsU2hhcmVkVmFsR2V0KCdJQl9OdWxsaWZYTUxTb3VyY2VOb25FeGlzdGVudFRhZ1ZhbHVlJykpICk=</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>D09B3C45-9B3D-4DAA-A67B-0BD1D9C52625</Identifier>
+          <Description />
+          <FieldName>ENGINENO</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFL0VOR0lORU5PKTwjISVAJD4pICk=</ExpressionVal>
+            <RuntimeExpression>VHJpbSggeG1sZ2V0KDAsMSwnL1pNSU1BTU9SSTAxWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMScpLCcnKSkmJ10nJicvSURPQ1snJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEvSURPQycpLCcnKSkmJ10nJicvWk1JTUFNT1JJU0VUVElOR0RBVEVbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MvWk1JTUFNT1JJU0VUVElOR0RBVEUnKSwnJykpJiddJyYnL0VOR0lORU5PJywnJyxTaGFyZWRWYWxHZXQoJ0lCX051bGxpZlhNTFNvdXJjZU5vbkV4aXN0ZW50VGFnVmFsdWUnKSkgKQ==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>AF1BCD5B-576F-4251-9DC2-1C70B6302765</Identifier>
+          <Description />
+          <FieldName>CHASSISNO</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aTUlNQU1PUkkwMS9JRE9DL1pNSU1BTU9SSVNFVFRJTkdEQVRFL0NIQVNTSVNOTyk8IyElQCQ+KSAp</ExpressionVal>
+            <RuntimeExpression>VHJpbSggeG1sZ2V0KDAsMSwnL1pNSU1BTU9SSTAxWycmdHJpbShzdHIoZ2V0cGFyYW0oJ1NfMV8xMl8xMDhfM19aTUlNQU1PUkkwMScpLCcnKSkmJ10nJicvSURPQ1snJnRyaW0oc3RyKGdldHBhcmFtKCdTXzFfMTJfMTA4XzNfWk1JTUFNT1JJMDEvSURPQycpLCcnKSkmJ10nJicvWk1JTUFNT1JJU0VUVElOR0RBVEVbJyZ0cmltKHN0cihnZXRwYXJhbSgnU18xXzEyXzEwOF8zX1pNSU1BTU9SSTAxL0lET0MvWk1JTUFNT1JJU0VUVElOR0RBVEUnKSwnJykpJiddJyYnL0NIQVNTSVNOTycsJycsU2hhcmVkVmFsR2V0KCdJQl9OdWxsaWZYTUxTb3VyY2VOb25FeGlzdGVudFRhZ1ZhbHVlJykpICk=</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>0</Length>
+        </Field>
+      </Fields>
+      <FF>
+        <DataExp>
+          <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezREQkVDRDJCLTdDNkYtNDEzMS04MDRGLUVGMjkzMjUxMjM3N30nLDAsMCk8IyElQCQ+</ExpressionVal>
+          <RuntimeExpression>U2V0UGFyYW0gKCcwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMTJGLkJsb2Jmb3JIb2xkaW5nRGV0YWlsJyw8JE1HX1ZBTFVFJD4p</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>O</Direction>
+        </DataExp>
+        <ExampleFile />
+        <isUnicode>true</isUnicode>
+        <isAppend>false</isAppend>
+        <DataDestination>Variable</DataDestination>
+        <Delimited_Posi>Delimited</Delimited_Posi>
+        <Delimeter>|</Delimeter>
+        <IncludeDelimiterInData>false</IncludeDelimiterInData>
+        <CreateTitles>false</CreateTitles>
+        <DataEncoding>Unicode</DataEncoding>
+        <FF_Lines>
+          <FF_Line>
+            <GUID>577013EF-F626-426C-AA41-6D1AAA04F815</GUID>
+            <Type>A</Type>
+            <Name>Header</Name>
+            <Picture>1</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>76CDDFDF-39DF-4D2E-AE64-1BC778F5F5D6</GUID>
+            <Type>A</Type>
+            <Name>Root</Name>
+            <Picture>1</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>F5E368EA-7913-4A89-B65D-391E75891817</GUID>
+            <Type>N</Type>
+            <Name>Line</Name>
+            <Picture>12</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>CCA5A8E8-02A3-46BB-932D-8FE302ABF9A2</GUID>
+            <Type>A</Type>
+            <Name>BRANCHCODE</Name>
+            <Picture>1000</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>C2723CE9-21DC-4CAD-A183-505703BC7EC5</GUID>
+            <Type>A</Type>
+            <Name>MIRAICUSTCODE</Name>
+            <Picture>1000</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>462E9DDC-CA12-4531-B5A8-B3400D7CE77E</GUID>
+            <Type>A</Type>
+            <Name>CONTRACT_STARTDATE</Name>
+            <Picture>1000</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>D09A0E33-9487-4AFA-820A-F3EEB485AC92</GUID>
+            <Type>A</Type>
+            <Name>CONTRACT_ENDDATE</Name>
+            <Picture>1000</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>AE84A08F-2F05-4026-819B-803D28D1F37E</GUID>
+            <Type>A</Type>
+            <Name>VIN</Name>
+            <Picture>1000</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>D09B3C45-9B3D-4DAA-A67B-0BD1D9C52625</GUID>
+            <Type>A</Type>
+            <Name>ENGINENO</Name>
+            <Picture>1000</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>AF1BCD5B-576F-4251-9DC2-1C70B6302765</GUID>
+            <Type>A</Type>
+            <Name>CHASSISNO</Name>
+            <Picture>1000</Picture>
+            <From>0</From>
+            <Length>0</Length>
+          </FF_Line>
+        </FF_Lines>
+      </FF>
+    </Schema>
+    <Schema d3p1:type="FlatFileSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>5</SchemaID>
+      <Order>2</Order>
+      <Name>D2</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>FlatFile</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>5</Identifier>
+          <Description />
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>48297714-3305-4E11-9A1D-452DD7CD0628</Identifier>
+          <Description />
+          <FieldName>EOF</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J2Z8RU9GJw==</ExpressionVal>
+            <RuntimeExpression>J2Z8RU9GJw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>30</Length>
+        </Field>
+      </Fields>
+      <FF>
+        <DataExp>
+          <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezREQkVDRDJCLTdDNkYtNDEzMS04MDRGLUVGMjkzMjUxMjM3N30nLDAsMCk8IyElQCQ+</ExpressionVal>
+          <RuntimeExpression>U2V0UGFyYW0gKCcwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMTJGLkJsb2Jmb3JIb2xkaW5nRGV0YWlsJyw8JE1HX1ZBTFVFJD4p</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>O</Direction>
+        </DataExp>
+        <ExampleFile />
+        <isUnicode>true</isUnicode>
+        <isAppend>true</isAppend>
+        <DataDestination>Variable</DataDestination>
+        <Delimited_Posi>Delimited</Delimited_Posi>
+        <Delimeter>,</Delimeter>
+        <IncludeDelimiterInData>false</IncludeDelimiterInData>
+        <CreateTitles>false</CreateTitles>
+        <DataEncoding>Unicode</DataEncoding>
+        <FF_Lines>
+          <FF_Line>
+            <GUID>48297714-3305-4E11-9A1D-452DD7CD0628</GUID>
+            <Type>A</Type>
+            <Name>EOF</Name>
+            <Picture>30</Picture>
+            <From>0</From>
+            <Length>30</Length>
+          </FF_Line>
+        </FF_Lines>
+      </FF>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>4</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/BRANCHCODE</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>CCA5A8E8-02A3-46BB-932D-8FE302ABF9A2</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/MIRAICUSTCODE</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>C2723CE9-21DC-4CAD-A183-505703BC7EC5</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/CONTRACT_STARTDATE</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>462E9DDC-CA12-4531-B5A8-B3400D7CE77E</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/CONTRACT_ENDDATE</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>D09A0E33-9487-4AFA-820A-F3EEB485AC92</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/VIN</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>AE84A08F-2F05-4026-819B-803D28D1F37E</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/ENGINENO</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>D09B3C45-9B3D-4DAA-A67B-0BD1D9C52625</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>ZMIMAMORI01/IDOC/ZMIMAMORISETTINGDATE/CHASSISNO</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>AF1BCD5B-576F-4251-9DC2-1C70B6302765</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+  <ErrorFlowExpressionVal>PCMhJUAkPmdldEZsb3dOYW1lKDQxKTwjISVAJD4=</ErrorFlowExpressionVal>
+</Mapper>

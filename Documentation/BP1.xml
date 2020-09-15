@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess id="1">
+   <Name><![CDATA[Inbound Interfaces]]></Name>
+   <Description><![CDATA[]]></Description>
+   <ID><![CDATA[1]]></ID>
+   <Repository id="BP Variables">
+      <Structure>
+         <Field fieldId="name" widthHint="FitToContent">Name</Field>
+         <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+         <Field fieldId="id" widthHint="FitToContent">ID</Field>
+         <Field fieldId="variabletype" widthHint="FitToContent">Type</Field>
+         <Field fieldId="picturelength" widthHint="FitToContent">Length</Field>
+         <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+         <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+      </Structure>
+      <Items>
+         <RepositoryItem>
+            <Property fieldId="name" value="B.BPID" />
+            <Property fieldId="description" value="" />
+            <Property fieldId="id" value="1" />
+            <Property fieldId="variabletype" value="Numeric" />
+            <Property fieldId="picturelength" value="1.0" />
+            <Property fieldId="defaultvalue" value="1" />
+            <Property fieldId="guid" value="{28AFB6D5-C121-4D66-82C8-F3D871B4634A}" />
+         </RepositoryItem>
+      </Items>
+   </Repository>
+   <Flows>
+      <FlowRef id="BP1_Flow1" flowName="IASFM004" />
+      <FlowRef id="BP1_Flow2" flowName="IASFM001" />
+      <FlowRef id="BP1_Flow3" flowName="IASFM007" />
+      <FlowRef id="BP1_Flow4" flowName="ICM001" />
+      <FlowRef id="BP1_Flow5" flowName="IASFM002" />
+      <FlowRef id="BP1_Flow6" flowName="IASFM006" />
+      <FlowRef id="BP1_Flow7" flowName="ICRM003" />
+      <FlowRef id="BP1_Flow8" flowName="ICRM001" />
+      <FlowRef id="BP1_Flow9" flowName="ICRM012" />
+      <FlowRef id="BP1_Flow10" flowName="IASPI001" />
+      <FlowRef id="BP1_Flow11" flowName="ICM002" />
+      <FlowRef id="BP1_Flow12" flowName="ICRM015" />
+      <FlowRef id="BP1_Flow13" flowName="IVSM018" />
+      <FlowRef id="BP1_Flow14" flowName="IASPI008" />
+      <FlowRef id="BP1_Flow15" flowName="ICRM013" />
+      <FlowRef id="BP1_Flow16" flowName="ICRM002" />
+      <FlowRef id="BP1_Flow17" flowName="ICRM017" />
+      <FlowRef id="BP1_Flow18" flowName="IASPP007" />
+      <FlowRef id="BP1_Flow19" flowName="ICM003" />
+      <FlowRef id="BP1_Flow20" flowName="IASPP009" />
+      <FlowRef id="BP1_Flow21" flowName="IASFR002" />
+      <FlowRef id="BP1_Flow22" flowName="IAFSI003" />
+      <FlowRef id="BP1_Flow23" flowName="IVSP012" />
+      <FlowRef id="BP1_Flow24" flowName="IACCR004" />
+      <FlowRef id="BP1_Flow25" flowName="IVSM006" />
+      <FlowRef id="BP1_Flow26" flowName="IVSM012" />
+      <FlowRef id="BP1_Flow27" flowName="IVSI001" />
+      <FlowRef id="BP1_Flow28" flowName="IVSI002" />
+      <FlowRef id="BP1_Flow29" flowName="IASPI002" />
+      <FlowRef id="BP1_Flow30" flowName="IASPP008" />
+      <FlowRef id="BP1_Flow31" flowName="IACCP001" />
+      <FlowRef id="BP1_Flow32" flowName="IAFSC003" />
+      <FlowRef id="BP1_Flow33" flowName="IASPI009" />
+      <FlowRef id="BP1_Flow34" flowName="ICM008" />
+      <FlowRef id="BP1_Flow35" flowName="IASFM005" />
+      <FlowRef id="BP1_Flow36" flowName="IAFSI007" />
+      <FlowRef id="BP1_Flow37" flowName="IAFSR003" />
+      <FlowRef id="BP1_Flow38" flowName="IAFSI006" />
+      <FlowRef id="BP1_Flow39" flowName="ICRM018" />
+      <FlowRef id="BP1_Flow40" flowName="IAFSM008" />
+   </Flows>
+</BusinessProcess>

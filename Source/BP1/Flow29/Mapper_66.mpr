@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MapperOrigin>DataMapperService</MapperOrigin>
+	
+			<ErrorFlowExpressionVal>PCMhJUAkPmdldEZsb3dOYW1lKDQxKTwjISVAJD4=</ErrorFlowExpressionVal>
+		
+		<SourceSchemas>
+		
+		
+				
+		<Schema xsi:type="DataBaseSchema">
+		<SchemaID>4</SchemaID>
+		<Order>1</Order>
+		<Name>Get_Interface_Name</Name>
+				<SchemaLocation>Source</SchemaLocation>
+		<SchemaType>DataBase</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="ComplexField">
+							<Identifier>Record</Identifier>
+							<Description></Description>
+							<FieldName>Record</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName></GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldDataBase">
+							<Identifier>Record/Interface_Name</Identifier>
+							<Description></Description>
+							<FieldName>Interface_Name</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>50</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+															<SpecialUniCode>false</SpecialUniCode>
+														
+																						<ExternalFieldType>VARCHAR</ExternalFieldType>
+																						<ExternalFieldPicture>50</ExternalFieldPicture>
+														<UserPicture>50</UserPicture>
+							<isNillable>true</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																				<StorageNum>3</StorageNum>
+														<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+															<GenerateColumnName>Interface_Name</GenerateColumnName>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+										<DB>
+					<DBResource>ISUZU_DB</DBResource>
+					<DynamicSQL>false</DynamicSQL>
+																									<SQLStatement>
+								<ExpressionVal>U0VMRUNUIFtJbnRlcmZhY2VfTWFzdGVyXS5JbnRlcmZhY2VfTmFtZSBGUk9NIGRiby5bSW50ZXJmYWNlX01hc3Rlcl0gV0hFUkUgW0ludGVyZmFjZV9NYXN0ZXJdLkludGVyZmFjZV9JRD0nPD9GLkludGVyZmFjZV9JRD8+Jw==</ExpressionVal>
+								<ExpectedType>B</ExpectedType>
+								<Direction>I</Direction>
+					</SQLStatement>
+					<GenerateTableName></GenerateTableName>
+				</DB>
+																														
+										
+															</Schema>
+		
+				
+		
+		</SourceSchemas>
+				<DestinationSchemas>
+		
+		
+				
+		<Schema xsi:type="FlatFileSchema">
+		<SchemaID>3</SchemaID>
+		<Order>1</Order>
+		<Name>H_Template</Name>
+				<SchemaLocation>Destination</SchemaLocation>
+		<SchemaType>FlatFile</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="ComplexField">
+							<Identifier>3</Identifier>
+							<Description></Description>
+							<FieldName>Record</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldFlatFile">
+							<Identifier>A6A5AFB9-C255-4E79-878B-A9EE11281620</Identifier>
+							<Description></Description>
+							<FieldName>Header</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>J2gn</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>Alpha</ExternalFieldType>
+																					<UserPicture>1</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldFlatFile">
+							<Identifier>468E34CD-DF63-4B5E-B221-0166D5AE3CDA</Identifier>
+							<Description></Description>
+							<FieldName>InterfaceID</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>VHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0I5RDc5RkZFLTVFMTQtNEM3RC1BODlDLUUyMUVCQTk4NzE2Nn0nLDAsMCk8IyElQCQ+ICk=</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>Alpha</ExternalFieldType>
+																					<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldFlatFile">
+							<Identifier>86A7FA40-2BAA-4A44-8E53-1740C22473B7</Identifier>
+							<Description></Description>
+							<FieldName>InterfaceName</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>Alpha</ExternalFieldType>
+																					<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldFlatFile">
+							<Identifier>FB4ED8FD-32F2-400F-8087-2000E24DF443</Identifier>
+							<Description></Description>
+							<FieldName>TextFileName</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>RmxpcCggIFN0clRva2VuIChGbGlwKFRyaW0oIDwjISVAJD5nZXRWYXJOYW1lKDEsJ3s4OTY0QTIzRC01MjMyLTQ4MDMtQTQ0MC1FMEM1MDNEOTIyRTN9JywwLDApPCMhJUAkPiApKSwxLCdcJykpDQo=</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>Alpha</ExternalFieldType>
+																					<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldFlatFile">
+							<Identifier>445ABCE0-BE54-4872-A2EB-D3593E97DA91</Identifier>
+							<Description></Description>
+							<FieldName>Type</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>J0lUMTAn</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>Alpha</ExternalFieldType>
+																					<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldFlatFile">
+							<Identifier>414AE209-BA06-4A65-947F-4852D65344BE</Identifier>
+							<Description></Description>
+							<FieldName>DataTime</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>30</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>VHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0VCRDM3QzJDLUM1QjctNDgxOC05N0IxLTczQTRDMjFBNTBGQX0nLDAsMCk8IyElQCQ+ICk=</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>Alpha</ExternalFieldType>
+																					<UserPicture>30</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldFlatFile">
+							<Identifier>F5E57D39-4F6E-466C-9C14-FCE4431AAEFF</Identifier>
+							<Description></Description>
+							<FieldName>CountLine</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>30</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>VHJpbShTdHIoIDwjISVAJD5nZXRWYXJOYW1lKDEsJ3tDRTQ5QkNGMi01NjhBLTRERDEtQjQ3OS00MUI2MTNCRkYwRTd9JywwLDApPCMhJUAkPiAsJycpKQ==</ExpressionVal>
+								<ExpectedType>A</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																						<ExternalFieldType>Alpha</ExternalFieldType>
+																					<UserPicture>30</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+												<FF>
+					<ExampleFile>%MiRAI_Interface%Schema\AE_Common\H_Template.TMP.txt</ExampleFile>
+					<DataDestination>File</DataDestination>
+					<DataExp>
+						<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezg5NjRBMjNELTUyMzItNDgwMy1BNDQwLUUwQzUwM0Q5MjJFM30nLDAsMCk8IyElQCQ+</ExpressionVal>
+						<ExpectedType>A</ExpectedType>
+						<Direction>I</Direction>
+					</DataExp>
+					<isUnicode>true</isUnicode>
+					<isAppend>false</isAppend>
+					<Delimited_Posi>Delimited</Delimited_Posi>
+					<Delimeter>|</Delimeter>
+										<IncludeDelimiterInData>false</IncludeDelimiterInData>
+					<Prefix></Prefix>
+					<CreateTitles>false</CreateTitles>
+					<DataEncoding>Unicode</DataEncoding>
+											<FF_Lines>
+																								<FF_Line>
+										<Order>1</Order>
+										<GUID>A6A5AFB9-C255-4E79-878B-A9EE11281620</GUID>
+										<Type>A</Type>
+										<Name>Header</Name>
+										<Picture>1</Picture>
+										<From>0</From>
+										<Length>0</Length>
+									</FF_Line>
+																																<FF_Line>
+										<Order>2</Order>
+										<GUID>468E34CD-DF63-4B5E-B221-0166D5AE3CDA</GUID>
+										<Type>A</Type>
+										<Name>InterfaceID</Name>
+										<Picture>1000</Picture>
+										<From>0</From>
+										<Length>0</Length>
+									</FF_Line>
+																																<FF_Line>
+										<Order>3</Order>
+										<GUID>86A7FA40-2BAA-4A44-8E53-1740C22473B7</GUID>
+										<Type>A</Type>
+										<Name>InterfaceName</Name>
+										<Picture>1000</Picture>
+										<From>0</From>
+										<Length>0</Length>
+									</FF_Line>
+																																<FF_Line>
+										<Order>4</Order>
+										<GUID>FB4ED8FD-32F2-400F-8087-2000E24DF443</GUID>
+										<Type>A</Type>
+										<Name>TextFileName</Name>
+										<Picture>1000</Picture>
+										<From>0</From>
+										<Length>0</Length>
+									</FF_Line>
+																																<FF_Line>
+										<Order>5</Order>
+										<GUID>445ABCE0-BE54-4872-A2EB-D3593E97DA91</GUID>
+										<Type>A</Type>
+										<Name>Type</Name>
+										<Picture>1000</Picture>
+										<From>0</From>
+										<Length>0</Length>
+									</FF_Line>
+																																<FF_Line>
+										<Order>6</Order>
+										<GUID>414AE209-BA06-4A65-947F-4852D65344BE</GUID>
+										<Type>A</Type>
+										<Name>DataTime</Name>
+										<Picture>30</Picture>
+										<From>0</From>
+										<Length>0</Length>
+									</FF_Line>
+																																<FF_Line>
+										<Order>7</Order>
+										<GUID>F5E57D39-4F6E-466C-9C14-FCE4431AAEFF</GUID>
+										<Type>A</Type>
+										<Name>CountLine</Name>
+										<Picture>30</Picture>
+										<From>0</From>
+										<Length>0</Length>
+									</FF_Line>
+																					</FF_Lines>
+									</FF>
+																												
+										
+															</Schema>
+		
+				
+		
+		</DestinationSchemas>
+			
+				<Connections>
+														<ConnectionData>
+						<SourceIdentifier>Record</SourceIdentifier>
+						<SourceSchemaID>4</SourceSchemaID>
+						<DestinationIdentifier>3</DestinationIdentifier>
+						<DestinationSchemaID>3</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>Record/Interface_Name</SourceIdentifier>
+						<SourceSchemaID>4</SourceSchemaID>
+						<DestinationIdentifier>86A7FA40-2BAA-4A44-8E53-1740C22473B7</DestinationIdentifier>
+						<DestinationSchemaID>3</DestinationSchemaID>
+					</ConnectionData>
+												</Connections>
+	  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

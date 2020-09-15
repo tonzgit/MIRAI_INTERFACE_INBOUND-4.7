@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FlowVariables>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>AutoEasy Backup File path</Description>
+    <GUID>{8964A23D-5232-4803-A440-E0C503D922E3}</GUID>
+    <ID>1</ID>
+    <Name>F.AEFilePath</Name>
+    <Order>3712</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>255</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>To Store Detail Records to be appended to AE Header file.</Description>
+    <GUID>{4DBECD2B-7C6F-4131-804F-EF2932512377}</GUID>
+    <ID>2</ID>
+    <Name>F.BlobforHoldingDetail</Name>
+    <Order>3714</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>B</Type>
+      <Picture />
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>B</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Total count of  InValid Converted Header Successful from input xml</Description>
+    <GUID>{1E1FBB34-9F8B-42C7-A141-926DE20A1CB9}</GUID>
+    <ID>3</ID>
+    <Name>F.Conversion_Failure_Count</Name>
+    <Order>3716</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>N</Type>
+      <Picture>12.0</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>MA==</ExpressionVal>
+      <RuntimeExpression>MA==</RuntimeExpression>
+      <ExpectedType>N</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Total Count of Headers</Description>
+    <GUID>{D9A50A96-573A-4953-9589-60BE98D51F27}</GUID>
+    <ID>4</ID>
+    <Name>F.Count_XML</Name>
+    <Order>3718</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>N</Type>
+      <Picture>10.0</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>MA==</ExpressionVal>
+      <RuntimeExpression>MA==</RuntimeExpression>
+      <ExpectedType>N</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Current Date Time Stmp</Description>
+    <GUID>{EBD37C2C-C5B7-4818-97B1-73A4C21A50FA}</GUID>
+    <ID>5</ID>
+    <Name>F.DateTimeStamp</Name>
+    <Order>3719</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>14</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>RFN0ciAoRGF0ZSAoKSwnWVlZWU1NREQnKSZUU3RyIChUaW1lICgpLCdISE1NU1MnKQ==</ExpressionVal>
+      <RuntimeExpression>RFN0ciAoRGF0ZSAoKSwnWVlZWU1NREQnKSZUU3RyIChUaW1lICgpLCdISE1NU1MnKQ==</RuntimeExpression>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Child Counter for Auto Easy records</Description>
+    <GUID>{0EF9C276-0931-48ED-8371-05FF552FF076}</GUID>
+    <ID>6</ID>
+    <Name>F.DetailSerialNo</Name>
+    <Order>3720</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>N</Type>
+      <Picture>10.0</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>MA==</ExpressionVal>
+      <RuntimeExpression>MA==</RuntimeExpression>
+      <ExpectedType>N</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Store Error Code while appending Blob to File</Description>
+    <GUID>{7D191931-B382-43F2-B4DA-53B4ECBA7A40}</GUID>
+    <ID>7</ID>
+    <Name>F.ErrorCodeFileManagement</Name>
+    <Order>3721</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>N</Type>
+      <Picture>10.0</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>N</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Extracted File name from Destination File Path</Description>
+    <GUID>{318DD523-7E16-49E2-9394-D8B9B4860CA6}</GUID>
+    <ID>8</ID>
+    <Name>F.FileName</Name>
+    <Order>3722</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>100</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Stores Interface IDs like ICM001 ICM002 etc</Description>
+    <GUID>{F1DE86E6-807E-4CD9-B5D5-A83CA1D46FC1}</GUID>
+    <ID>10</ID>
+    <Name>F.Interface_ID</Name>
+    <Order>3726</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>30</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Current Date of the system in YYYYMMDD format</Description>
+    <GUID>{1E860D40-A405-41FC-95E1-FCC45BE63B54}</GUID>
+    <ID>12</ID>
+    <Name>F.Operation_Date</Name>
+    <Order>3729</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>8</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>RFN0ciAoRGF0ZSAoKSwnWVlZWU1NREQnKQ==</ExpressionVal>
+      <RuntimeExpression>RFN0ciAoRGF0ZSAoKSwnWVlZWU1NREQnKQ==</RuntimeExpression>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Counter for the Auto Easy records</Description>
+    <GUID>{CE49BCF2-568A-4DD1-B479-41B613BFF0E7}</GUID>
+    <ID>14</ID>
+    <Name>F.RunningSerialNi</Name>
+    <Order>3731</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>N</Type>
+      <Picture>10.0</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>MA==</ExpressionVal>
+      <RuntimeExpression>MA==</RuntimeExpression>
+      <ExpectedType>N</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>StoresInvalid Key Indexes for failed records</Description>
+    <GUID>{D4C962A9-1DC1-44A2-9878-A48EE3A3D4A1}</GUID>
+    <ID>15</ID>
+    <Name>F.Store_Invalid_Key_Values</Name>
+    <Order>3733</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>32000</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>Jyc=</ExpressionVal>
+      <RuntimeExpression>Jyc=</RuntimeExpression>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>EnvVal('Temp') &amp; F.FileName</Description>
+    <GUID>{2049FBA2-B6B1-479D-8E9F-920F0D29BCEC}</GUID>
+    <ID>16</ID>
+    <Name>F.TempFilePath</Name>
+    <Order>3734</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>255</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpressionVal>RW52VmFsICgnTWlSQUlfSW50ZXJmYWNlJykmJ0RhdGFcSW5ib3VuZFxJQ00wMDJcSUNNMDAyLlhNTCc=</ExpressionVal>
+      <RuntimeExpression>RW52VmFsICgnTWlSQUlfSW50ZXJmYWNlJykmJ0RhdGFcSW5ib3VuZFxJQ00wMDJcSUNNMDAyLlhNTCc=</RuntimeExpression>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Uniqu Sequential number which isFirst part of the recevied xml file from Trigger</Description>
+    <GUID>{04FCB036-C16B-462D-8C75-6BEC42096964}</GUID>
+    <ID>17</ID>
+    <Name>F.Transaction_ID</Name>
+    <Order>3735</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>5</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>Total count of  Invalid Header Failed from input xml</Description>
+    <GUID>{4B0F3D3E-E52A-4690-851B-3375D4961EB9}</GUID>
+    <ID>18</ID>
+    <Name>F.Validation_Failure_Count</Name>
+    <Order>3737</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>N</Type>
+      <Picture>12.0</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>N</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <Description>XSD file path for dotNet validation</Description>
+    <GUID>{FCF7DCA0-D61D-4A80-88BE-8FFFA6F7F873}</GUID>
+    <ID>19</ID>
+    <Name>F.XSDFilename</Name>
+    <Order>3739</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>255</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+  <Variable d2p1:type="VariableRepositoryItem" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <GUID>{8B6CF291-A092-4573-87E5-2404C2712A52}</GUID>
+    <ID>20</ID>
+    <Name>F.Start_Exe</Name>
+    <Order>4417</Order>
+    <IsNameIncompatible>false</IsNameIncompatible>
+    <Type>
+      <Type>A</Type>
+      <Picture>6</Picture>
+      <isUnicode>false</isUnicode>
+      <isNillable>false</isNillable>
+    </Type>
+    <DefaultValue>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </DefaultValue>
+    <isDeleted>false</isDeleted>
+    <IsSystemVariable>false</IsSystemVariable>
+  </Variable>
+</FlowVariables>

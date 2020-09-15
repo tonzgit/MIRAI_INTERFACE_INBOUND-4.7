@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <Exe comp="-1"/>
+    <LastIsn val="3"/>
+    <LastIsnFolder val="0"/>
+    <Folders/>
+  </Header>
+
+  <ComponentsRepository>
+    <Components>
+      <Component id="1" name="UserFunctionality">
+        <Description val="Handles the Range, Locate, Sort and Print Data internal events"/>
+        <CompId val="738976342-28670-18720-BFE77D42E"/>
+        <MciFile val="D:\Magic\xpi47\runtime\magic xpa\Add_On\UserFunctionality\UserFunctionality.eci"/>
+        <ComponentType val="Magic xpa"/>
+        <Type val="U"/>
+        <CABINET_FILE val="%EngineDir%Add_On\UserFunctionality\UserFunctionality.ecf"/>
+        <LoadImmediate val="Y"/>
+        <CtlIndex val="1"/>
+        <Comment val="This component provides an interface for the user to perform Range, Locate, Sort and Print Data.The component does not expose any object. It has logic units for handling the Range, Locate, Sort and Print Data internal events.The source code for this component is available in the Add_On\UserFunctionality directory, so you can customize the screens of the component as you wish."/>
+      </Component>
+      <Component id="2" name="Model">
+        <Description val="Model Component"/>
+        <CompId val="N15107160493499"/>
+        <Revision val="3"/>
+        <MciFile val="C:\iBOLT3.2_sp1C\model_dev.eci"/>
+        <ComponentType val="Magic xpa"/>
+        <Type val="U"/>
+        <CABINET_FILE val="%ibolt%model.ecf"/>
+        <LoadImmediate val="Y"/>
+        <CtlIndex val="2"/>
+        <LastISN val="272"/>
+        <ComponentModels>
+          <Object>
+            <id val="1"/>
+            <ItemIsn val="1"/>
+            <PublicName val="IBName"/>
+          </Object>
+          <Object>
+            <id val="2"/>
+            <ItemIsn val="2"/>
+            <PublicName val="IBPath"/>
+          </Object>
+          <Object>
+            <id val="3"/>
+            <ItemIsn val="3"/>
+            <PublicName val="IBDescription"/>
+          </Object>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="4"/>
+            <PublicName val="IBID"/>
+          </Object>
+          <Object>
+            <id val="5"/>
+            <ItemIsn val="5"/>
+            <PublicName val="IBCode"/>
+          </Object>
+          <Object>
+            <id val="6"/>
+            <ItemIsn val="6"/>
+            <PublicName val="IBNumber"/>
+          </Object>
+          <Object>
+            <id val="7"/>
+            <ItemIsn val="7"/>
+            <PublicName val="IBLogical"/>
+          </Object>
+          <Object>
+            <id val="8"/>
+            <ItemIsn val="8"/>
+            <PublicName val="IBDate"/>
+          </Object>
+          <Object>
+            <id val="9"/>
+            <ItemIsn val="9"/>
+            <PublicName val="IBTime"/>
+          </Object>
+          <Object>
+            <id val="10"/>
+            <ItemIsn val="10"/>
+            <PublicName val="IBList"/>
+          </Object>
+          <Object>
+            <id val="11"/>
+            <ItemIsn val="11"/>
+            <PublicName val="Dialog_Forms"/>
+          </Object>
+          <Object>
+            <id val="12"/>
+            <ItemIsn val="12"/>
+            <PublicName val="Dialog_Input"/>
+          </Object>
+          <Object>
+            <id val="13"/>
+            <ItemIsn val="13"/>
+            <PublicName val="Dialog_Input_Titles"/>
+          </Object>
+          <Object>
+            <id val="14"/>
+            <ItemIsn val="14"/>
+            <PublicName val="Dialog_Push_But"/>
+          </Object>
+          <Object>
+            <id val="15"/>
+            <ItemIsn val="15"/>
+            <PublicName val="Dialog_Push_Select"/>
+          </Object>
+          <Object>
+            <id val="16"/>
+            <ItemIsn val="16"/>
+            <PublicName val="Dialog_Push_Cancel"/>
+          </Object>
+          <Object>
+            <id val="17"/>
+            <ItemIsn val="17"/>
+            <PublicName val="Dialog_Group"/>
+          </Object>
+          <Object>
+            <id val="18"/>
+            <ItemIsn val="18"/>
+            <PublicName val="Dialog_Image"/>
+          </Object>
+          <Object>
+            <id val="19"/>
+            <ItemIsn val="19"/>
+            <PublicName val="Dialog_Tab"/>
+          </Object>
+          <Object>
+            <id val="20"/>
+            <ItemIsn val="20"/>
+            <PublicName val="Table_Forms"/>
+          </Object>
+          <Object>
+            <id val="21"/>
+            <ItemIsn val="21"/>
+            <PublicName val="Table_Table"/>
+          </Object>
+          <Object>
+            <id val="22"/>
+            <ItemIsn val="22"/>
+            <PublicName val="Table_Input"/>
+          </Object>
+          <Object>
+            <id val="23"/>
+            <ItemIsn val="23"/>
+            <PublicName val="Table_Combo"/>
+          </Object>
+          <Object>
+            <id val="24"/>
+            <ItemIsn val="24"/>
+            <PublicName val="Table_Column SY"/>
+          </Object>
+          <Object>
+            <id val="25"/>
+            <ItemIsn val="25"/>
+            <PublicName val="Table_Column SN"/>
+          </Object>
+          <Object>
+            <id val="26"/>
+            <ItemIsn val="26"/>
+            <PublicName val="Table_Forms M"/>
+          </Object>
+          <Object>
+            <id val="28"/>
+            <ItemIsn val="27"/>
+            <PublicName val="List_Input"/>
+          </Object>
+          <Object>
+            <id val="29"/>
+            <ItemIsn val="28"/>
+            <PublicName val="List_Column SY/PY"/>
+          </Object>
+          <Object>
+            <id val="30"/>
+            <ItemIsn val="29"/>
+            <PublicName val="List_Column SN/PY"/>
+          </Object>
+          <Object>
+            <id val="31"/>
+            <ItemIsn val="30"/>
+            <PublicName val="List_Column SY/PN"/>
+          </Object>
+          <Object>
+            <id val="32"/>
+            <ItemIsn val="31"/>
+            <PublicName val="List_Column SN/PN"/>
+          </Object>
+          <Object>
+            <id val="33"/>
+            <ItemIsn val="32"/>
+            <PublicName val="Dialog_Asterix"/>
+          </Object>
+          <Object>
+            <id val="34"/>
+            <ItemIsn val="33"/>
+            <PublicName val="IBShort_Name"/>
+          </Object>
+          <Object>
+            <id val="35"/>
+            <ItemIsn val="34"/>
+            <PublicName val="IBBlob"/>
+          </Object>
+          <Object>
+            <id val="36"/>
+            <ItemIsn val="35"/>
+            <PublicName val="IBNumber12.4"/>
+          </Object>
+          <Object>
+            <id val="37"/>
+            <ItemIsn val="36"/>
+            <PublicName val="Wizard_Form"/>
+          </Object>
+          <Object>
+            <id val="38"/>
+            <ItemIsn val="37"/>
+            <PublicName val="Wizard_HeaderArea"/>
+          </Object>
+          <Object>
+            <id val="39"/>
+            <ItemIsn val="38"/>
+            <PublicName val="Wizard_HeaderIcon"/>
+          </Object>
+          <Object>
+            <id val="40"/>
+            <ItemIsn val="39"/>
+            <PublicName val="Wizard_HeaderImage"/>
+          </Object>
+          <Object>
+            <id val="41"/>
+            <ItemIsn val="40"/>
+            <PublicName val="Wizard_HeaderBottomLine"/>
+          </Object>
+          <Object>
+            <id val="42"/>
+            <ItemIsn val="41"/>
+            <PublicName val="Wizard_HeaderTitle"/>
+          </Object>
+          <Object>
+            <id val="43"/>
+            <ItemIsn val="42"/>
+            <PublicName val="Wizard_HeaderTextLine"/>
+          </Object>
+          <Object>
+            <id val="44"/>
+            <ItemIsn val="43"/>
+            <PublicName val="Wizard_Button"/>
+          </Object>
+          <Object>
+            <id val="46"/>
+            <ItemIsn val="44"/>
+            <PublicName val="PB_Zoom_(field)"/>
+          </Object>
+          <Object>
+            <id val="47"/>
+            <ItemIsn val="45"/>
+            <PublicName val="PB_ZoomTable_(field)"/>
+          </Object>
+          <Object>
+            <id val="48"/>
+            <ItemIsn val="46"/>
+            <PublicName val="PB_OpenFile_(field)"/>
+          </Object>
+          <Object>
+            <id val="49"/>
+            <ItemIsn val="47"/>
+            <PublicName val="PB_field"/>
+          </Object>
+          <Object>
+            <id val="50"/>
+            <ItemIsn val="48"/>
+            <PublicName val="Non_Editable_Text"/>
+          </Object>
+          <Object>
+            <id val="51"/>
+            <ItemIsn val="49"/>
+            <PublicName val="Group_Rect"/>
+          </Object>
+          <Object>
+            <id val="52"/>
+            <ItemIsn val="50"/>
+            <PublicName val="Group_Title"/>
+          </Object>
+          <Object>
+            <id val="53"/>
+            <ItemIsn val="51"/>
+            <PublicName val="Single_Table_Title"/>
+          </Object>
+          <Object>
+            <id val="54"/>
+            <ItemIsn val="52"/>
+            <PublicName val="Group_Title_Text"/>
+          </Object>
+          <Object>
+            <id val="55"/>
+            <ItemIsn val="53"/>
+            <PublicName val="Combo"/>
+          </Object>
+          <Object>
+            <id val="56"/>
+            <ItemIsn val="54"/>
+            <PublicName val="ListBox"/>
+          </Object>
+          <Object>
+            <id val="57"/>
+            <ItemIsn val="55"/>
+            <PublicName val="Radio"/>
+          </Object>
+          <Object>
+            <id val="58"/>
+            <ItemIsn val="56"/>
+            <PublicName val="CheckBox"/>
+          </Object>
+          <Object>
+            <id val="59"/>
+            <ItemIsn val="57"/>
+            <PublicName val="CheckBox_on_Table"/>
+          </Object>
+          <Object>
+            <id val="60"/>
+            <ItemIsn val="58"/>
+            <PublicName val="PB_Zoom"/>
+          </Object>
+          <Object>
+            <id val="61"/>
+            <ItemIsn val="59"/>
+            <PublicName val="PB_ZoomTable"/>
+          </Object>
+          <Object>
+            <id val="62"/>
+            <ItemIsn val="60"/>
+            <PublicName val="PB_OpenFile"/>
+          </Object>
+          <Object>
+            <id val="63"/>
+            <ItemIsn val="61"/>
+            <PublicName val="Group_Title_Edit"/>
+          </Object>
+          <Object>
+            <id val="64"/>
+            <ItemIsn val="62"/>
+            <PublicName val="Non_Editable_on_Table"/>
+          </Object>
+          <Object>
+            <id val="65"/>
+            <ItemIsn val="63"/>
+            <PublicName val="Wizard_Next"/>
+          </Object>
+          <Object>
+            <id val="66"/>
+            <ItemIsn val="64"/>
+            <PublicName val="Wizard_Next_(field)"/>
+          </Object>
+          <Object>
+            <id val="67"/>
+            <ItemIsn val="65"/>
+            <PublicName val="Wizard_Back"/>
+          </Object>
+          <Object>
+            <id val="68"/>
+            <ItemIsn val="66"/>
+            <PublicName val="Wizard_Back_(field)"/>
+          </Object>
+          <Object>
+            <id val="69"/>
+            <ItemIsn val="67"/>
+            <PublicName val="Wizard_Add"/>
+          </Object>
+          <Object>
+            <id val="70"/>
+            <ItemIsn val="68"/>
+            <PublicName val="Wizard_Add_(field)"/>
+          </Object>
+          <Object>
+            <id val="71"/>
+            <ItemIsn val="69"/>
+            <PublicName val="Wizard_Remove"/>
+          </Object>
+          <Object>
+            <id val="72"/>
+            <ItemIsn val="70"/>
+            <PublicName val="Wizard_Remove_(field)"/>
+          </Object>
+          <Object>
+            <id val="73"/>
+            <ItemIsn val="71"/>
+            <PublicName val="Group_BlobEdit"/>
+          </Object>
+          <Object>
+            <id val="74"/>
+            <ItemIsn val="72"/>
+            <PublicName val="Table_BlobEdit"/>
+          </Object>
+          <Object>
+            <id val="75"/>
+            <ItemIsn val="73"/>
+            <PublicName val="Tree"/>
+          </Object>
+          <Object>
+            <id val="76"/>
+            <ItemIsn val="74"/>
+            <PublicName val="PB_ZoomFX(field)"/>
+          </Object>
+          <Object>
+            <id val="77"/>
+            <ItemIsn val="75"/>
+            <PublicName val="PB_ZoomTableFX(field)"/>
+          </Object>
+          <Object>
+            <id val="78"/>
+            <ItemIsn val="76"/>
+            <PublicName val="PB_ZoomFX"/>
+          </Object>
+          <Object>
+            <id val="79"/>
+            <ItemIsn val="77"/>
+            <PublicName val="PB_ZoomTableFX"/>
+          </Object>
+          <Object>
+            <id val="80"/>
+            <ItemIsn val="78"/>
+            <PublicName val="PB_OpenFileTable(field)"/>
+          </Object>
+          <Object>
+            <id val="81"/>
+            <ItemIsn val="79"/>
+            <PublicName val="PB_OpenFileTable"/>
+          </Object>
+          <Object>
+            <id val="83"/>
+            <ItemIsn val="80"/>
+            <PublicName val="lg_form"/>
+          </Object>
+          <Object>
+            <id val="84"/>
+            <ItemIsn val="81"/>
+            <PublicName val="lg_green_edit"/>
+          </Object>
+          <Object>
+            <id val="85"/>
+            <ItemIsn val="82"/>
+            <PublicName val="IBExpression"/>
+          </Object>
+          <Object>
+            <id val="86"/>
+            <ItemIsn val="83"/>
+            <PublicName val="IBElementName"/>
+          </Object>
+          <Object>
+            <id val="87"/>
+            <ItemIsn val="84"/>
+            <PublicName val="IBGUID"/>
+          </Object>
+          <Object>
+            <id val="93"/>
+            <ItemIsn val="85"/>
+            <PublicName val="IBUniCodeBlob"/>
+          </Object>
+          <Object>
+            <id val="96"/>
+            <ItemIsn val="271"/>
+            <PublicName val="BlobAnsii"/>
+          </Object>
+        </ComponentModels>
+        <ComponentDataObjects>
+          <Object>
+            <id val="1"/>
+            <ItemIsn val="86"/>
+            <PublicName val="dam_methods_master"/>
+          </Object>
+          <Object>
+            <id val="2"/>
+            <ItemIsn val="87"/>
+            <PublicName val="dam_parameters_master"/>
+          </Object>
+          <Object>
+            <id val="3"/>
+            <ItemIsn val="88"/>
+            <PublicName val="dam_methods"/>
+          </Object>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="89"/>
+            <PublicName val="dam_parameters"/>
+          </Object>
+          <Object>
+            <id val="7"/>
+            <ItemIsn val="90"/>
+            <PublicName val="XMLProcessData"/>
+          </Object>
+          <Object>
+            <id val="9"/>
+            <ItemIsn val="91"/>
+            <PublicName val="ExpressionTable"/>
+          </Object>
+          <Object>
+            <id val="11"/>
+            <ItemIsn val="92"/>
+            <PublicName val="dam_method_XML"/>
+          </Object>
+          <Object>
+            <id val="12"/>
+            <ItemIsn val="93"/>
+            <PublicName val="dam_parameters_XML"/>
+          </Object>
+          <Object>
+            <id val="23"/>
+            <ItemIsn val="94"/>
+            <PublicName val="MapperElementData"/>
+          </Object>
+          <Object>
+            <id val="24"/>
+            <ItemIsn val="95"/>
+            <PublicName val="MapperExpressionID"/>
+          </Object>
+          <Object>
+            <id val="25"/>
+            <ItemIsn val="96"/>
+            <PublicName val="ScanUnsedVarForChecker"/>
+          </Object>
+          <Object>
+            <id val="26"/>
+            <ItemIsn val="97"/>
+            <PublicName val="HTTPActivationBLOBs"/>
+          </Object>
+          <Object>
+            <id val="27"/>
+            <ItemIsn val="98"/>
+            <PublicName val="ResidentActivationBLOBs"/>
+          </Object>
+        </ComponentDataObjects>
+        <ComponentPrograms>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="99"/>
+            <PublicName val="Warningmsg"/>
+          </Object>
+          <Object>
+            <id val="5"/>
+            <ItemIsn val="100"/>
+            <PublicName val="CmdCommands"/>
+          </Object>
+          <Object>
+            <id val="6"/>
+            <ItemIsn val="101"/>
+            <PublicName val="CreateDirectory"/>
+          </Object>
+          <Object>
+            <id val="7"/>
+            <ItemIsn val="102"/>
+            <PublicName val="SearchNreplace"/>
+          </Object>
+          <Object>
+            <ItemIsn val="103"/>
+            <PublicName val="OptionDialog"/>
+          </Object>
+          <Object>
+            <id val="8"/>
+            <ItemIsn val="104"/>
+            <PublicName val="BrowseForFolder"/>
+          </Object>
+          <Object>
+            <id val="41"/>
+            <ItemIsn val="105"/>
+            <PublicName val="Calender"/>
+          </Object>
+          <Object>
+            <id val="9"/>
+            <ItemIsn val="106"/>
+            <PublicName val="Bifurcate_Path/File/Ext"/>
+          </Object>
+          <Object>
+            <id val="11"/>
+            <ItemIsn val="107"/>
+            <PublicName val="SearchForCharecters"/>
+          </Object>
+          <Object>
+            <id val="12"/>
+            <ItemIsn val="108"/>
+            <PublicName val="SetFocus"/>
+          </Object>
+          <Object>
+            <id val="42"/>
+            <ItemIsn val="109"/>
+            <PublicName val="ChangeWindowTitle"/>
+          </Object>
+          <Object>
+            <ItemIsn val="110"/>
+            <PublicName val="DisableMenu"/>
+          </Object>
+          <Object>
+            <ItemIsn val="111"/>
+            <PublicName val="EnableMenu"/>
+          </Object>
+          <Object>
+            <id val="13"/>
+            <ItemIsn val="112"/>
+            <PublicName val="StringMasking"/>
+          </Object>
+          <Object>
+            <ItemIsn val="113"/>
+            <PublicName val="Show_All_Schemas"/>
+          </Object>
+          <Object>
+            <ItemIsn val="114"/>
+            <PublicName val="Flows_Select_Table"/>
+          </Object>
+          <Object>
+            <ItemIsn val="115"/>
+            <PublicName val="DAMConfiguration"/>
+          </Object>
+          <Object>
+            <ItemIsn val="116"/>
+            <PublicName val="ExpressionAssistor"/>
+          </Object>
+          <Object>
+            <ItemIsn val="117"/>
+            <PublicName val="FlowVarUserParamtersList"/>
+          </Object>
+          <Object>
+            <id val="49"/>
+            <ItemIsn val="118"/>
+            <PublicName val="GET_DAMActivation Blob"/>
+          </Object>
+          <Object>
+            <id val="50"/>
+            <ItemIsn val="119"/>
+            <PublicName val="SET_DAMActivation Blob"/>
+          </Object>
+          <Object>
+            <id val="51"/>
+            <ItemIsn val="120"/>
+            <PublicName val="DAMSetVector"/>
+          </Object>
+          <Object>
+            <id val="52"/>
+            <ItemIsn val="121"/>
+            <PublicName val="DAMSettingOutputVariables"/>
+          </Object>
+          <Object>
+            <id val="48"/>
+            <ItemIsn val="122"/>
+            <PublicName val="returnDAMList"/>
+          </Object>
+          <Object>
+            <ItemIsn val="123"/>
+            <PublicName val="DAM_Emul_Show"/>
+          </Object>
+          <Object>
+            <ItemIsn val="124"/>
+            <PublicName val="DAM_Clear"/>
+          </Object>
+          <Object>
+            <ItemIsn val="125"/>
+            <PublicName val="DAMMethodsMaintenance"/>
+          </Object>
+          <Object>
+            <ItemIsn val="126"/>
+            <PublicName val="checkiboltlicence"/>
+          </Object>
+          <Object>
+            <ItemIsn val="127"/>
+            <PublicName val="CopyandMergeXSD"/>
+          </Object>
+          <Object>
+            <ItemIsn val="128"/>
+            <PublicName val="VerifyExpression"/>
+          </Object>
+          <Object>
+            <ItemIsn val="129"/>
+            <PublicName val="AutoHandle"/>
+          </Object>
+          <Object>
+            <id val="43"/>
+            <ItemIsn val="130"/>
+            <PublicName val="MessageBox"/>
+          </Object>
+          <Object>
+            <ItemIsn val="131"/>
+            <PublicName val="VerifyExpression_Mapper"/>
+          </Object>
+          <Object>
+            <id val="10"/>
+            <ItemIsn val="132"/>
+            <PublicName val="Bifurcate"/>
+          </Object>
+          <Object>
+            <id val="15"/>
+            <ItemIsn val="133"/>
+            <PublicName val="FileDirectoryStatus"/>
+          </Object>
+          <Object>
+            <id val="14"/>
+            <ItemIsn val="134"/>
+            <PublicName val="OutputToStdErrorlog"/>
+          </Object>
+          <Object>
+            <ItemIsn val="135"/>
+            <PublicName val="CreateXMLProcessData"/>
+          </Object>
+          <Object>
+            <id val="44"/>
+            <ItemIsn val="136"/>
+            <PublicName val="WarningmsgDetails"/>
+          </Object>
+          <Object>
+            <ItemIsn val="137"/>
+            <PublicName val="DAMConversion"/>
+          </Object>
+          <Object>
+            <id val="16"/>
+            <ItemIsn val="138"/>
+            <PublicName val="ConvertExpression"/>
+          </Object>
+          <Object>
+            <ItemIsn val="139"/>
+            <PublicName val="ParseExpressionInput"/>
+          </Object>
+          <Object>
+            <ItemIsn val="140"/>
+            <PublicName val="ParseExpressionOutput"/>
+          </Object>
+          <Object>
+            <id val="90"/>
+            <ItemIsn val="141"/>
+            <PublicName val="SaveExpression"/>
+          </Object>
+          <Object>
+            <id val="85"/>
+            <ItemIsn val="142"/>
+            <PublicName val="GetExpression"/>
+          </Object>
+          <Object>
+            <ItemIsn val="143"/>
+            <PublicName val="CopyExpression"/>
+          </Object>
+          <Object>
+            <id val="86"/>
+            <ItemIsn val="144"/>
+            <PublicName val="DeleteExpression"/>
+          </Object>
+          <Object>
+            <ItemIsn val="145"/>
+            <PublicName val="ET_StartTransaction"/>
+          </Object>
+          <Object>
+            <ItemIsn val="146"/>
+            <PublicName val="ET_CommitTransaction"/>
+          </Object>
+          <Object>
+            <ItemIsn val="147"/>
+            <PublicName val="ET_RollbackTransaction"/>
+          </Object>
+          <Object>
+            <id val="83"/>
+            <ItemIsn val="148"/>
+            <PublicName val="GetServerExpression"/>
+          </Object>
+          <Object>
+            <ItemIsn val="149"/>
+            <PublicName val="VarExistInExpression"/>
+          </Object>
+          <Object>
+            <id val="63"/>
+            <ItemIsn val="150"/>
+            <PublicName val="EA_CallPublicStr"/>
+          </Object>
+          <Object>
+            <id val="64"/>
+            <ItemIsn val="151"/>
+            <PublicName val="EA_CallPublicNum"/>
+          </Object>
+          <Object>
+            <id val="65"/>
+            <ItemIsn val="152"/>
+            <PublicName val="EA_CallPublicDate"/>
+          </Object>
+          <Object>
+            <id val="66"/>
+            <ItemIsn val="153"/>
+            <PublicName val="EA_CallPublicTime"/>
+          </Object>
+          <Object>
+            <id val="67"/>
+            <ItemIsn val="154"/>
+            <PublicName val="EA_CallPublicLog"/>
+          </Object>
+          <Object>
+            <id val="68"/>
+            <ItemIsn val="155"/>
+            <PublicName val="EA_CallPublicBLB"/>
+          </Object>
+          <Object>
+            <id val="69"/>
+            <ItemIsn val="156"/>
+            <PublicName val="ParseXMLGetInCallPublic"/>
+          </Object>
+          <Object>
+            <id val="53"/>
+            <ItemIsn val="157"/>
+            <PublicName val="Method_OutputXML"/>
+          </Object>
+          <Object>
+            <ItemIsn val="158"/>
+            <PublicName val="ResourceTypePicklist"/>
+          </Object>
+          <Object>
+            <ItemIsn val="159"/>
+            <PublicName val="ResetTransactionLevel"/>
+          </Object>
+          <Object>
+            <ItemIsn val="160"/>
+            <PublicName val="AutoHandleMapper"/>
+          </Object>
+          <Object>
+            <ItemIsn val="161"/>
+            <PublicName val="RenameVariable"/>
+          </Object>
+          <Object>
+            <ItemIsn val="162"/>
+            <PublicName val="GenerateDeployment"/>
+          </Object>
+          <Object>
+            <ItemIsn val="163"/>
+            <PublicName val="getVariableList"/>
+          </Object>
+          <Object>
+            <ItemIsn val="164"/>
+            <PublicName val="getUsedVariableList"/>
+          </Object>
+          <Object>
+            <ItemIsn val="165"/>
+            <PublicName val="VariableExistsInExpnTable"/>
+          </Object>
+          <Object>
+            <id val="106"/>
+            <ItemIsn val="166"/>
+            <PublicName val="PopulateMasterTables"/>
+          </Object>
+          <Object>
+            <id val="17"/>
+            <ItemIsn val="167"/>
+            <PublicName val="TriggerLoggingMSG"/>
+          </Object>
+          <Object>
+            <id val="18"/>
+            <ItemIsn val="168"/>
+            <PublicName val="GetTriggerParameters"/>
+          </Object>
+          <Object>
+            <id val="20"/>
+            <ItemIsn val="169"/>
+            <PublicName val="File_Directory_Java"/>
+          </Object>
+          <Object>
+            <id val="54"/>
+            <ItemIsn val="170"/>
+            <PublicName val="SET_DAMActivation Blob_2.5"/>
+          </Object>
+          <Object>
+            <id val="22"/>
+            <ItemIsn val="171"/>
+            <PublicName val="DeleteUsedVariable"/>
+          </Object>
+          <Object>
+            <id val="23"/>
+            <ItemIsn val="172"/>
+            <PublicName val="UpdateDataKeyEntry"/>
+          </Object>
+          <Object>
+            <id val="24"/>
+            <ItemIsn val="173"/>
+            <PublicName val="RemoveDataKeyEntry"/>
+          </Object>
+          <Object>
+            <id val="25"/>
+            <ItemIsn val="174"/>
+            <PublicName val="ManipulationExpressions"/>
+          </Object>
+          <Object>
+            <ItemIsn val="175"/>
+            <PublicName val="DeleteStepExpression"/>
+          </Object>
+          <Object>
+            <id val="84"/>
+            <ItemIsn val="176"/>
+            <PublicName val="ReplaceVarNameForGetVarName"/>
+          </Object>
+          <Object>
+            <ItemIsn val="177"/>
+            <PublicName val="UpdateMDSFlowSpace"/>
+          </Object>
+          <Object>
+            <ItemIsn val="178"/>
+            <PublicName val="UpdateDeployment_GenerateFlag"/>
+          </Object>
+          <Object>
+            <id val="28"/>
+            <ItemIsn val="179"/>
+            <PublicName val="ShowProgressBar"/>
+          </Object>
+          <Object>
+            <ItemIsn val="180"/>
+            <PublicName val="CreateDAM_Data_ByMethodName"/>
+          </Object>
+          <Object>
+            <id val="62"/>
+            <ItemIsn val="181"/>
+            <PublicName val="GetUDSDetails"/>
+          </Object>
+          <Object>
+            <id val="47"/>
+            <ItemIsn val="182"/>
+            <PublicName val="DAMGetMethodCode&amp;Desc"/>
+          </Object>
+          <Object>
+            <id val="92"/>
+            <ItemIsn val="183"/>
+            <PublicName val="ReplacegetVarNameindevExp"/>
+          </Object>
+          <Object>
+            <ItemIsn val="184"/>
+            <PublicName val="ExpressionValidation"/>
+          </Object>
+          <Object>
+            <ItemIsn val="185"/>
+            <PublicName val="ET_StartTransaction_Mapper"/>
+          </Object>
+          <Object>
+            <ItemIsn val="186"/>
+            <PublicName val="ET_CommitTransaction_Mapper"/>
+          </Object>
+          <Object>
+            <ItemIsn val="187"/>
+            <PublicName val="ET_RollBackTransaction_Mapper"/>
+          </Object>
+          <Object>
+            <ItemIsn val="188"/>
+            <PublicName val="ResetValidatedFlagInET"/>
+          </Object>
+          <Object>
+            <ItemIsn val="189"/>
+            <PublicName val="Update_ExpectedReturnType"/>
+          </Object>
+          <Object>
+            <ItemIsn val="190"/>
+            <PublicName val="DebugThroughMsg"/>
+          </Object>
+          <Object>
+            <ItemIsn val="191"/>
+            <PublicName val="MigrationSaveExpression"/>
+          </Object>
+          <Object>
+            <ItemIsn val="192"/>
+            <PublicName val="MigrationReplaceToGVN_GNP"/>
+          </Object>
+          <Object>
+            <id val="30"/>
+            <ItemIsn val="193"/>
+            <PublicName val="GetVCStatus"/>
+          </Object>
+          <Object>
+            <ItemIsn val="194"/>
+            <PublicName val="GenerateCheckerLog"/>
+          </Object>
+          <Object>
+            <ItemIsn val="195"/>
+            <PublicName val="Browse_ExpressionTable"/>
+          </Object>
+          <Object>
+            <ItemIsn val="196"/>
+            <PublicName val="Browse_TransactionTable"/>
+          </Object>
+          <Object>
+            <id val="31"/>
+            <ItemIsn val="197"/>
+            <PublicName val="EncryptData"/>
+          </Object>
+          <Object>
+            <id val="32"/>
+            <ItemIsn val="198"/>
+            <PublicName val="DecryptData"/>
+          </Object>
+          <Object>
+            <id val="61"/>
+            <ItemIsn val="199"/>
+            <PublicName val="RepString_OutsideQuote"/>
+          </Object>
+          <Object>
+            <id val="45"/>
+            <ItemIsn val="200"/>
+            <PublicName val="DAMReadStep_idd"/>
+          </Object>
+          <Object>
+            <id val="21"/>
+            <ItemIsn val="201"/>
+            <PublicName val="File_Directory_uniPaaS"/>
+          </Object>
+          <Object>
+            <ItemIsn val="202"/>
+            <PublicName val="Update_MapElementData_To_Table"/>
+          </Object>
+        </ComponentPrograms>
+        <ComponentEvents>
+          <Object>
+            <id val="1"/>
+            <ItemIsn val="203"/>
+            <PublicName val="ClearAll"/>
+          </Object>
+          <Object>
+            <id val="2"/>
+            <ItemIsn val="204"/>
+            <PublicName val="Configuration"/>
+          </Object>
+          <Object>
+            <id val="3"/>
+            <ItemIsn val="205"/>
+            <PublicName val="Run"/>
+          </Object>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="206"/>
+            <PublicName val="Continue"/>
+          </Object>
+          <Object>
+            <id val="5"/>
+            <ItemIsn val="207"/>
+            <PublicName val="AbortFlow"/>
+          </Object>
+          <Object>
+            <id val="6"/>
+            <ItemIsn val="208"/>
+            <PublicName val="Skip"/>
+          </Object>
+          <Object>
+            <id val="7"/>
+            <ItemIsn val="209"/>
+            <PublicName val="Wait"/>
+          </Object>
+          <Object>
+            <id val="8"/>
+            <ItemIsn val="210"/>
+            <PublicName val="PreviousField&amp;ZoomAct"/>
+          </Object>
+          <Object>
+            <id val="9"/>
+            <ItemIsn val="211"/>
+            <PublicName val="Zoom_ControlSuffix"/>
+          </Object>
+          <Object>
+            <id val="11"/>
+            <ItemIsn val="212"/>
+            <PublicName val="Zoom_None"/>
+          </Object>
+          <Object>
+            <id val="12"/>
+            <ItemIsn val="213"/>
+            <PublicName val="TriggerErrorHandler"/>
+          </Object>
+          <Object>
+            <id val="13"/>
+            <ItemIsn val="214"/>
+            <PublicName val="TriggerMessage"/>
+          </Object>
+        </ComponentEvents>
+        <ComponentFuncs>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="215"/>
+            <PublicName val="GetVarValue"/>
+          </Object>
+          <Object>
+            <id val="5"/>
+            <ItemIsn val="216"/>
+            <PublicName val="GetSessionID"/>
+          </Object>
+          <Object>
+            <id val="7"/>
+            <ItemIsn val="217"/>
+            <PublicName val="ODSExists"/>
+          </Object>
+          <Object>
+            <id val="8"/>
+            <ItemIsn val="218"/>
+            <PublicName val="STRFormat"/>
+          </Object>
+          <Object>
+            <id val="10"/>
+            <ItemIsn val="219"/>
+            <PublicName val="GetUniqueCounter"/>
+          </Object>
+          <Object>
+            <id val="11"/>
+            <ItemIsn val="220"/>
+            <PublicName val="ODSArrayCnt"/>
+          </Object>
+          <Object>
+            <id val="12"/>
+            <ItemIsn val="221"/>
+            <PublicName val="GetFSID"/>
+          </Object>
+          <Object>
+            <id val="13"/>
+            <ItemIsn val="222"/>
+            <PublicName val="Convert"/>
+          </Object>
+          <Object>
+            <id val="15"/>
+            <ItemIsn val="223"/>
+            <PublicName val="ODSGet"/>
+          </Object>
+          <Object>
+            <id val="22"/>
+            <ItemIsn val="224"/>
+            <PublicName val="UDSGet"/>
+          </Object>
+          <Object>
+            <id val="16"/>
+            <ItemIsn val="225"/>
+            <PublicName val="UDSSet"/>
+          </Object>
+          <Object>
+            <id val="18"/>
+            <ItemIsn val="226"/>
+            <PublicName val="UDSUpdateField"/>
+          </Object>
+          <Object>
+            <id val="19"/>
+            <ItemIsn val="227"/>
+            <PublicName val="UDSGetField"/>
+          </Object>
+          <Object>
+            <id val="23"/>
+            <ItemIsn val="228"/>
+            <PublicName val="UDSDeleteRecord"/>
+          </Object>
+          <Object>
+            <id val="17"/>
+            <ItemIsn val="229"/>
+            <PublicName val="UDSClear"/>
+          </Object>
+          <Object>
+            <id val="88"/>
+            <ItemIsn val="230"/>
+            <PublicName val="iBolt_FileDlg"/>
+          </Object>
+          <Object>
+            <id val="20"/>
+            <ItemIsn val="231"/>
+            <PublicName val="iBolt_FileExist"/>
+          </Object>
+          <Object>
+            <id val="21"/>
+            <ItemIsn val="232"/>
+            <PublicName val="getFullPath"/>
+          </Object>
+          <Object>
+            <id val="24"/>
+            <ItemIsn val="233"/>
+            <PublicName val="GetNewGUID"/>
+          </Object>
+          <Object>
+            <id val="26"/>
+            <ItemIsn val="234"/>
+            <PublicName val="IsFlowEnabled"/>
+          </Object>
+          <Object>
+            <id val="27"/>
+            <ItemIsn val="235"/>
+            <PublicName val="IsServerSuspended"/>
+          </Object>
+          <Object>
+            <id val="28"/>
+            <ItemIsn val="236"/>
+            <PublicName val="DelSubStr"/>
+          </Object>
+          <Object>
+            <id val="30"/>
+            <ItemIsn val="237"/>
+            <PublicName val="IBXmlCount"/>
+          </Object>
+          <Object>
+            <id val="29"/>
+            <ItemIsn val="238"/>
+            <PublicName val="GetUDSInstanceName"/>
+          </Object>
+          <Object>
+            <id val="31"/>
+            <ItemIsn val="239"/>
+            <PublicName val="ConvertStringToVector"/>
+          </Object>
+          <Object>
+            <id val="32"/>
+            <ItemIsn val="240"/>
+            <PublicName val="iBolt_ReturnRelativePath"/>
+          </Object>
+          <Object>
+            <id val="33"/>
+            <ItemIsn val="241"/>
+            <PublicName val="IsFlowActive"/>
+          </Object>
+          <Object>
+            <id val="25"/>
+            <ItemIsn val="242"/>
+            <PublicName val="EnvVal"/>
+          </Object>
+          <Object>
+            <id val="34"/>
+            <ItemIsn val="243"/>
+            <PublicName val="setAlphaVar"/>
+          </Object>
+          <Object>
+            <id val="35"/>
+            <ItemIsn val="244"/>
+            <PublicName val="setNumVar"/>
+          </Object>
+          <Object>
+            <id val="36"/>
+            <ItemIsn val="245"/>
+            <PublicName val="setBlobVar"/>
+          </Object>
+          <Object>
+            <id val="37"/>
+            <ItemIsn val="246"/>
+            <PublicName val="setDateVar"/>
+          </Object>
+          <Object>
+            <id val="38"/>
+            <ItemIsn val="247"/>
+            <PublicName val="setTimeVar"/>
+          </Object>
+          <Object>
+            <id val="39"/>
+            <ItemIsn val="248"/>
+            <PublicName val="setLogicalVar"/>
+          </Object>
+          <Object>
+            <id val="89"/>
+            <ItemIsn val="249"/>
+            <PublicName val="GetUtilLocationValue"/>
+          </Object>
+          <Object>
+            <id val="41"/>
+            <ItemIsn val="250"/>
+            <PublicName val="File2Blb"/>
+          </Object>
+          <Object>
+            <id val="9"/>
+            <ItemIsn val="251"/>
+            <PublicName val="getBlobType"/>
+          </Object>
+          <Object>
+            <id val="42"/>
+            <ItemIsn val="252"/>
+            <PublicName val="IsComponentSupported"/>
+          </Object>
+          <Object>
+            <id val="43"/>
+            <ItemIsn val="253"/>
+            <PublicName val="XmlGetNull"/>
+          </Object>
+          <Object>
+            <id val="44"/>
+            <ItemIsn val="254"/>
+            <PublicName val="XmlInsertNull"/>
+          </Object>
+          <Object>
+            <id val="45"/>
+            <ItemIsn val="255"/>
+            <PublicName val="GetObjectName"/>
+          </Object>
+          <Object>
+            <id val="46"/>
+            <ItemIsn val="256"/>
+            <PublicName val="GetObjectID"/>
+          </Object>
+          <Object>
+            <id val="47"/>
+            <ItemIsn val="257"/>
+            <PublicName val="Concat"/>
+          </Object>
+          <Object>
+            <id val="48"/>
+            <ItemIsn val="258"/>
+            <PublicName val="GetTime"/>
+          </Object>
+          <Object>
+            <id val="49"/>
+            <ItemIsn val="259"/>
+            <PublicName val="GetDate"/>
+          </Object>
+          <Object>
+            <id val="50"/>
+            <ItemIsn val="260"/>
+            <PublicName val="GetTimeZone"/>
+          </Object>
+          <Object>
+            <id val="51"/>
+            <ItemIsn val="261"/>
+            <PublicName val="DateTimeFormat"/>
+          </Object>
+          <Object>
+            <id val="53"/>
+            <ItemIsn val="262"/>
+            <PublicName val="DeployExpressionVal"/>
+          </Object>
+          <Object>
+            <id val="56"/>
+            <ItemIsn val="263"/>
+            <PublicName val="Val_e"/>
+          </Object>
+          <Object>
+            <id val="60"/>
+            <ItemIsn val="264"/>
+            <PublicName val="SharedValSetA"/>
+          </Object>
+          <Object>
+            <id val="61"/>
+            <ItemIsn val="265"/>
+            <PublicName val="SharedValSetB"/>
+          </Object>
+          <Object>
+            <id val="63"/>
+            <ItemIsn val="266"/>
+            <PublicName val="SharedValSetD"/>
+          </Object>
+          <Object>
+            <id val="64"/>
+            <ItemIsn val="267"/>
+            <PublicName val="SharedValSetT"/>
+          </Object>
+          <Object>
+            <id val="65"/>
+            <ItemIsn val="268"/>
+            <PublicName val="SharedValSetN"/>
+          </Object>
+          <Object>
+            <id val="66"/>
+            <ItemIsn val="269"/>
+            <PublicName val="SharedValSetL"/>
+          </Object>
+          <Object>
+            <id val="69"/>
+            <ItemIsn val="270"/>
+            <PublicName val="SharedValGetGs"/>
+          </Object>
+          <Object>
+            <id val="73"/>
+            <ItemIsn val="272"/>
+            <PublicName val="xpiXmlAppend"/>
+          </Object>
+          <Object>
+            <id val="62"/>
+            <ItemIsn val="273"/>
+            <PublicName val="SharedValSetBdt"/>
+          </Object>
+          <Object>
+            <id val="77"/>
+            <ItemIsn val="274"/>
+            <PublicName val="GetVarContentType"/>
+          </Object>
+          <Object>
+            <id val="81"/>
+            <ItemIsn val="275"/>
+            <PublicName val="getBlobDataTypeByData"/>
+          </Object>
+          <Object>
+            <id val="78"/>
+            <ItemIsn val="276"/>
+            <PublicName val="UTF8toUnicode"/>
+          </Object>
+          <Object>
+            <id val="79"/>
+            <ItemIsn val="277"/>
+            <PublicName val="UTF8fromUnicode"/>
+          </Object>
+          <Object>
+            <id val="6"/>
+            <ItemIsn val="278"/>
+            <PublicName val="SFDC_GetBulkCSVFileName"/>
+          </Object>
+          <Object>
+            <id val="84"/>
+            <ItemIsn val="279"/>
+            <PublicName val="ChangeBlobDataType"/>
+          </Object>
+          <Object>
+            <id val="52"/>
+            <ItemIsn val="280"/>
+            <PublicName val="SrvUDSSet"/>
+          </Object>
+          <Object>
+            <id val="87"/>
+            <ItemIsn val="281"/>
+            <PublicName val="JSONElementExist"/>
+          </Object>
+        </ComponentFuncs>
+      </Component>
+      <Component id="3" name="UserFunction">
+        <CompId val="463816514-25434-19825-92354D96D"/>
+        <MciFile val="C:\Magic xpi 4.5\Runtime\Magic Xpa\Builders\ECI\userfunctions\UserFunction.eci"/>
+        <ComponentType val="Magic xpa"/>
+        <Type val="U"/>
+        <CABINET_FILE val="%UserFunctionsLocation%"/>
+        <LoadImmediate val="Y"/>
+        <CtlIndex val="5"/>
+        <LastISN val="1"/>
+        <ComponentFuncs>
+          <Object>
+            <id val="1"/>
+            <ItemIsn val="1"/>
+            <PublicName val="userfunctionsTest"/>
+          </Object>
+        </ComponentFuncs>
+      </Component>
+    </Components>
+  </ComponentsRepository>
+
+</Application>

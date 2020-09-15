@@ -1,0 +1,6096 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK rel="stylesheet" type="text/css" href="iboltprint.css">
+  </head>
+  <h1>
+        Flow: Generic Error Handling</h1>
+  <h2>General</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">ID</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Name</td>
+      <td>Generic Error Handling</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Two Phase Processing</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">DB transaction</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Disable</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Inactive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Max Instances</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Timeout Policy</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Timeout Value</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Recovery Policy</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Enablement</td>
+      <td>Always</td>
+    </tr>
+  </table>
+  <h2>Flow Invokers</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">Auto Start</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Auto Repeat</td>
+      <td>No</td>
+    </tr>
+  </table>
+  <h2>External</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">PSS Subscribe Once</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">PSS Subscribe Name</td>
+      <td>
+      </td>
+    </tr>
+  </table><br><br><hr>
+  <h1>Graphical View</h1><img style="max-width: 80%;" src="&#xD;&#xA;          ../Images/BP2_Flow41.png&#xD;&#xA;        "><hr>
+  <h2>Flow Variables</h2>
+  <table width="100%">
+    <tr>
+      <th class="FitToContent">Name</th>
+      <th class="ExtendToMax">Description</th>
+      <th class="FitToContent">Type</th>
+      <th class="FitToContent">Length</th>
+      <th class="FitToContent">Default Value</th>
+    </tr>
+    <tr>
+      <td>F.AbortExecution</td>
+      <td>Abort after reporting error ?</td>
+      <td>Logical</td>
+      <td>1</td>
+      <td>'TRUE'LOG</td>
+    </tr>
+    <tr>
+      <td>F.ErrorCode</td>
+      <td>
+      </td>
+      <td>Numeric</td>
+      <td>12.4</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.ErrorDescription</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>1000</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.ErrorFlowName</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>30</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.ErrorInfo</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>1000</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.ErrorLogFilename</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>1000</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.ErrorStepName</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>30</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.ErrorType</td>
+      <td>Either SYSTEM or APPLICATION</td>
+      <td>Alpha</td>
+      <td>30</td>
+      <td>'SYSTEM'</td>
+    </tr>
+    <tr>
+      <td>F.OperationDate</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>8</td>
+      <td>DStr (Date (),'YYYYMMDD')</td>
+    </tr>
+    <tr>
+      <td>F.ErrorSeqId</td>
+      <td>
+      </td>
+      <td>Numeric</td>
+      <td>12.0</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.Last_Flow_Step</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>30</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.Count_Step</td>
+      <td>
+      </td>
+      <td>Numeric</td>
+      <td>8.0</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.TransactionID_update</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>30</td>
+      <td>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h2>Triggers</h2>
+  <hr>
+  <h2>Steps</h2>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Flow Data.png">Step: Save error details</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Save error details</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Condition</td>
+        <td>C.sys.ErrorCode &lt;&gt; 23</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         <h4>
+    </h4>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">Action</th>
+        <th class="FitToContent">Target Type</th>
+        <th class="FitToContent">Dynamic Variable</th>
+        <th class="FitToContent">Name</th>
+        <th class="FitToContent">Data Type</th>
+        <th class="FitToContent">Encoding</th>
+        <th class="FitToContent">Index</th>
+        <th class="FitToContent">Update Expression</th>
+        <th class="FitToContent">Condition</th>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Flow</td>
+        <td>No</td>
+        <td>F.ErrorCode</td>
+        <td>Numeric</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>C.sys.LastErrorCode</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Flow</td>
+        <td>No</td>
+        <td>F.ErrorDescription</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>C.sys.LastErrorDescription</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Flow</td>
+        <td>No</td>
+        <td>F.ErrorInfo</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>C.sys.LastErrorInfo</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Flow</td>
+        <td>No</td>
+        <td>F.ErrorFlowName</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>C.sys.LastErrorFlowName</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Flow</td>
+        <td>No</td>
+        <td>F.ErrorStepName</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>C.sys.LastErrorStepName</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Flow</td>
+        <td>No</td>
+        <td>F.ErrorLogFilename</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>EnvVal ('MiRAI_Interface')&amp;'Error\MagicLog\MIRAI_INTERFACE_INBOUND_'&amp;DStr (Date (),'DDMMYYYY')&amp;'.csv'</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Flow</td>
+        <td>No</td>
+        <td>F.TransactionID_update</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>C.TransactionID</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+      </div>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Data Mapper.png">Step: Create Header file</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Create Header file</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Condition</td>
+        <td>NOT(FileExist ( F.ErrorLogFilename ))</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         
+         
+      <h4>
+      Schemas
+    </h4>
+    <table width="100%">
+      <tr>
+        <th>Source Schemas</th>
+        <th>Destination Schemas</th>
+      </tr>
+      <tr>
+        <td valign="top"></td>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>D1</td>
+              <td>FlatFile</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <h4>
+        Schema: D1</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Destination Type:
+              </td>
+          <td>File</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Data Destination Encoding:
+              </td>
+          <td>ANSI</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">File Path:
+              </td>
+          <td>F.ErrorLogFilename</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Variable:
+              </td>
+          <td>F.ErrorLogFilename</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Append Data:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Type:
+              </td>
+          <td>Delimited</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Columns Delimiter:
+              </td>
+          <td>,</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Record Delimiter:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Include Delimiter In Data:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>D1</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>FlatFile</td>
+        </tr>
+      </table>
+    </div>
+         
+         <h4>
+      Mappings
+    </h4>
+    <table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Date</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Date</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Date</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>DD/MM/YYYY</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>Date ()</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Time</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Time</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Time</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>HH:MM:SS</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>Time ()</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Flow_Name</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorFlowName</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Component</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorStepName</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/ErrorCode</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorCode</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/ErrorMessage</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>32000</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>Trim( F.ErrorDescription )</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br>
+         
+      </div>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Data Mapper.png">Step: Write error info to log file</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Write error info to log file</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         
+         
+      <h4>
+      Schemas
+    </h4>
+    <table width="100%">
+      <tr>
+        <th>Source Schemas</th>
+        <th>Destination Schemas</th>
+      </tr>
+      <tr>
+        <td valign="top"></td>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>D1</td>
+              <td>FlatFile</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <h4>
+        Schema: D1</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Destination Type:
+              </td>
+          <td>File</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Data Destination Encoding:
+              </td>
+          <td>ANSI</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">File Path:
+              </td>
+          <td>F.ErrorLogFilename</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Variable:
+              </td>
+          <td>F.ErrorLogFilename</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Append Data:
+              </td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Type:
+              </td>
+          <td>Delimited</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Columns Delimiter:
+              </td>
+          <td>,</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Record Delimiter:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Include Delimiter In Data:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>D1</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>FlatFile</td>
+        </tr>
+      </table>
+    </div>
+         
+         <h4>
+      Mappings
+    </h4>
+    <table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Date</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Date</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Date</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>DD/MM/YYYY</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>Date ()</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Time</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Time</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Time</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>HH:MM:SS</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>Time ()</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Flow</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorFlowName</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Component</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorStepName</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/ErrorCode</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorCode</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/ErrorMessage</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>32000</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>Trim( F.ErrorDescription )</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br>
+         
+      </div>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Flow Data.png">Step: Raise the error :calling flow</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Raise the error :calling flow</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         <h4>
+    </h4>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">Action</th>
+        <th class="FitToContent">Target Type</th>
+        <th class="FitToContent">Dynamic Variable</th>
+        <th class="FitToContent">Name</th>
+        <th class="FitToContent">Data Type</th>
+        <th class="FitToContent">Encoding</th>
+        <th class="FitToContent">Index</th>
+        <th class="FitToContent">Update Expression</th>
+        <th class="FitToContent">Condition</th>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Context</td>
+        <td>No</td>
+        <td>C.UserCode</td>
+        <td>Numeric</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>F.ErrorCode</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Context</td>
+        <td>No</td>
+        <td>C.sys.ErrorDescription</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>F.ErrorDescription</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+      </div>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Data Mapper.png">Step: Update Interface log</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Update Interface log</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         
+         
+         
+      <h4>
+      Schemas
+    </h4>
+    <table width="100%">
+      <tr>
+        <th>Source Schemas</th>
+        <th>Destination Schemas</th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>S1</td>
+              <td>DataBase</td>
+            </tr>
+          </table>
+        </td>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Step1</td>
+              <td>DataBase</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Step2</td>
+              <td>DataBase</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Step3</td>
+              <td>DataBase</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Step4</td>
+              <td>DataBase</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Step5</td>
+              <td>DataBase</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Step6</td>
+              <td>DataBase</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <h4>
+        Schema: S1</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>S1</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: Step1</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>Step1</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: Step2</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>Step2</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: Step3</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>Step3</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: Step4</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>Step4</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: Step5</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>Step5</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: Step6</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>Step6</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+         
+         <h4>
+      Mappings
+    </h4>
+    <table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Interface_Log</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>F.Last_Flow_Step ='0' or F.Last_Flow_Step ='1'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Interface_Log/Step1_Get</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Interface_Log/Interface_Flow_Status</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S5/dbo.Interface_Log</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>F.Last_Flow_Step ='2'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S5/dbo.Interface_Log/Step2_Get</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S5/dbo.Interface_Log/Interface_Flow_Status</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S6/dbo.Interface_Log</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>F.Last_Flow_Step ='3'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step3</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S6/dbo.Interface_Log/Step3_Get</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step3</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S6/dbo.Interface_Log/Interface_Flow_Status</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step3</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S7/dbo.Interface_Log</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>F.Last_Flow_Step ='4'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step4</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S7/dbo.Interface_Log/Step4_Get</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step4</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S7/dbo.Interface_Log/Interface_Flow_Status</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step4</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S8/dbo.Interface_Log</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>F.Last_Flow_Step ='5'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step5</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S8/dbo.Interface_Log/Step5_Get</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step5</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S8/dbo.Interface_Log/Interface_Flow_Status</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step5</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S9/dbo.Interface_Log</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>F.Last_Flow_Step ='6'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step6</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S9/dbo.Interface_Log/Step6_Get</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step6</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S9/dbo.Interface_Log/Interface_Flow_Status</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>Step6</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'04'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br>
+         
+         
+      </div>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Data Mapper.png">Step: Insert Error Log</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Insert Error Log</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         
+         
+         
+      <h4>
+      Schemas
+    </h4>
+    <table width="100%">
+      <tr>
+        <th>Source Schemas</th>
+        <th>Destination Schemas</th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>S_ErrorSequence</td>
+              <td>DataBase</td>
+            </tr>
+          </table>
+        </td>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>I_ErrorLog</td>
+              <td>DataBase</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>U_Last_Status_Master</td>
+              <td>DataBase</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <h4>
+        Schema: S_ErrorSequence</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>S_ErrorSequence</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: I_ErrorLog</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>I_ErrorLog</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: U_Last_Status_Master</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>U_Last_Status_Master</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+         
+         <h4>
+      Mappings
+    </h4>
+    <table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S7/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S_ErrorSequence</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S7/Record/NextErrorRunning</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S_ErrorSequence</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Error_ID</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>INTEGER</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>N10</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Error_Date</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.OperationDate</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Error_Time</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>TStr (Time (),'HHMMSS')</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Error_Group</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'I'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Method</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'I'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Error_Source_System</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'03'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Interface_ID</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorFlowName</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Business_Process_ID</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>INTEGER</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>N10</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Business_Process_Name</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>C.sys.InvokingBPName</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Integration_Flow_ID</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>INTEGER</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>N10</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>C.sys.LastFlowID</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Error_Message</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>255</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>F.ErrorDescription</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Action_Close_Problem</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>'0'</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/dbo.Error_Log/Error_Log.Transaction_ID</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>I_ErrorLog</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>C.TransactionID</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S6/dbo.Last_Status_Master/LastErrorDate</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>U_Last_Status_Master</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>DStr (Date (),'YYYYMMDD')</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S6/dbo.Last_Status_Master/LastErrorTime</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>VARCHAR</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>U_Last_Status_Master</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>TStr (Time (),'HHMMSS')</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody></tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S6/dbo.Last_Status_Master</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>U_Last_Status_Master</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br>
+         
+         
+      </div>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Data Mapper.png">Step: Get Last Step</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Get Last Step</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         
+         
+         
+      <h4>
+      Schemas
+    </h4>
+    <table width="100%">
+      <tr>
+        <th>Source Schemas</th>
+        <th>Destination Schemas</th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>S1</td>
+              <td>DataBase</td>
+            </tr>
+          </table>
+        </td>
+        <td valign="top">
+          <table width="100%">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Schema Type</th>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>D1</td>
+              <td>Variable</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <h4>
+        Schema: S1</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">Dynamic SQL Statement:
+              </td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Database Definition:
+              </td>
+          <td>ISUZU_DB</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>S1</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>DataBase</td>
+        </tr>
+      </table>
+    </div>
+    <h4>
+        Schema: D1</h4>
+    <div style="margin-left:3em">
+      <table width="100%">
+        <tr>
+          <td class="RowHeader">ID:
+              </td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Name:
+              </td>
+          <td>D1</td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Description:
+              </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td class="RowHeader">Schema Type:
+              </td>
+          <td>Variable</td>
+        </tr>
+      </table>
+    </div>
+         
+         <h4>
+      Mappings
+    </h4>
+    <table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Complex</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/Instance</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br><table style="width: 100%;" cellpadding="2">
+      <tr>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S3/Record/Last_Flow_Step</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Numeric</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>INTEGER</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>N10</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <table style="width: 100%;" border="1">
+            <tbody>
+              <tr>
+                <td class="RowHeader">Node Type</td>
+                <td>Simple</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Path</td>
+                <td>Src.S4/Instance/F.Last_Flow_Step</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Internal Data Type</td>
+                <td>Alpha</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">External Data Type</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Description</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Nillable</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Condition</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Picture</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Always Use Custom Picture</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Additional JSON Properties</td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Schema</td>
+                <td>D1</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Calculated  Value</td>
+                <td>Str( objOldName(Src.S3/Record/Last_Flow_Step) ,'0')</td>
+              </tr>
+              <tr>
+                <td class="RowHeader">Log Error</td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table><br>
+         
+         
+      </div>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\Abort Flow.png">Step: Abort Flow Service</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Abort Flow Service</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            <h4>Configuration...</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ReStart</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Propagation Error</td>
+        <td>23</td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+      </div>
+  <h3><img src="icon-clock">Step: GOTO</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>GOTO</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Parallel</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+      </div>
+</html>

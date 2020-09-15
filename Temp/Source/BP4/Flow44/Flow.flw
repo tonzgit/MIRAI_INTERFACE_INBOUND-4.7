@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Flow>
+  <Properties>
+    <ID>44</ID>
+    <Order>1</Order>
+    <Name>Put to FTP</Name>
+    <isInactive>false</isInactive>
+    <isDisabled>false</isDisabled>
+    <isTwoPhase>false</isTwoPhase>
+    <isAutoStart>false</isAutoStart>
+    <MaxInstances>0</MaxInstances>
+    <isAutoRepeat>false</isAutoRepeat>
+    <isPSSSubOnce>false</isPSSSubOnce>
+    <TimeoutPolicy>6</TimeoutPolicy>
+    <TimeOutVal>0</TimeOutVal>
+    <HasDBTransaction>false</HasDBTransaction>
+    <RecoveryPolicy>6</RecoveryPolicy>
+    <isSecuredCall>false</isSecuredCall>
+  </Properties>
+  <DrawProperties>
+    <RootStepID>1</RootStepID>
+    <HasTrigger>false</HasTrigger>
+  </DrawProperties>
+  <Steps>
+    <row_Step>
+      <Properties>
+        <isGoTo>false</isGoTo>
+        <ParentStepID>0</ParentStepID>
+        <SortOrder>0</SortOrder>
+        <ID>1</ID>
+        <Name>FTP</Name>
+        <IFCDefinition>109</IFCDefinition>
+        <ProcessMode>1</ProcessMode>
+        <isTwoPhase>false</isTwoPhase>
+        <isWait4Comp>false</isWait4Comp>
+        <isSavePoint>false</isSavePoint>
+        <CallLogicFlow>false</CallLogicFlow>
+        <isReturnXML>false</isReturnXML>
+        <isTrigger>false</isTrigger>
+      </Properties>
+      <LoggingInfo>
+        <Scope>0</Scope>
+        <Option>1</Option>
+        <MSGDetails>
+          <MSGString>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </MSGString>
+          <MSGBLOB>
+            <ExpectedType>B</ExpectedType>
+            <Direction>I</Direction>
+          </MSGBLOB>
+        </MSGDetails>
+      </LoggingInfo>
+      <ResourceInfo>
+        <isDynamic>false</isDynamic>
+        <ResSerName>AE_Config</ResSerName>
+      </ResourceInfo>
+      <ConfigInfo>
+        <Interface>2</Interface>
+        <InvokeComp>%ifclib%ftp\ftpifc.ecf</InvokeComp>
+        <ActivationBLOB>PERBTV9BY3RpdmF0aW9uQkxPQj48Q2xhc3NOYW1lIC8+PE1ldGhvZHM+PFJlY29yZElTTj4xPC9SZWNvcmRJU04+PE9yZGVyTm8+MTwvT3JkZXJObz48TWV0aG9kQ29kZT4zPC9NZXRob2RDb2RlPjxQdWJsaWNOYW1lPlB1dEZpbGU8L1B1YmxpY05hbWU+PFBhcmFtZXRlcnM+PFBhcmFtZXRlck5hbWU+RXJyb3JDb2RlICg0KTwvUGFyYW1ldGVyTmFtZT48UGFyYW1ldGVyVHlwZT5OPC9QYXJhbWV0ZXJUeXBlPjxQYXJhbWV0ZXJQaWN0dXJlPjEyPC9QYXJhbWV0ZXJQaWN0dXJlPjxEaXJlY3Rpb24+T3V0PC9EaXJlY3Rpb24+PEluX0V4cHJlc3Npb24+PEV4cGVjdGVkVHlwZSAvPjwvSW5fRXhwcmVzc2lvbj48T3V0X0V4cHJlc3Npb24+PEV4cGVjdGVkVHlwZSAvPjwvT3V0X0V4cHJlc3Npb24+PFhTREVsZW1lbnROYW1lPkVycm9yQ29kZTwvWFNERWxlbWVudE5hbWU+PERpc3BsYXlTZXF1ZW5jZUlEPjU8L0Rpc3BsYXlTZXF1ZW5jZUlEPjxWaXNpYmlsaXR5PjA8L1Zpc2liaWxpdHk+PE1hbmRhdG9yeT4wPC9NYW5kYXRvcnk+PFBhcmFtZXRlclZhbHVlU2VsZWN0aW9uVHlwZT5QaWNrbGlzdDwvUGFyYW1ldGVyVmFsdWVTZWxlY3Rpb25UeXBlPjxQYXJhbWV0ZXJJRD40PC9QYXJhbWV0ZXJJRD48L1BhcmFtZXRlcnM+PFBhcmFtZXRlcnM+PFBhcmFtZXRlck5hbWU+U291cmNlRmlsZU5hbWUgKDUpPC9QYXJhbWV0ZXJOYW1lPjxQYXJhbWV0ZXJUeXBlPkE8L1BhcmFtZXRlclR5cGU+PFBhcmFtZXRlclBpY3R1cmU+MjYwPC9QYXJhbWV0ZXJQaWN0dXJlPjxEaXJlY3Rpb24+SW48L0RpcmVjdGlvbj48SW5fRXhwcmVzc2lvbj48RXhwcmVzc2lvblZhbD5QQ01oSlVBa1BtZGxkRlpoY2s1aGJXVW9NU3duZTBWRE1ETkZRVUUyTFVJMlJUY3RORUk1TUMxQlJFVkVMVFk0TWpNMk1UQTFSa1ZHTlgwbkxEQXNNQ2s4SXlFbFFDUSs8L0V4cHJlc3Npb25WYWw+PFJ1bnRpbWVFeHByZXNzaW9uPlIyVjBVR0Z5WVcwZ0tDY3dNREF3TURBd01EQXdNRFF3TURBd01EQXdNREF3TkRSR0xsTnZkWEpqWlVacGJHVlFZWFJvSnlrPTwvUnVudGltZUV4cHJlc3Npb24+PEV4cGVjdGVkVHlwZT5BPC9FeHBlY3RlZFR5cGU+PERpcmVjdGlvbj5JPC9EaXJlY3Rpb24+PC9Jbl9FeHByZXNzaW9uPjxPdXRfRXhwcmVzc2lvbj48RXhwZWN0ZWRUeXBlIC8+PC9PdXRfRXhwcmVzc2lvbj48WFNERWxlbWVudE5hbWU+U291cmNlRmlsZU5hbWU8L1hTREVsZW1lbnROYW1lPjxEaXNwbGF5U2VxdWVuY2VJRD4xPC9EaXNwbGF5U2VxdWVuY2VJRD48VmlzaWJpbGl0eT4wPC9WaXNpYmlsaXR5PjxNYW5kYXRvcnk+MTwvTWFuZGF0b3J5PjxQYXJhbWV0ZXJWYWx1ZVNlbGVjdGlvblR5cGU+RUE8L1BhcmFtZXRlclZhbHVlU2VsZWN0aW9uVHlwZT48UGFyYW1ldGVySUQ+NTwvUGFyYW1ldGVySUQ+PC9QYXJhbWV0ZXJzPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXJOYW1lPkRlc3RpbmF0aW9uRmlsZU5hbWUgKDYpPC9QYXJhbWV0ZXJOYW1lPjxQYXJhbWV0ZXJUeXBlPkE8L1BhcmFtZXRlclR5cGU+PFBhcmFtZXRlclBpY3R1cmU+MjYwPC9QYXJhbWV0ZXJQaWN0dXJlPjxEaXJlY3Rpb24+SW48L0RpcmVjdGlvbj48SW5fRXhwcmVzc2lvbj48RXhwcmVzc2lvblZhbD5QQ01oSlVBa1BtZGxkRlpoY2s1aGJXVW9NU3duZTBJMU16UXlNVGRGTFRCRk56SXRORVV6TUMwNE1rUTNMVFpFUVRORE5ETXhSamczTUgwbkxEQXNNQ2s4SXlFbFFDUSs8L0V4cHJlc3Npb25WYWw+PFJ1bnRpbWVFeHByZXNzaW9uPlIyVjBVR0Z5WVcwZ0tDY3dNREF3TURBd01EQXdNRFF3TURBd01EQXdNREF3TkRSR0xrUmxjM1JHYVd4bFVHRjBhQ2NwPC9SdW50aW1lRXhwcmVzc2lvbj48RXhwZWN0ZWRUeXBlPkE8L0V4cGVjdGVkVHlwZT48RGlyZWN0aW9uPkk8L0RpcmVjdGlvbj48L0luX0V4cHJlc3Npb24+PE91dF9FeHByZXNzaW9uPjxFeHBlY3RlZFR5cGUgLz48L091dF9FeHByZXNzaW9uPjxYU0RFbGVtZW50TmFtZT5EZXN0aW5hdGlvbkZpbGVOYW1lPC9YU0RFbGVtZW50TmFtZT48RGlzcGxheVNlcXVlbmNlSUQ+MjwvRGlzcGxheVNlcXVlbmNlSUQ+PFZpc2liaWxpdHk+MDwvVmlzaWJpbGl0eT48TWFuZGF0b3J5PjE8L01hbmRhdG9yeT48UGFyYW1ldGVyVmFsdWVTZWxlY3Rpb25UeXBlPkVBPC9QYXJhbWV0ZXJWYWx1ZVNlbGVjdGlvblR5cGU+PFBhcmFtZXRlcklEPjY8L1BhcmFtZXRlcklEPjwvUGFyYW1ldGVycz48UGFyYW1ldGVycz48UGFyYW1ldGVyTmFtZT5UcmFuc2Zlck1vZGUgKDcpPC9QYXJhbWV0ZXJOYW1lPjxQYXJhbWV0ZXJUeXBlPkE8L1BhcmFtZXRlclR5cGU+PFBhcmFtZXRlclBpY3R1cmU+MTwvUGFyYW1ldGVyUGljdHVyZT48RGlyZWN0aW9uPkluPC9EaXJlY3Rpb24+PEluX0V4cHJlc3Npb24+PEV4cHJlc3Npb25WYWw+SjBJbjwvRXhwcmVzc2lvblZhbD48UnVudGltZUV4cHJlc3Npb24+SjBJbjwvUnVudGltZUV4cHJlc3Npb24+PEV4cGVjdGVkVHlwZT5BPC9FeHBlY3RlZFR5cGU+PERpcmVjdGlvbj5JPC9EaXJlY3Rpb24+PC9Jbl9FeHByZXNzaW9uPjxPdXRfRXhwcmVzc2lvbj48RXhwZWN0ZWRUeXBlIC8+PC9PdXRfRXhwcmVzc2lvbj48WFNERWxlbWVudE5hbWU+VHJhbnNmZXJNb2RlPC9YU0RFbGVtZW50TmFtZT48RGlzcGxheVNlcXVlbmNlSUQ+MzwvRGlzcGxheVNlcXVlbmNlSUQ+PFZpc2liaWxpdHk+MDwvVmlzaWJpbGl0eT48TWFuZGF0b3J5PjA8L01hbmRhdG9yeT48UGFyYW1ldGVyVmFsdWVTZWxlY3Rpb25UeXBlPkNvbWJvPC9QYXJhbWV0ZXJWYWx1ZVNlbGVjdGlvblR5cGU+PFBhcmFtZXRlcklEPjc8L1BhcmFtZXRlcklEPjwvUGFyYW1ldGVycz48UGFyYW1ldGVycz48UGFyYW1ldGVyTmFtZT5PdmVyd3JpdGUgKDgpPC9QYXJhbWV0ZXJOYW1lPjxQYXJhbWV0ZXJUeXBlPk48L1BhcmFtZXRlclR5cGU+PFBhcmFtZXRlclBpY3R1cmU+MTwvUGFyYW1ldGVyUGljdHVyZT48RGlyZWN0aW9uPkluPC9EaXJlY3Rpb24+PEluX0V4cHJlc3Npb24+PEV4cHJlc3Npb25WYWw+TVE9PTwvRXhwcmVzc2lvblZhbD48UnVudGltZUV4cHJlc3Npb24+TVE9PTwvUnVudGltZUV4cHJlc3Npb24+PEV4cGVjdGVkVHlwZT5OPC9FeHBlY3RlZFR5cGU+PERpcmVjdGlvbj5JPC9EaXJlY3Rpb24+PC9Jbl9FeHByZXNzaW9uPjxPdXRfRXhwcmVzc2lvbj48RXhwZWN0ZWRUeXBlIC8+PC9PdXRfRXhwcmVzc2lvbj48WFNERWxlbWVudE5hbWU+T3ZlcndyaXRlPC9YU0RFbGVtZW50TmFtZT48RGlzcGxheVNlcXVlbmNlSUQ+NDwvRGlzcGxheVNlcXVlbmNlSUQ+PFZpc2liaWxpdHk+MDwvVmlzaWJpbGl0eT48TWFuZGF0b3J5PjA8L01hbmRhdG9yeT48UGFyYW1ldGVyVmFsdWVTZWxlY3Rpb25UeXBlPkNvbWJvPC9QYXJhbWV0ZXJWYWx1ZVNlbGVjdGlvblR5cGU+PFBhcmFtZXRlcklEPjg8L1BhcmFtZXRlcklEPjwvUGFyYW1ldGVycz48L01ldGhvZHM+PC9EQU1fQWN0aXZhdGlvbkJMT0I+</ActivationBLOB>
+      </ConfigInfo>
+    </row_Step>
+  </Steps>
+  <Triggers />
+  <TextElements />
+  <Struct_Scheduler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+</Flow>

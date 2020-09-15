@@ -1,0 +1,365 @@
+ <Application>
+ 
+<Header>
+
+  <Version val="13021"/>
+
+  <WithIsn val="Y"/>
+
+  <Exe comp="-1"/>
+
+  <LastIsn val="1"/>
+
+  <LastIsnFolder val="0"/>
+
+  <Folders/>
+
+</Header>
+ <DataSourceRepository>
+  <DataObjects>
+ 
+<DataObject PhysicalName="[Error_Log]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_2_41_12_4" id="1" name="[Error_Log]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="Error_Log.Error_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Error_ID"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Error_ID" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Error_Log.Error_Date">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="8"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Error_Date"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Error_Date" PIC_U="8" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="Error_Log.Error_Time">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Error_Time"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Error_Time" PIC_U="6" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Error_Log.Error_Group">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Error_Group"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Error_Group" PIC_U="1" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="Error_Log.Method">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Method"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Method" PIC_U="1" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Error_Log.Error_Source_System">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Error_Source_System"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Error_Source_System" PIC_U="2" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Error_Log.Interface_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Interface_ID"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Interface_ID" PIC_U="10" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="Error_Log.Business_Process_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Business_Process_ID"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Business_Process_ID" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="Error_Log.Business_Process_Name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Business_Process_Name"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Business_Process_Name" PIC_U="20" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="Error_Log.Integration_Flow_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Integration_Flow_ID"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Integration_Flow_ID" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="Error_Log.Error_Message">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="255"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Error_Message"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Error_Message" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="Error_Log.Link_To_Error_Detail">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Link_To_Error_Detail"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Link_To_Error_Detail" PIC_U="10" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="Error_Log.Action_Close_Problem">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Action_Close_Problem"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Action_Close_Problem" PIC_U="1" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="Error_Log.By_User">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="By_User"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="By_User" PIC_U="10" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="Error_Log.By_Date">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="8"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="By_Date"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="By_Date" PIC_U="8" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="Error_Log.By_Time">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="By_Time"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="By_Time" PIC_U="6" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="Error_Log.Cause_Of_Problem">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Cause_Of_Problem"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Cause_Of_Problem" PIC_U="50" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="Error_Log.Solution_To_Solve_Iss">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Solution_To_Solve_Issue"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Solution_To_Solve_Issue" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="19" name="Error_Log.Transaction_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="5"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="5"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Transaction_ID"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Transaction_ID" PIC_U="5" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject>  </DataObjects>
+ </DataSourceRepository>
+  </Application>

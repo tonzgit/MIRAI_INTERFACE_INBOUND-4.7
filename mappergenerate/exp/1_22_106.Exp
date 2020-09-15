@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ModelsRepository>
+    <Models/>
+  </ModelsRepository>
+  <DataSourceRepository/>
+  <Header>
+    <Version val="12050"/>
+    <APPLICATION val="Y"/>
+    <WithIsn val="N"/>
+    <Exe/>
+    <_InternalTask/>
+    <IsRoot/>
+    <InIndex/>
+    <WITH_MODELS/>
+    <MAIN_PRG_VARS val="0"/>
+    <MAIN_PRG_DSPS val="1"/>
+    <Arguments END="2" START="2"/>
+  </Header>
+  <ProgramsRepository>
+    <Programs>
+      <Task>
+        <Header Description="map_1_22_106">
+          <Public val="map_1_22_106"/>
+          <ExecutionRight/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <ParametersAttributes/>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="Y"/>
+          <LastModified _date="737626" _time="38308" date="20//7//2020" time="10:38:28.9644201"/>
+        </Header>
+        <ReturnValueExpression/>
+        <Resource/>
+        <Information>
+          <Key>
+            <Column/>
+            <Mode val="N"/>
+          </Key>
+          <DB/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="R"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="N"/>
+            <PreloadView val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="N"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="4" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <ErrorTrigger/>
+              <PublicObject obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="0"/>
+                  <Text val=""/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="R"/>
+            <Type val="S"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <ErrorTrigger/>
+              <PublicObject obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="1"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=""/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="********  BeginTask-1********"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=""/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=" Before CallTask"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="******** Begin Iniput of schema ********"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="2"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="******** End Iniput of schema ********"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=""/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="P"/>
+                    <Exp val="4"/>
+                    <PublicObject/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Arguments>
+                    <Argument>
+                      <id val="0"/>
+                      <Expression val="5"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition Exp="3"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="------------------------------"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="CallTask"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="7"/>
+                  <ReturnValue/>
+                  <Condition Exp="6"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="8"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <CallTask>
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="1"/>
+                  <Lock val="N"/>
+                  <Arguments/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="------------------------------"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="9"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=" After CallTask"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="------------------------------"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=""/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val="********  EndTask-1********"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=""/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark>
+                  <Type val="2"/>
+                  <Text val=""/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="27"/>
+                  <ReturnValue/>
+                  <Condition Exp="26"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="R"/>
+            <Type val="P"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <ErrorTrigger/>
+              <PublicObject obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="T"/>
+            <Type val="P"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <ErrorTrigger/>
+              <PublicObject obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="T"/>
+            <Type val="S"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <ErrorTrigger/>
+              <PublicObject obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="F"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="F"/>
+              <ErrorTrigger/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="GetSqlStmt"/>
+            <Expanded val="1"/>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <ErrorTrigger/>
+              <PublicObject comp="-1" obj="1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="11"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="P"/>
+                    <Exp val="12"/>
+                    <PublicObject/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <ErrorTrigger/>
+              <PublicObject comp="-1" obj="2"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="P"/>
+                    <Exp val="13"/>
+                    <PublicObject/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Arguments>
+                    <Argument>
+                      <id val="0"/>
+                      <Expression val="14"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <id val="0"/>
+                      <Expression val="15"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="16"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="17"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="1"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <ErrorTrigger/>
+              <PublicObject comp="-1" obj="3"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="18"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="2"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="R"/>
+              <ErrorTrigger val="1"/>
+              <PublicObject comp="-1" obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="19"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="20"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="3"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="R"/>
+              <ErrorTrigger val="2"/>
+              <PublicObject comp="-1" obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="19"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="21"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="3"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="R"/>
+              <ErrorTrigger val="3"/>
+              <PublicObject comp="-1" obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="19"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="22"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="3"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="R"/>
+              <ErrorTrigger val="7"/>
+              <PublicObject comp="-1" obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="19"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="23"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="3"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="R"/>
+              <ErrorTrigger val="8"/>
+              <PublicObject comp="-1" obj="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="19"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="24"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="3"/>
+                  </Event>
+                  <Wait val="89"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <_DspTemplate val="0"/>
+            <_HeaderPosition val="3"/>
+            <Scope val="S"/>
+            <EngineDirective val="I"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <ErrorTrigger/>
+              <PublicObject comp="-1" obj="4"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Evaluate>
+                  <Expression val="25"/>
+                  <ReturnValue/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_test_id="1">
+            <PropertyList model="FORM_GUI0">
+              <Width/>
+              <Height/>
+              <_Comment/>
+              <FormName valUnicode="Empty Program"/>
+            </PropertyList>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression val="1">
+            <ExpSyntax val="SetParam('xmlErr',' ')"/>
+            <ExpAttribute val="*"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="2">
+            <ExpSyntax val="INIPut (TranslateNR('[MAGIC_DATABASES]DestinationDB_1_22_106_4 =* DBMS,21, %ISUZU_DB_db%, ,%ISUZU_DB_server%,  ,%ISUZU_DB_user%, '&amp;SharedValGet('IBISUZU_DB_pass')&amp;', NoMagicRecordLock, DontChangeFileInToolkit, NoCheckDefinition, NoCheckKey, NoFileLocks,  SQLBLOB=%sql_blobsize%, , NoCheckExist, 0, %ISUZU_DB_db%, NoAS400SrvrSort,'),'FALSE'LOG)"/>
+            <ExpAttribute val="L"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="3">
+            <ExpSyntax val="SharedValGet('IBDebugMapper')='true'log"/>
+            <ExpAttribute val="L"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="4">
+            <ExpSyntax val="'MainWriteLog'"/>
+            <ExpAttribute val="L"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="5">
+            <ExpSyntax val="TranslateNR('DestinationDB_1_22_106_4. Trying to connect, MS-SQL,DB=%ISUZU_DB_db%,Server=%ISUZU_DB_server%, User=%ISUZU_DB_user%,Pass=**********')"/>
+            <ExpAttribute val="L"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="6">
+            <ExpSyntax val="getParam('Error')&lt;&gt;0"/>
+            <ExpAttribute val="L"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="7">
+            <ExpSyntax val="setparam('MapperLastErrorCode',getparam('Error'))"/>
+            <ExpAttribute val="*"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="8">
+            <ExpSyntax val="setparam('Error',0)"/>
+            <ExpAttribute val="N"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="9">
+            <ExpSyntax val="SetParam('xpi_SourceJsonIsNotWellFormed',NULL())"/>
+            <ExpAttribute val="B"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="10">
+            <ExpSyntax val="ErrDatabaseName ()= 'DestinationDB_1_22_106_4'"/>
+            <ExpAttribute val="L"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="11">
+            <ExpSyntax val="SetParam('IB_SqlDBName',ErrDatabaseName())"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="12">
+            <ExpSyntax val="'MainDBError'"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="13">
+            <ExpSyntax val="'MainMap_InitiVars'"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="14">
+            <ExpSyntax val="2"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="15">
+            <ExpSyntax val="41"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="16">
+            <ExpSyntax val="SetParam('ErrBPID',2)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="17">
+            <ExpSyntax val="SetParam('ErrFlowID',41)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="18">
+            <ExpSyntax val="SetParam ('C.sys.ErrorDescription',MlsTrans (ErrDbmsMessage ()))"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="19">
+            <ExpSyntax val="SetParam('IB_SqlDBName',ErrDatabaseName())"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="20">
+            <ExpSyntax val="SetParam('Error',9801)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="21">
+            <ExpSyntax val="SetParam('Error',9802)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="22">
+            <ExpSyntax val="SetParam('Error',9803)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="23">
+            <ExpSyntax val="SetParam('Error',9804)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="24">
+            <ExpSyntax val="SetParam('Error',9805)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="25">
+            <ExpSyntax val="Rollback('FALSE'LOG,0)"/>
+            <ExpAttribute val="A"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="26">
+            <ExpSyntax val="GetParam('xmlErr')&lt;&gt;''"/>
+            <ExpAttribute val="L"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+          <Expression val="27">
+            <ExpSyntax val="SetParam('C.sys.LastErrorInfo',GetParam('xmlErr'))"/>
+            <ExpAttribute val="*"/>
+            <_ExeOnClient val="32"/>
+          </Expression>
+        </Expressions>
+        <EVNT DESC="Errors" FORCE_EXIT="N" id="1">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="Err_1" FORCE_EXIT="N" id="2">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="EachError" FORCE_EXIT="N" id="3">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="ibRollback" FORCE_EXIT="N" id="4">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject/>
+          </Event>
+        </EVNT>
+        <Task>
+          <Header Description="D1">
+            <Public/>
+            <ExecutionRight/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="Y"/>
+            <LastModified _date="737626" _time="38308" date="20//7//2020" time="10:38:28.9644201"/>
+          </Header>
+          <ReturnValueExpression/>
+          <Resource>
+            <Columns>
+              <Column id="1" name="D_4_Start_Exe_Time">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA"/>
+                  <NullAllowed val="Y"/>
+                  <StoredAs val="3"/>
+                  <Size/>
+                  <_FieldStyle val="1"/>
+                  <Type val="VARCHAR"/>
+                  <Picture valUnicode="6"/>
+                  <Definition val="2"/>
+                </PropertyList>
+              </Column>
+            </Columns>
+          </Resource>
+          <Information>
+            <Key>
+              <Column/>
+              <Mode val="N"/>
+            </Key>
+            <DB/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="R"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="T"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="4" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="3"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <_TotalVariabls val="1"/>
+              <_TotalVirtuals val="1"/>
+              <Event>
+                <EventType val="S"/>
+                <ErrorTrigger/>
+                <PublicObject obj="-1"/>
+              </Event>
+              <Expanded val="1"/>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+                <LogicLine>
+                  <Select Name="A">
+                    <ASS/>
+                    <Column val="1"/>
+                    <Type val="V"/>
+                    <IsParameter val="N"/>
+                    <_RecomputeIndex val="1"/>
+                    <_FormIndex val="1"/>
+                    <_ControlIndex val="1"/>
+                    <_OleSubformIdx val="1"/>
+                    <_TabbingOrderDspIndex val="1"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="R"/>
+              <Type val="S"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="3"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <ErrorTrigger/>
+                <PublicObject obj="-1"/>
+              </Event>
+              <Expanded val="1"/>
+              <LogicLines>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val=""/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val=" **** Schema  Destination ****"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val="   ***Begin Update Destination Vars   ***"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Update>
+                    <Variable val="A"/>
+                    <WithValue val="1"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val=""/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val="   ***End Update Destination Vars   ***"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val=""/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val="***   Begin Destination Builder   ***"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Evaluate>
+                    <Expression val="2"/>
+                    <ReturnValue/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Evaluate>
+                </LogicLine>
+                <LogicLine>
+                  <Evaluate>
+                    <Expression val="3"/>
+                    <ReturnValue/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Evaluate>
+                </LogicLine>
+                <LogicLine>
+                  <Evaluate>
+                    <Expression val="4"/>
+                    <ReturnValue/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Evaluate>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent>
+                    <Event>
+                      <EventType val="P"/>
+                      <Exp val="6"/>
+                      <PublicObject/>
+                    </Event>
+                    <Wait val="89"/>
+                    <Arguments>
+                      <Argument>
+                        <id val="0"/>
+                        <Expression val="7"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition Exp="5"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val=""/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <CallTask>
+                    <OperationType val="T"/>
+                    <TaskID comp="-1" obj="1"/>
+                    <Lock val="N"/>
+                    <Arguments/>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val="***   End Destination Builder   ***"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark>
+                    <Type val="2"/>
+                    <Text val=""/>
+                  </Remark>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="R"/>
+              <Type val="P"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="3"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <ErrorTrigger/>
+                <PublicObject obj="-1"/>
+              </Event>
+              <Expanded val="1"/>
+            </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="T"/>
+              <Type val="P"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="3"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <ErrorTrigger/>
+                <PublicObject obj="-1"/>
+              </Event>
+              <Expanded val="1"/>
+            </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="T"/>
+              <Type val="S"/>
+              <_DspTemplate val="0"/>
+              <_HeaderPosition val="3"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <ErrorTrigger/>
+                <PublicObject obj="-1"/>
+              </Event>
+              <Expanded val="1"/>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry _last_test_id="1">
+              <PropertyList model="FORM_GUI0">
+                <Width/>
+                <Height/>
+                <_Comment/>
+                <FormName valUnicode="Empty Program"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression val="1">
+              <ExpSyntax val="getParam('000000000001000000000022F.Start_Exe')"/>
+              <ExpAttribute val="A"/>
+              <_ExeOnClient val="32"/>
+            </Expression>
+            <Expression val="2">
+              <ExpSyntax val="SetParam('IB_SqlStmt',TranslateNR( 'UPDATE dbo.[Interface_Log] SET Start_Exe_Time=' ) &amp; TranslateNR(  IF(ISNULL(A),'null',ASCIIChr(39)&amp;RTrim(RepStr(A,ASCIIChr(39),ASCIIChr(39)&amp;ASCIIChr(39) ))&amp;ASCIIChr(39)) &amp; ' WHERE Operation_Date = ''' ) &amp; TranslateNR( IF(ISNULL(getParam('000000000001000000000022F.Operation_Date')),'',RTrim(getParam('000000000001000000000022F.Operation_Date'))) &amp; ''' and   Transaction_ID = ''' ) &amp; TranslateNR( IF(ISNULL(getParam('000000000001000000000022F.Transaction_ID')),'',RTrim(getParam('000000000001000000000022F.Transaction_ID'))) &amp; ''' and   Interface_ID = ''' ) &amp; TranslateNR( IF(ISNULL(getParam('000000000001000000000022F.Interface_ID')),'',RTrim(getParam('000000000001000000000022F.Interface_ID'))) &amp; '''' ))"/>
+              <ExpAttribute val="A"/>
+              <_ExeOnClient val="32"/>
+            </Expression>
+            <Expression val="3">
+              <ExpSyntax val="setparam('IB_SqlDBName','DestinationDB_1_22_106_4')"/>
+              <ExpAttribute val="L"/>
+              <_ExeOnClient val="32"/>
+            </Expression>
+            <Expression val="4">
+              <ExpSyntax val="GetSqlStmt()"/>
+              <ExpAttribute val="L"/>
+              <_ExeOnClient val="32"/>
+            </Expression>
+            <Expression val="5">
+              <ExpSyntax val="SharedValGet('IBDebugMapper')='true'log"/>
+              <ExpAttribute val="L"/>
+              <_ExeOnClient val="32"/>
+            </Expression>
+            <Expression val="6">
+              <ExpSyntax val="'MainWriteLog'"/>
+              <ExpAttribute val="L"/>
+              <_ExeOnClient val="32"/>
+            </Expression>
+            <Expression val="7">
+              <ExpSyntax val="getparam('IB_SqlStmt')"/>
+              <ExpAttribute val="L"/>
+              <_ExeOnClient val="32"/>
+            </Expression>
+          </Expressions>
+          <Task>
+            <Header Description="DataBaseSelection">
+              <Public/>
+              <ExecutionRight/>
+              <Resident val="N"/>
+              <SQL val="Y"/>
+              <ReturnValue>
+                <ReturnValueAttr/>
+                <ParametersAttributes/>
+              </ReturnValue>
+              <SqlWhereExist val="N"/>
+              <TaskType val="B"/>
+              <External val="Y"/>
+              <LastModified _date="737626" _time="38308" date="20//7//2020" time="10:38:28.9644201"/>
+            </Header>
+            <ReturnValueExpression/>
+            <Resource/>
+            <Information>
+              <Key>
+                <Column/>
+                <Mode val="N"/>
+              </Key>
+              <DB/>
+              <Sort>
+                <CLS val="A"/>
+              </Sort>
+              <ForceRecordDelete DEL="N"/>
+              <EndTaskCondition val="Y"/>
+              <EvaluateEndCondition val="A"/>
+              <InitialMode val="M"/>
+              <Locate Direction="A"/>
+              <Range Direction="A"/>
+              <VarRange/>
+              <TaskProperties>
+                <SelectionTable val="N"/>
+                <ConfirmUpdate CNFU="N"/>
+                <ConfirmCancel val="N"/>
+                <ErrorStrategy val="R"/>
+                <LockingStrategy val="M"/>
+                <CacheStrategy val="T"/>
+                <ForceRecordSuffix val="N"/>
+                <TransactionMode val="W"/>
+                <TransactionBegin val="U"/>
+                <PreloadView val="N"/>
+                <KeepCreatedContext val="N"/>
+              </TaskProperties>
+              <SIDE_WIN>
+                <AllowOptions val="N"/>
+                <AllowQuery val="Y"/>
+                <AllowModify val="Y"/>
+                <AllowCreate val="Y"/>
+                <AllowDelete val="Y"/>
+                <AllowLocate val="Y"/>
+                <AllowRange val="Y"/>
+                <AllowIndexChange val="Y"/>
+                <AllowSorting val="Y"/>
+                <AllowIOFiles val="Y"/>
+                <RecordCycle val="Y"/>
+                <AllowEvents val="Y"/>
+                <AllowIndexOptimization val="Y"/>
+                <AllowLocationInQuery val="Y"/>
+                <AllowPrintingData val="N"/>
+              </SIDE_WIN>
+              <WIN>
+                <OpenTaskWindow val="N"/>
+                <CloseTaskWindow val="Y"/>
+                <ForegroundWindow val="Y"/>
+                <FlipFld val="N"/>
+                <RefreshTaskWindow ReturnValue="N"/>
+              </WIN>
+              <BOX>
+                <Direction val="V"/>
+              </BOX>
+            </Information>
+            <SQL_FORM DB="DestinationDB_1_22_106_4" RESTAB="Memory">
+              <SQL_STMT_U val=":1:2:3:4:5"/>
+              <INARG>
+                <Arguments>
+                  <Argument>
+                    <id val="0"/>
+                    <Exp val="1"/>
+                  </Argument>
+                  <Argument>
+                    <id val="0"/>
+                    <Exp val="2"/>
+                  </Argument>
+                  <Argument>
+                    <id val="0"/>
+                    <Exp val="3"/>
+                  </Argument>
+                  <Argument>
+                    <id val="0"/>
+                    <Exp val="4"/>
+                  </Argument>
+                  <Argument>
+                    <id val="0"/>
+                    <Exp val="5"/>
+                  </Argument>
+                </Arguments>
+              </INARG>
+            </SQL_FORM>
+            <TaskLogic>
+              <LogicUnit id="4" propagate="78">
+                <Level val="R"/>
+                <Type val="M"/>
+                <_DspTemplate val="0"/>
+                <_HeaderPosition val="3"/>
+                <Scope val="S"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="S"/>
+                  <ErrorTrigger/>
+                  <PublicObject obj="-1"/>
+                </Event>
+                <Expanded val="1"/>
+                <LogicLines>
+                  <LogicLine>
+                    <DATAVIEW_SRC Type="Q">
+                      <Condition val="N"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </DATAVIEW_SRC>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
+            </TaskLogic>
+            <TaskForms>
+              <FormEntry _last_test_id="1">
+                <PropertyList model="FORM_GUI0">
+                  <Width/>
+                  <Height/>
+                  <_Comment/>
+                  <FormName valUnicode="Empty Program"/>
+                </PropertyList>
+              </FormEntry>
+            </TaskForms>
+            <Expressions>
+              <Expression val="1">
+                <ExpSyntax val="TranslateNR( 'UPDATE dbo.[Interface_Log] SET Start_Exe_Time=' )"/>
+                <ExpAttribute val="A"/>
+                <_ExeOnClient val="32"/>
+              </Expression>
+              <Expression val="2">
+                <ExpSyntax val="TranslateNR(  IF(ISNULL(A),'null',ASCIIChr(39)&amp;RTrim(RepStr(A,ASCIIChr(39),ASCIIChr(39)&amp;ASCIIChr(39) ))&amp;ASCIIChr(39)) &amp; ' WHERE Operation_Date = ''' )"/>
+                <ExpAttribute val="A"/>
+                <_ExeOnClient val="32"/>
+              </Expression>
+              <Expression val="3">
+                <ExpSyntax val="TranslateNR( IF(ISNULL(getParam('000000000001000000000022F.Operation_Date')),'',RTrim(getParam('000000000001000000000022F.Operation_Date'))) &amp; ''' and   Transaction_ID = ''' )"/>
+                <ExpAttribute val="A"/>
+                <_ExeOnClient val="32"/>
+              </Expression>
+              <Expression val="4">
+                <ExpSyntax val="TranslateNR( IF(ISNULL(getParam('000000000001000000000022F.Transaction_ID')),'',RTrim(getParam('000000000001000000000022F.Transaction_ID'))) &amp; ''' and   Interface_ID = ''' )"/>
+                <ExpAttribute val="A"/>
+                <_ExeOnClient val="32"/>
+              </Expression>
+              <Expression val="5">
+                <ExpSyntax val="TranslateNR( IF(ISNULL(getParam('000000000001000000000022F.Interface_ID')),'',RTrim(getParam('000000000001000000000022F.Interface_ID'))) &amp; '''' )"/>
+                <ExpAttribute val="A"/>
+                <_ExeOnClient val="32"/>
+              </Expression>
+            </Expressions>
+          </Task>
+        </Task>
+      </Task>
+      <SubTaskNumber/>
+    </Programs>
+  </ProgramsRepository>
+</Application>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper>
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>3</SchemaID>
+      <Order>1</Order>
+      <Name>S1</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>Record</Identifier>
+          <Description />
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>Record/Last_Flow_Step</Identifier>
+          <Description />
+          <FieldName>Last_Flow_Step</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>INTEGER</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture>N10</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>4</StorageSize>
+          <StorageNum>4</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Last_Flow_Step</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>U0VMRUNUIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLkxhc3RfRmxvd19TdGVwIEZST00gZGJvLltJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdIFdIRVJFIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLk9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCBbSW50ZXJmYWNlX0xvZ1N0ZXBfU3RhdHVzXS5JbnRlcmZhY2VfSUQgPSAnPD9GLkVycm9yRmxvd05hbWU/PicgYW5kW0ludGVyZmFjZV9Mb2dTdGVwX1N0YXR1c10uVHJhbnNhY3Rpb25fSUQgPSAnPD9GLlRyYW5zYWN0aW9uSURfdXBkYXRlPz4n</ExpressionVal>
+          <RuntimeExpression>U0VMRUNUIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLkxhc3RfRmxvd19TdGVwIEZST00gZGJvLltJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdIFdIRVJFIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLk9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCBbSW50ZXJmYWNlX0xvZ1N0ZXBfU3RhdHVzXS5JbnRlcmZhY2VfSUQgPSAnPD9GLkVycm9yRmxvd05hbWU/PicgYW5kW0ludGVyZmFjZV9Mb2dTdGVwX1N0YXR1c10uVHJhbnNhY3Rpb25fSUQgPSAnPD9GLlRyYW5zYWN0aW9uSURfdXBkYXRlPz4n</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName />
+      </DB>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema d3p1:type="VariableSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>4</SchemaID>
+      <Order>1</Order>
+      <Name>D1</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>Variable</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>4</Identifier>
+          <Description />
+          <FieldName>Instance</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldVariable">
+          <Identifier>{315032D0-0676-45DE-96A0-F82084FC4A51}</Identifier>
+          <Description />
+          <FieldName>F.Last_Flow_Step</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyKCBvYmpPbGROYW1lKDwjISVAJD5nZXROb2RlTmFtZSgzL1JlY29yZC9MYXN0X0Zsb3dfU3RlcCk8IyElQCQ+KSAsJzAnKQ==</ExpressionVal>
+            <RuntimeExpression>U3RyKCBBICwnMCcp</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>0</Encoding>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variables>
+          <Variable>
+            <VarGUID>{315032D0-0676-45DE-96A0-F82084FC4A51}</VarGUID>
+          </Variable>
+        </Variables>
+      </Variables>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>4</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/Last_Flow_Step</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>{315032D0-0676-45DE-96A0-F82084FC4A51}</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

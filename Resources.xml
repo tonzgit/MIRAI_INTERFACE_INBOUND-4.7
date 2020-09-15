@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource_Settings type="resource">
+  <Resource_Element>
+    <Main_Resource_ID>104</Main_Resource_ID>
+    <Main_Resource_Name>Domino</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>106</Main_Resource_ID>
+    <Main_Resource_Name>Email</Main_Resource_Name>
+    <Default_Resource>MailServer</Default_Resource>
+    <Main_Resource_Defintion>
+      <Resource_Type_ID>36</Resource_Type_ID>
+      <Resource_Type_Name>MailServer</Resource_Type_Name>
+      <Resource_Type_Description>relaymain.magicsoftware.com</Resource_Type_Description>
+      <Resource_Type_Blob>TgB1AGwAbABCAGwAbwBiAA==</Resource_Type_Blob>
+      <Resource_Properties>
+        <ID>1</ID>
+        <Name>Server Type</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>1</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>10</ID>
+        <Name>Password</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>10</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>2</ID>
+        <Name>Incoming Mail Server</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>2</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>3</ID>
+        <Name>Incoming Port</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>3</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>4</ID>
+        <Name>Incoming Secure Connection</Name>
+        <ExpressionValue>0</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>4</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>5</ID>
+        <Name>Outgoing Mail Server</Name>
+        <ExpressionValue>172.30.92.100</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>5</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>6</ID>
+        <Name>Outgoing Port</Name>
+        <ExpressionValue>25</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>6</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>7</ID>
+        <Name>Outgoing Secure Connection</Name>
+        <ExpressionValue>0</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>7</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>8</ID>
+        <Name>From Address</Name>
+        <ExpressionValue>IFBAM_DEV_Admin@isuzu-dealers.com</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>8</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>9</ID>
+        <Name>User</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>9</DisplaySequenceID>
+      </Resource_Properties>
+    </Main_Resource_Defintion>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>109</Main_Resource_ID>
+    <Main_Resource_Name>FTP</Main_Resource_Name>
+    <Default_Resource>AE_Config</Default_Resource>
+    <Main_Resource_Defintion>
+      <Resource_Type_ID>37</Resource_Type_ID>
+      <Resource_Type_Name>AE_Config</Resource_Type_Name>
+      <Resource_Type_Description />
+      <Resource_Type_Blob>TgB1AGwAbABCAGwAbwBiAA==</Resource_Type_Blob>
+      <Resource_Properties>
+        <ID>25</ID>
+        <Name>Server</Name>
+        <ExpressionValue>%FTP_Server%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>1</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>26</ID>
+        <Name>Protocol</Name>
+        <ExpressionValue>1</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>2</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>27</ID>
+        <Name>Enable server validation</Name>
+        <ExpressionValue>1</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>3</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>28</ID>
+        <Name>Validate against</Name>
+        <ExpressionValue>2</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>4</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>29</ID>
+        <Name>Server validation file</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>5</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>30</ID>
+        <Name>Client authentication</Name>
+        <ExpressionValue>1</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>6</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>31</ID>
+        <Name>User</Name>
+        <ExpressionValue>%FTP_User%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>7</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>32</ID>
+        <Name>Password</Name>
+        <ExpressionValue>nXnTBLkhVb4ICeYPAr9GNA==</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>8</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>33</ID>
+        <Name>Client private key file path</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>9</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>34</ID>
+        <Name>Encoding</Name>
+        <ExpressionValue>ISO_8859_1</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>11</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>35</ID>
+        <Name>Locale Name</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>12</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>36</ID>
+        <Name>Timeout in Miliseconds</Name>
+        <ExpressionValue>0</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>13</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>37</ID>
+        <Name>Connect Mode</Name>
+        <ExpressionValue>PASSIVE</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>14</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>38</ID>
+        <Name>Number of Login Retries</Name>
+        <ExpressionValue>6</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>15</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>39</ID>
+        <Name>Delay Between Login Retries</Name>
+        <ExpressionValue>10</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>16</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>40</ID>
+        <Name>Use Secured FTP</Name>
+        <ExpressionValue>'FALSE'LOG</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>17</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>41</ID>
+        <Name>Server Certificate Validation</Name>
+        <ExpressionValue>'FALSE'LOG</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>18</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>42</ID>
+        <Name>Server Certificate File</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>19</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>43</ID>
+        <Name>Use Client Certificate</Name>
+        <ExpressionValue>'FALSE'LOG</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>20</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>44</ID>
+        <Name>Client Certificate File</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>21</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>45</ID>
+        <Name>Client Certificate Password</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>22</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>46</ID>
+        <Name>Client private key Pass Phrase</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>10</DisplaySequenceID>
+      </Resource_Properties>
+    </Main_Resource_Defintion>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>110</Main_Resource_ID>
+    <Main_Resource_Name>HTTP</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>111</Main_Resource_ID>
+    <Main_Resource_Name>IBM i</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>115</Main_Resource_ID>
+    <Main_Resource_Name>JMS</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>117</Main_Resource_ID>
+    <Main_Resource_Name>WebSphereMQ</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>118</Main_Resource_ID>
+    <Main_Resource_Name>MSMQ</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>121</Main_Resource_ID>
+    <Main_Resource_Name>Web Services Client</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>128</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 2004</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>133</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 2005</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>140</Main_Resource_ID>
+    <Main_Resource_Name>SAP R3</Main_Resource_Name>
+    <Default_Resource>SAP MiRAI Resource</Default_Resource>
+    <Main_Resource_Defintion>
+      <Resource_Type_ID>35</Resource_Type_ID>
+      <Resource_Type_Name>SAP MiRAI Resource</Resource_Type_Name>
+      <Resource_Type_Description>`</Resource_Type_Description>
+      <Resource_Type_Blob>TgB1AGwAbABCAGwAbwBiAA==</Resource_Type_Blob>
+      <Resource_Properties>
+        <ID>1</ID>
+        <Name>Connection Type</Name>
+        <ExpressionValue>1</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>1</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>10</ID>
+        <Name>Use Secure Network Connection</Name>
+        <ExpressionValue>0</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>10</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>11</ID>
+        <Name>SNC Name</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>11</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>12</ID>
+        <Name>SNC Partner</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>12</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>13</ID>
+        <Name>SNC Security Level</Name>
+        <ExpressionValue>3</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>13</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>14</ID>
+        <Name>SNC Library Path</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>14</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>15</ID>
+        <Name>SAP Language</Name>
+        <ExpressionValue>EN</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>15</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>16</ID>
+        <Name>SAP Codepage</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>16</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>17</ID>
+        <Name>SAP Unicode System</Name>
+        <ExpressionValue>0</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>17</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>18</ID>
+        <Name>Unicode Support</Name>
+        <ExpressionValue>1</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>18</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>19</ID>
+        <Name>SAP Trace</Name>
+        <ExpressionValue>0</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>19</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>2</ID>
+        <Name>SAP Host Name</Name>
+        <ExpressionValue>%SAPHostName%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>2</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>20</ID>
+        <Name>Connection Pool Size</Name>
+        <ExpressionValue>5</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>20</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>3</ID>
+        <Name>Port</Name>
+        <ExpressionValue>3600</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>3</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>4</ID>
+        <Name>Group</Name>
+        <ExpressionValue>XPI</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>4</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>5</ID>
+        <Name>SAP System Number</Name>
+        <ExpressionValue>%SAPSysNo%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>5</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>6</ID>
+        <Name>SAP Client Number</Name>
+        <ExpressionValue>%SAPCliNo%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>6</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>7</ID>
+        <Name>SAP User Name</Name>
+        <ExpressionValue>%SAPUser%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>7</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>8</ID>
+        <Name>SAP Password</Name>
+        <ExpressionValue>k1YhEvwIHel8vT6qUKARKQ==</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>8</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>9</ID>
+        <Name>SAP Router String</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>9</DisplaySequenceID>
+      </Resource_Properties>
+    </Main_Resource_Defintion>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>141</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 2007</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>143</Main_Resource_ID>
+    <Main_Resource_Name>Salesforce</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>144</Main_Resource_ID>
+    <Main_Resource_Name>Notes DB</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>145</Main_Resource_ID>
+    <Main_Resource_Name>JD Edwards EnterpriseOne</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>149</Main_Resource_ID>
+    <Main_Resource_Name>HL7</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>151</Main_Resource_ID>
+    <Main_Resource_Name>Google</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>152</Main_Resource_ID>
+    <Main_Resource_Name>LDAP</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>153</Main_Resource_ID>
+    <Main_Resource_Name>SAP A1</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>156</Main_Resource_ID>
+    <Main_Resource_Name>Dynamics CRM</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>157</Main_Resource_ID>
+    <Main_Resource_Name>Exchange</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>159</Main_Resource_ID>
+    <Main_Resource_Name>SharePoint</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>160</Main_Resource_ID>
+    <Main_Resource_Name>SAP B1 88</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>161</Main_Resource_ID>
+    <Main_Resource_Name>JD Edwards World</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>162</Main_Resource_ID>
+    <Main_Resource_Name>Sugar</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>163</Main_Resource_ID>
+    <Main_Resource_Name>Dynamics AX</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>164</Main_Resource_ID>
+    <Main_Resource_Name>ServiceMax</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>200</Main_Resource_ID>
+    <Main_Resource_Name>WCF Client</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>9000</Main_Resource_ID>
+    <Main_Resource_Name>Web Services Server</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>9001</Main_Resource_ID>
+    <Main_Resource_Name>UDDI Server</Main_Resource_Name>
+  </Resource_Element>
+  <Resource_Element>
+    <Main_Resource_ID>10000</Main_Resource_ID>
+    <Main_Resource_Name>Database</Main_Resource_Name>
+    <Default_Resource>ISUZU_DB</Default_Resource>
+    <Main_Resource_Defintion>
+      <Resource_Type_ID>10001</Resource_Type_ID>
+      <Resource_Type_Name>ISUZU_DB</Resource_Type_Name>
+      <Resource_Type_Description />
+      <Resource_Type_Blob>TgB1AGwAbABCAGwAbwBiAA==</Resource_Type_Blob>
+      <Resource_Properties>
+        <ID>1</ID>
+        <Name>DBMS</Name>
+        <ExpressionValue>21</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>1</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>2</ID>
+        <Name>Database name</Name>
+        <ExpressionValue>%ISUZU_DBName%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>2</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>20</ID>
+        <Name>DataB name - sort (Lowercase)</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>11</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>22</ID>
+        <Name>Filter Owner</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>12</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>23</ID>
+        <Name>ODBC Driver Name</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>13</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>24</ID>
+        <Name>Filters data</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>14</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>25</ID>
+        <Name>Library Details</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>15</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>3</ID>
+        <Name>Server</Name>
+        <ExpressionValue>%ISUZU_ServerName%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>3</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>4</ID>
+        <Name>Data Source name</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>4</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>5</ID>
+        <Name>Connect String</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>5</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>6</ID>
+        <Name>Database alias</Name>
+        <ExpressionValue />
+        <ExpressionValueBlob />
+        <DisplaySequenceID>6</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>7</ID>
+        <Name>User</Name>
+        <ExpressionValue>%ISUZU_User%</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>7</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>8</ID>
+        <Name>Password</Name>
+        <ExpressionValue>HMj56Ofmoi4rcYuBVOnaiQ==</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>8</DisplaySequenceID>
+      </Resource_Properties>
+      <Resource_Properties>
+        <ID>9</ID>
+        <Name>Starting Owner</Name>
+        <ExpressionValue>dbo</ExpressionValue>
+        <ExpressionValueBlob />
+        <DisplaySequenceID>9</DisplaySequenceID>
+      </Resource_Properties>
+    </Main_Resource_Defintion>
+  </Resource_Element>
+</Resource_Settings>

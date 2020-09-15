@@ -1,0 +1,252 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK rel="stylesheet" type="text/css" href="iboltprint.css">
+  </head>
+  <h1>
+        Flow: Put to FTP</h1>
+  <h2>General</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">ID</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Name</td>
+      <td>Put to FTP</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Two Phase Processing</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">DB transaction</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Disable</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Inactive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Max Instances</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Timeout Policy</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Timeout Value</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Recovery Policy</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Enablement</td>
+      <td>Always</td>
+    </tr>
+  </table>
+  <h2>Flow Invokers</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">Auto Start</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Auto Repeat</td>
+      <td>No</td>
+    </tr>
+  </table>
+  <h2>External</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">PSS Subscribe Once</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">PSS Subscribe Name</td>
+      <td>
+      </td>
+    </tr>
+  </table><br><br><hr>
+  <h1>Graphical View</h1><img style="max-width: 80%;" src="&#xD;&#xA;          ../Images/BP4_Flow44.png&#xD;&#xA;        "><hr>
+  <h2>Flow Variables</h2>
+  <table width="100%">
+    <tr>
+      <th class="FitToContent">Name</th>
+      <th class="ExtendToMax">Description</th>
+      <th class="FitToContent">Type</th>
+      <th class="FitToContent">Length</th>
+      <th class="FitToContent">Default Value</th>
+    </tr>
+    <tr>
+      <td>F.SourceFilePath</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>255</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>F.DestFilePath</td>
+      <td>
+      </td>
+      <td>Alpha</td>
+      <td>255</td>
+      <td>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h2>Triggers</h2>
+  <hr>
+  <h2>Steps</h2>
+  <h3><img src="\\172.30.84.85\d$\Magic\Projects\MIRAI_INTERFACE_INBOUND\Documentation\Images\FTP.png">Step: FTP</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>FTP</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Interface</td>
+        <td>Method</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Configuration...</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Resource Name</td>
+        <td>AE_Config</td>
+      </tr>
+    </table>
+            <h4>Logging</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Logging Scope</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Step Logging Options</td>
+        <td>Before</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Message</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">BLOB</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         <h4>
+      DAM Data
+    </h4>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">DAM Method:
+      </td>
+        <td style="font-weight:bold;background-color: gray">Put File</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Condition:
+      </td>
+        <td style="">
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+              Arguments:
+            </td>
+        <td>
+          <h2>
+          </h2>
+          <table width="100%">
+            <tr>
+              <th class="FitToContent">Parameter Name</th>
+              <th class="FitToContent">Type</th>
+              <th class="FitToContent">Picture</th>
+              <th class="FitToContent">In/Out</th>
+              <th class="FitToContent">Value</th>
+            </tr>
+            <tr>
+              <td>ErrorCode (4)</td>
+              <td>Numeric</td>
+              <td>12</td>
+              <td>Out</td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>SourceFileName (5)</td>
+              <td>Alpha</td>
+              <td>260</td>
+              <td>In</td>
+              <td>F.SourceFilePath</td>
+            </tr>
+            <tr>
+              <td>DestinationFileName (6)</td>
+              <td>Alpha</td>
+              <td>260</td>
+              <td>In</td>
+              <td>F.DestFilePath</td>
+            </tr>
+            <tr>
+              <td>TransferMode (7)</td>
+              <td>Alpha</td>
+              <td>1</td>
+              <td>In</td>
+              <td>Binary</td>
+            </tr>
+            <tr>
+              <td>Overwrite (8)</td>
+              <td>Numeric</td>
+              <td>1</td>
+              <td>In</td>
+              <td>Yes</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table><br>
+      </div>
+</html>

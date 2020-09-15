@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Magicxpi_Startup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Projects>
+    <Project Name="MIRAI_INTERFACE_INBOUND" ProjectsDirPath="\\MQXPI17\Magic\Projects\">
+     <Servers>
+													<Server host="MQXPI14" alternateHosts="MQXPI13">
+														<ProjectsDirPath></ProjectsDirPath>
+														<NumberOfWorkers>0</NumberOfWorkers>
+														<NumberOfInstances>1</NumberOfInstances>
+														<Triggers load="true">
+														</Triggers>
+														<Scheduler load="false"/>
+														<AutoStart load="true"/>
+													</Server>
+													<Server host="MQXPI14" alternateHosts="MQXPI13">
+														<ProjectsDirPath></ProjectsDirPath>
+														<NumberOfWorkers>1</NumberOfWorkers>
+														<NumberOfInstances>4</NumberOfInstances>
+														<Triggers load="false">
+														</Triggers>
+														<Scheduler load="false"/>
+														<AutoStart load="false"/>
+													</Server>
+													<Server host="MQXPI13" alternateHosts="MQXPI14">
+														<ProjectsDirPath></ProjectsDirPath>
+														<NumberOfWorkers>1</NumberOfWorkers>
+														<NumberOfInstances>4</NumberOfInstances>
+														<Triggers load="false">
+														</Triggers>
+														<Scheduler load="false"/>
+														<AutoStart load="false"/>
+													</Server>         
+     </Servers>
+    </Project>
+  </Projects>
+</Magicxpi_Startup>

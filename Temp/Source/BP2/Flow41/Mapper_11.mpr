@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper>
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>3</SchemaID>
+      <Order>1</Order>
+      <Name>S1</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>Record</Identifier>
+          <Description />
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>Record/Last_Flow_Step</Identifier>
+          <Description />
+          <FieldName>Last_Flow_Step</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>INTEGER</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture />
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>4</StorageSize>
+          <StorageNum>4</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Last_Flow_Step</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>U0VMRUNUIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLkxhc3RfRmxvd19TdGVwIEZST00gZGJvLltJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdIFdIRVJFIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLk9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCBbSW50ZXJmYWNlX0xvZ1N0ZXBfU3RhdHVzXS5JbnRlcmZhY2VfSUQgPSAnPD9GLkVycm9yRmxvd05hbWU/PicgYW5kW0ludGVyZmFjZV9Mb2dTdGVwX1N0YXR1c10uVHJhbnNhY3Rpb25fSUQgPSAnPD9GLlRyYW5zYWN0aW9uSURfdXBkYXRlPz4n</ExpressionVal>
+          <RuntimeExpression>U0VMRUNUIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLkxhc3RfRmxvd19TdGVwIEZST00gZGJvLltJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdIFdIRVJFIFtJbnRlcmZhY2VfTG9nU3RlcF9TdGF0dXNdLk9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCBbSW50ZXJmYWNlX0xvZ1N0ZXBfU3RhdHVzXS5JbnRlcmZhY2VfSUQgPSAnPD9GLkVycm9yRmxvd05hbWU/PicgYW5kW0ludGVyZmFjZV9Mb2dTdGVwX1N0YXR1c10uVHJhbnNhY3Rpb25fSUQgPSAnPD9GLlRyYW5zYWN0aW9uSURfdXBkYXRlPz4n</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName />
+      </DB>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>4</SchemaID>
+      <Order>1</Order>
+      <Name>Step1</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Interface_Log</Identifier>
+          <Description />
+          <FieldName>dbo.Interface_Log</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezMxNTAzMkQwLTA2NzYtNDVERS05NkEwLUY4MjA4NEZDNEE1MX0nLDAsMCk8IyElQCQ+ID0nMCcgb3IgPCMhJUAkPmdldFZhck5hbWUoMSwnezMxNTAzMkQwLTA2NzYtNDVERS05NkEwLUY4MjA4NEZDNEE1MX0nLDAsMCk8IyElQCQ+ID0nMSc=</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkxhc3RfRmxvd19TdGVwJykgPScwJyBvciBHZXRQYXJhbSAoJzAwMDAwMDAwMDAwMjAwMDAwMDAwMDA0MUYuTGFzdF9GbG93X1N0ZXAnKSA9JzEn</RuntimeExpression>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Step1_Get</Identifier>
+          <Description />
+          <FieldName>Step1_Get</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Step1_Get</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Interface_Flow_Status</Identifier>
+          <Description />
+          <FieldName>Interface_Flow_Status</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Interface_Flow_Status</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXAxX0dldD08IT9TdGVwMV9HZXQ/IT4gLCBJbnRlcmZhY2VfRmxvd19TdGF0dXM9PCE/SW50ZXJmYWNlX0Zsb3dfU3RhdHVzPyE+IFdIRVJFIE9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCBUcmFuc2FjdGlvbl9JRCA9ICc8P0MuVHJhbnNhY3Rpb25JRD8+JyAgIGFuZCBJbnRlcmZhY2VfSUQgPSAnPD9GLkVycm9yRmxvd05hbWU/Pic=</ExpressionVal>
+          <RuntimeExpression>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXAxX0dldD08IT9TdGVwMV9HZXQ/IT4gLCBJbnRlcmZhY2VfRmxvd19TdGF0dXM9PCE/SW50ZXJmYWNlX0Zsb3dfU3RhdHVzPyE+IFdIRVJFIE9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCBUcmFuc2FjdGlvbl9JRCA9ICc8P0MuVHJhbnNhY3Rpb25JRD8+JyAgIGFuZCBJbnRlcmZhY2VfSUQgPSAnPD9GLkVycm9yRmxvd05hbWU/Pic=</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Interface_Log]</GenerateTableName>
+      </DB>
+    </Schema>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>5</SchemaID>
+      <Order>2</Order>
+      <Name>Step2</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Interface_Log</Identifier>
+          <Description />
+          <FieldName>dbo.Interface_Log</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezMxNTAzMkQwLTA2NzYtNDVERS05NkEwLUY4MjA4NEZDNEE1MX0nLDAsMCk8IyElQCQ+ID0nMic=</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkxhc3RfRmxvd19TdGVwJykgPScyJw==</RuntimeExpression>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Step2_Get</Identifier>
+          <Description />
+          <FieldName>Step2_Get</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Step2_Validate_wo_Condition</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Interface_Flow_Status</Identifier>
+          <Description />
+          <FieldName>Interface_Flow_Status</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Interface_Flow_Status</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXAyX1ZhbGlkYXRlX3dvX0NvbmRpdGlvbj08IT9TdGVwMl9HZXQ/IT4gLCBJbnRlcmZhY2VfRmxvd19TdGF0dXM9PCE/SW50ZXJmYWNlX0Zsb3dfU3RhdHVzPyE+IFdIRVJFIE9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCAgIFRyYW5zYWN0aW9uX0lEPSc8P0MuVHJhbnNhY3Rpb25JRD8+JyAgYW5kICAgSW50ZXJmYWNlX0lEID0nPD9GLkVycm9yU3RlcE5hbWU/Pic=</ExpressionVal>
+          <RuntimeExpression>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXAyX1ZhbGlkYXRlX3dvX0NvbmRpdGlvbj08IT9TdGVwMl9HZXQ/IT4gLCBJbnRlcmZhY2VfRmxvd19TdGF0dXM9PCE/SW50ZXJmYWNlX0Zsb3dfU3RhdHVzPyE+IFdIRVJFIE9wZXJhdGlvbl9EYXRlID0gJzw/Ri5PcGVyYXRpb25EYXRlPz4nIGFuZCAgIFRyYW5zYWN0aW9uX0lEPSc8P0MuVHJhbnNhY3Rpb25JRD8+JyAgYW5kICAgSW50ZXJmYWNlX0lEID0nPD9GLkVycm9yU3RlcE5hbWU/Pic=</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Interface_Log]</GenerateTableName>
+      </DB>
+    </Schema>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>6</SchemaID>
+      <Order>3</Order>
+      <Name>Step3</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Interface_Log</Identifier>
+          <Description />
+          <FieldName>dbo.Interface_Log</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezMxNTAzMkQwLTA2NzYtNDVERS05NkEwLUY4MjA4NEZDNEE1MX0nLDAsMCk8IyElQCQ+ID0nMyc=</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkxhc3RfRmxvd19TdGVwJykgPSczJw==</RuntimeExpression>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Step3_Get</Identifier>
+          <Description />
+          <FieldName>Step3_Get</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Step3_Validate_by_Trans</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Interface_Flow_Status</Identifier>
+          <Description />
+          <FieldName>Interface_Flow_Status</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Interface_Flow_Status</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXAzX1ZhbGlkYXRlX2J5X1RyYW5zPTwhP1N0ZXAzX0dldD8hPiAsIEludGVyZmFjZV9GbG93X1N0YXR1cz08IT9JbnRlcmZhY2VfRmxvd19TdGF0dXM/IT4gV0hFUkUgT3BlcmF0aW9uX0RhdGUgPSAnPD9GLk9wZXJhdGlvbkRhdGU/PicgYW5kICAgVHJhbnNhY3Rpb25fSUQ9Jzw/Qy5UcmFuc2FjdGlvbklEPz4nICBhbmQgICBJbnRlcmZhY2VfSUQgPSc8P0YuRXJyb3JTdGVwTmFtZT8+Jw==</ExpressionVal>
+          <RuntimeExpression>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXAzX1ZhbGlkYXRlX2J5X1RyYW5zPTwhP1N0ZXAzX0dldD8hPiAsIEludGVyZmFjZV9GbG93X1N0YXR1cz08IT9JbnRlcmZhY2VfRmxvd19TdGF0dXM/IT4gV0hFUkUgT3BlcmF0aW9uX0RhdGUgPSAnPD9GLk9wZXJhdGlvbkRhdGU/PicgYW5kICAgVHJhbnNhY3Rpb25fSUQ9Jzw/Qy5UcmFuc2FjdGlvbklEPz4nICBhbmQgICBJbnRlcmZhY2VfSUQgPSc8P0YuRXJyb3JTdGVwTmFtZT8+Jw==</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Interface_Log]</GenerateTableName>
+      </DB>
+    </Schema>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>7</SchemaID>
+      <Order>4</Order>
+      <Name>Step4</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Interface_Log</Identifier>
+          <Description />
+          <FieldName>dbo.Interface_Log</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezMxNTAzMkQwLTA2NzYtNDVERS05NkEwLUY4MjA4NEZDNEE1MX0nLDAsMCk8IyElQCQ+ID0nNCc=</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkxhc3RfRmxvd19TdGVwJykgPSc0Jw==</RuntimeExpression>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Step4_Get</Identifier>
+          <Description />
+          <FieldName>Step4_Get</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Step4_Validate_w_Condition</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Interface_Flow_Status</Identifier>
+          <Description />
+          <FieldName>Interface_Flow_Status</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Interface_Flow_Status</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXA0X1ZhbGlkYXRlX3dfQ29uZGl0aW9uPTwhP1N0ZXA0X0dldD8hPiAsIEludGVyZmFjZV9GbG93X1N0YXR1cz08IT9JbnRlcmZhY2VfRmxvd19TdGF0dXM/IT4gV0hFUkUgT3BlcmF0aW9uX0RhdGUgPSAnPD9GLk9wZXJhdGlvbkRhdGU/PicgYW5kICAgVHJhbnNhY3Rpb25fSUQ9Jzw/Qy5UcmFuc2FjdGlvbklEPz4nICBhbmQgICBJbnRlcmZhY2VfSUQgPSc8P0YuRXJyb3JTdGVwTmFtZT8+Jw==</ExpressionVal>
+          <RuntimeExpression>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXA0X1ZhbGlkYXRlX3dfQ29uZGl0aW9uPTwhP1N0ZXA0X0dldD8hPiAsIEludGVyZmFjZV9GbG93X1N0YXR1cz08IT9JbnRlcmZhY2VfRmxvd19TdGF0dXM/IT4gV0hFUkUgT3BlcmF0aW9uX0RhdGUgPSAnPD9GLk9wZXJhdGlvbkRhdGU/PicgYW5kICAgVHJhbnNhY3Rpb25fSUQ9Jzw/Qy5UcmFuc2FjdGlvbklEPz4nICBhbmQgICBJbnRlcmZhY2VfSUQgPSc8P0YuRXJyb3JTdGVwTmFtZT8+Jw==</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Interface_Log]</GenerateTableName>
+      </DB>
+    </Schema>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>8</SchemaID>
+      <Order>5</Order>
+      <Name>Step5</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Interface_Log</Identifier>
+          <Description />
+          <FieldName>dbo.Interface_Log</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezMxNTAzMkQwLTA2NzYtNDVERS05NkEwLUY4MjA4NEZDNEE1MX0nLDAsMCk8IyElQCQ+ID0nNSc=</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkxhc3RfRmxvd19TdGVwJykgPSc1Jw==</RuntimeExpression>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Step5_Get</Identifier>
+          <Description />
+          <FieldName>Step5_Get</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Step5_Conversion</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Interface_Flow_Status</Identifier>
+          <Description />
+          <FieldName>Interface_Flow_Status</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Interface_Flow_Status</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXA1X0NvbnZlcnNpb249PCE/U3RlcDVfR2V0PyE+ICwgSW50ZXJmYWNlX0Zsb3dfU3RhdHVzPTwhP0ludGVyZmFjZV9GbG93X1N0YXR1cz8hPiBXSEVSRSBPcGVyYXRpb25fRGF0ZSA9ICc8P0YuT3BlcmF0aW9uRGF0ZT8+JyBhbmQgICBUcmFuc2FjdGlvbl9JRD0nPD9DLlRyYW5zYWN0aW9uSUQ/PicgIGFuZCAgIEludGVyZmFjZV9JRCA9Jzw/Ri5FcnJvclN0ZXBOYW1lPz4n</ExpressionVal>
+          <RuntimeExpression>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXA1X0NvbnZlcnNpb249PCE/U3RlcDVfR2V0PyE+ICwgSW50ZXJmYWNlX0Zsb3dfU3RhdHVzPTwhP0ludGVyZmFjZV9GbG93X1N0YXR1cz8hPiBXSEVSRSBPcGVyYXRpb25fRGF0ZSA9ICc8P0YuT3BlcmF0aW9uRGF0ZT8+JyBhbmQgICBUcmFuc2FjdGlvbl9JRD0nPD9DLlRyYW5zYWN0aW9uSUQ/PicgIGFuZCAgIEludGVyZmFjZV9JRCA9Jzw/Ri5FcnJvclN0ZXBOYW1lPz4n</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Interface_Log]</GenerateTableName>
+      </DB>
+    </Schema>
+    <Schema d3p1:type="DataBaseSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>9</SchemaID>
+      <Order>6</Order>
+      <Name>Step6</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>dbo.Interface_Log</Identifier>
+          <Description />
+          <FieldName>dbo.Interface_Log</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezMxNTAzMkQwLTA2NzYtNDVERS05NkEwLUY4MjA4NEZDNEE1MX0nLDAsMCk8IyElQCQ+ID0nNic=</ExpressionVal>
+            <RuntimeExpression>R2V0UGFyYW0gKCcwMDAwMDAwMDAwMDIwMDAwMDAwMDAwNDFGLkxhc3RfRmxvd19TdGVwJykgPSc2Jw==</RuntimeExpression>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Step6_Get</Identifier>
+          <Description />
+          <FieldName>Step6_Get</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Step6_Send</GenerateColumnName>
+        </Field>
+        <Field d3p1:type="FieldDataBase">
+          <Identifier>dbo.Interface_Log/Interface_Flow_Status</Identifier>
+          <Description />
+          <FieldName>Interface_Flow_Status</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>JzA0Jw==</ExpressionVal>
+            <RuntimeExpression>JzA0Jw==</RuntimeExpression>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>2</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>2</ExternalFieldPicture>
+          <UserPicture>2</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>Interface_Flow_Status</GenerateColumnName>
+        </Field>
+      </Fields>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXA2X1NlbmQ9PCE/U3RlcDZfR2V0PyE+ICwgSW50ZXJmYWNlX0Zsb3dfU3RhdHVzPTwhP0ludGVyZmFjZV9GbG93X1N0YXR1cz8hPiBXSEVSRSBPcGVyYXRpb25fRGF0ZSA9ICc8P0YuT3BlcmF0aW9uRGF0ZT8+JyBhbmQgICBUcmFuc2FjdGlvbl9JRD0nPD9DLlRyYW5zYWN0aW9uSUQ/PicgIGFuZCAgIEludGVyZmFjZV9JRCA9Jzw/Ri5FcnJvclN0ZXBOYW1lPz4n</ExpressionVal>
+          <RuntimeExpression>VVBEQVRFIGRiby5bSW50ZXJmYWNlX0xvZ10gU0VUIFN0ZXA2X1NlbmQ9PCE/U3RlcDZfR2V0PyE+ICwgSW50ZXJmYWNlX0Zsb3dfU3RhdHVzPTwhP0ludGVyZmFjZV9GbG93X1N0YXR1cz8hPiBXSEVSRSBPcGVyYXRpb25fRGF0ZSA9ICc8P0YuT3BlcmF0aW9uRGF0ZT8+JyBhbmQgICBUcmFuc2FjdGlvbl9JRD0nPD9DLlRyYW5zYWN0aW9uSUQ/PicgIGFuZCAgIEludGVyZmFjZV9JRCA9Jzw/Ri5FcnJvclN0ZXBOYW1lPz4n</RuntimeExpression>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <DBResource>ISUZU_DB</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <GenerateTableName>dbo.[Interface_Log]</GenerateTableName>
+      </DB>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>dbo.Interface_Log</DestinationIdentifier>
+      <DestinationSchemaID>4</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>dbo.Interface_Log</DestinationIdentifier>
+      <DestinationSchemaID>5</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>dbo.Interface_Log</DestinationIdentifier>
+      <DestinationSchemaID>6</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>dbo.Interface_Log</DestinationIdentifier>
+      <DestinationSchemaID>7</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>dbo.Interface_Log</DestinationIdentifier>
+      <DestinationSchemaID>8</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>3</SourceSchemaID>
+      <DestinationIdentifier>dbo.Interface_Log</DestinationIdentifier>
+      <DestinationSchemaID>9</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

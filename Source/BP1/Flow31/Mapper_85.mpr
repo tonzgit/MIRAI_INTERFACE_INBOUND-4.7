@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MapperOrigin>DataMapperService</MapperOrigin>
+	
+			<ErrorFlowExpressionVal>PCMhJUAkPmdldEZsb3dOYW1lKDQxKTwjISVAJD4=</ErrorFlowExpressionVal>
+		
+		<SourceSchemas>
+		
+		
+				
+		<Schema xsi:type="XSDSchema">
+		<SchemaID>3</SchemaID>
+		<Order>1</Order>
+		<Name>S1</Name>
+				<SchemaLocation>Source</SchemaLocation>
+		<SchemaType>XSD</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="XSDComplexField">
+							<Identifier>ZCNDN01</Identifier>
+							<Description></Description>
+							<FieldName>ZCNDN01</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>False</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																											</Field>
+																					<Field xsi:type="XSDComplexField">
+							<Identifier>ZCNDN01/IDOC</Identifier>
+							<Description></Description>
+							<FieldName>IDOC</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>79228162514264337593543950335</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>False</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																											</Field>
+																					<Field xsi:type="XSDComplexField">
+							<Identifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER</Identifier>
+							<Description></Description>
+							<FieldName>ZSARINVOICE_HEADER</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture></MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture></UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/DEALER_CODE</Identifier>
+							<Description></Description>
+							<FieldName>DEALER_CODE</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture>10</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/DOC_NUM</Identifier>
+							<Description></Description>
+							<FieldName>DOC_NUM</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>10</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture>10</ExternalFieldPicture>
+														<UserPicture>10</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/DOC_TYPE</Identifier>
+							<Description></Description>
+							<FieldName>DOC_TYPE</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>2</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture>2</ExternalFieldPicture>
+														<UserPicture>2</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="SimpleXSDField">
+							<Identifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/TIS_COMPCODE</Identifier>
+							<Description></Description>
+							<FieldName>TIS_COMPCODE</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>4</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																						<ExternalFieldType>string</ExternalFieldType>
+																						<ExternalFieldPicture>4</ExternalFieldPicture>
+														<UserPicture>4</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+																								<XSD>
+					<XSDSubType>File</XSDSubType>
+					<IFCModel></IFCModel>
+					<XsdFileName>%MiRAI_Interface%Schema\IACCP001\ZCNDN01_V.xsd</XsdFileName>
+					<RootSelected>ZCNDN01</RootSelected>
+					<isAppend>false</isAppend>
+					<isValidation>false</isValidation>
+					<RecursionDepth>1</RecursionDepth>
+					<AlwaysCreateNodes>false</AlwaysCreateNodes>
+					<DataDestination>File</DataDestination>
+					<DataExp>
+						<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwnezIwNDlGQkEyLUI2QjEtNDc5RC04RTlGLTkyMEYwRDI5QkNFQ30nLDAsMCk8IyElQCQ+</ExpressionVal>
+						<ExpectedType>A</ExpectedType>
+						<Direction>I</Direction>
+					</DataExp>
+					<UseStreamingParser>false</UseStreamingParser>
+					<xmlFileEncoding>Project Encoding</xmlFileEncoding>
+										<TargetNamespace></TargetNamespace>
+																			</XSD>
+																					
+										
+										</Schema>
+		
+				
+		
+		</SourceSchemas>
+				<DestinationSchemas>
+		
+		
+				
+		<Schema xsi:type="TemplateSchema">
+		<SchemaID>6</SchemaID>
+		<Order>1</Order>
+		<Name>ConversionErrors</Name>
+				<SchemaLocation>Destination</SchemaLocation>
+		<SchemaType>Template</SchemaType>
+		
+									<Fields>
+															<Field xsi:type="ComplexField">
+							<Identifier>Root</Identifier>
+							<Description></Description>
+							<FieldName>Root</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>79228162514264337593543950335</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From></From>
+							<Length></Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																											</Field>
+																					<Field xsi:type="ComplexField">
+							<Identifier>Root/Repeat1</Identifier>
+							<Description></Description>
+							<FieldName>Repeat1</FieldName>
+							<NodeType>Complex</NodeType>
+							<Color>210</Color>
+							<MagicFieldType></MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<Condition>
+								<ExpressionVal>VHJpbShDb252ZXJ0KDwjISVAJD5nZXRDb252ZXJ0ZXJOYW1lKHs1RTM4Nzg1NC1DRDE5LTQ5REEtQUNFMy1EM0M1QTE5ODk0NzN9KTwjISVAJD4sVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aQ05ETjAxL0lET0MvWlNBUklOVk9JQ0VfSEVBREVSL1RJU19DT01QQ09ERSk8IyElQCQ+KSApICwnJywwKSk9Jyc=</ExpressionVal>
+								<ExpectedType>L</ExpectedType>
+								<Direction>I</Direction>
+							</Condition>
+														<MaxInstance>0</MaxInstance>
+							<MinInstance>0</MinInstance>
+															<MultiUpdates>
+																													<Update>
+												<ID>3</ID>
+												<VariableExp>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0MzRUUwM0EzLTEzNzItNEVEMC05NkJCLUI0QjdFQ0JDNTMwNX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+													<ExpectedType>N</ExpectedType>
+													<Direction>O</Direction>
+												</VariableExp>
+												<Expression>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0MzRUUwM0EzLTEzNzItNEVEMC05NkJCLUI0QjdFQ0JDNTMwNX0nLDAsMCk8IyElQCQ+ICsgMQ==</ExpressionVal>
+													<ExpectedType>N</ExpectedType>
+													<Direction>I</Direction>
+												</Expression>
+												<Condition>
+													<ExpressionVal>VHJpbShDb252ZXJ0KDwjISVAJD5nZXRDb252ZXJ0ZXJOYW1lKHs1RTM4Nzg1NC1DRDE5LTQ5REEtQUNFMy1EM0M1QTE5ODk0NzN9KTwjISVAJD4sVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aQ05ETjAxL0lET0MvWlNBUklOVk9JQ0VfSEVBREVSL1RJU19DT01QQ09ERSk8IyElQCQ+KSApICwnJywwKSk9JycgQU5EICggSW5TdHIoVHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+ICksJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWkNORE4wMS9JRE9DL1pTQVJJTlZPSUNFX0hFQURFUi9ERUFMRVJfQ09ERSk8IyElQCQ+KSApJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWkNORE4wMS9JRE9DL1pTQVJJTlZPSUNFX0hFQURFUi9ET0NfTlVNKTwjISVAJD4pICkmVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aQ05ETjAxL0lET0MvWlNBUklOVk9JQ0VfSEVBREVSL0RPQ19UWVBFKTwjISVAJD4pICkmJ3wnKSA9IDAp</ExpressionVal>
+													<ExpectedType>L</ExpectedType>
+													<Direction>I</Direction>
+												</Condition>
+											</Update>
+																																							<Update>
+												<ID>4</ID>
+												<VariableExp>
+													<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+</ExpressionVal>
+													<ExpectedType>A</ExpectedType>
+													<Direction>O</Direction>
+												</VariableExp>
+												<Expression>
+													<ExpressionVal>VHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+ICkmJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWkNORE4wMS9JRE9DL1pTQVJJTlZPSUNFX0hFQURFUi9ERUFMRVJfQ09ERSk8IyElQCQ+KSApJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWkNORE4wMS9JRE9DL1pTQVJJTlZPSUNFX0hFQURFUi9ET0NfTlVNKTwjISVAJD4pICkmVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aQ05ETjAxL0lET0MvWlNBUklOVk9JQ0VfSEVBREVSL0RPQ19UWVBFKTwjISVAJD4pICkmJ3wnDQoNCg==</ExpressionVal>
+													<ExpectedType>A</ExpectedType>
+													<Direction>I</Direction>
+												</Expression>
+												<Condition>
+													<ExpressionVal>VHJpbShDb252ZXJ0KDwjISVAJD5nZXRDb252ZXJ0ZXJOYW1lKHs1RTM4Nzg1NC1DRDE5LTQ5REEtQUNFMy1EM0M1QTE5ODk0NzN9KTwjISVAJD4sVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aQ05ETjAxL0lET0MvWlNBUklOVk9JQ0VfSEVBREVSL1RJU19DT01QQ09ERSk8IyElQCQ+KSApICwnJywwKSk9JycgQU5EICggSW5TdHIoVHJpbSggPCMhJUAkPmdldFZhck5hbWUoMSwne0E2NzhCMDQ2LTM0MjctNDdDMC05QkZDLUY0N0FCMTBGQzIyRX0nLDAsMCk8IyElQCQ+ICksJ3wnJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWkNORE4wMS9JRE9DL1pTQVJJTlZPSUNFX0hFQURFUi9ERUFMRVJfQ09ERSk8IyElQCQ+KSApJlRyaW0oIG9iak9sZE5hbWUoPCMhJUAkPmdldE5vZGVOYW1lKDMvWkNORE4wMS9JRE9DL1pTQVJJTlZPSUNFX0hFQURFUi9ET0NfTlVNKTwjISVAJD4pICkmVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aQ05ETjAxL0lET0MvWlNBUklOVk9JQ0VfSEVBREVSL0RPQ19UWVBFKTwjISVAJD4pICkmJ3wnKSA9IDAp</ExpressionVal>
+													<ExpectedType>L</ExpectedType>
+													<Direction>I</Direction>
+												</Condition>
+											</Update>
+																											</MultiUpdates>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/IF_VenderCode</Identifier>
+							<Description></Description>
+							<FieldName>IF_VenderCode</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>L</MagicFieldType>
+							<MagicPicture>1</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+														<Expression>
+								<ExpressionVal>VHJpbShDb252ZXJ0KDwjISVAJD5nZXRDb252ZXJ0ZXJOYW1lKHs1RTM4Nzg1NC1DRDE5LTQ5REEtQUNFMy1EM0M1QTE5ODk0NzN9KTwjISVAJD4sVHJpbSggb2JqT2xkTmFtZSg8IyElQCQ+Z2V0Tm9kZU5hbWUoMy9aQ05ETjAxL0lET0MvWlNBUklOVk9JQ0VfSEVBREVSL1RJU19DT01QQ09ERSk8IyElQCQ+KSApICwnJywwKSk9Jyc=</ExpressionVal>
+								<ExpectedType>L</ExpectedType>
+								<Direction>I</Direction>
+							</Expression>
+																												<UserPicture>1</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/Delear_Code</Identifier>
+							<Description></Description>
+							<FieldName>Delear_Code</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/DOC_NUM</Identifier>
+							<Description></Description>
+							<FieldName>DOC_NUM</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/DOC_TYPE</Identifier>
+							<Description></Description>
+							<FieldName>DOC_TYPE</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+																					<Field xsi:type="FieldTemplate">
+							<Identifier>Root/Repeat1/VenderCode</Identifier>
+							<Description></Description>
+							<FieldName>VenderCode</FieldName>
+							<NodeType>Simple</NodeType>
+							<Color>210</Color>
+							<MagicFieldType>A</MagicFieldType>
+							<MagicPicture>1000</MagicPicture>
+							<isUnicode>false</isUnicode>
+							
+														
+																												<UserPicture>1000</UserPicture>
+							<isNillable>false</isNillable>
+														<MaxInstance>1</MaxInstance>
+							<MinInstance>0</MinInstance>
+																												<LogError>false</LogError>
+																																			<From>0</From>
+							<Length>0</Length>
+							<CreateAllways>false</CreateAllways>
+														<Required>false</Required>
+							<Replication>0</Replication>
+							<AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+																													<Encoding>0</Encoding>
+													</Field>
+														</Fields>
+						
+								
+																																	
+										
+									<Template>
+					<TplFile>%MiRAI_Interface%Schema\AE_Common\IACCP001_C.TPL</TplFile>
+					<DataDestination>File</DataDestination>
+					<DataExp>
+						<ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwne0MxQzIxMzMwLTI1QUEtNDlBMy1CMjk1LTEwRDdGNzAxODI5Mn0nLDAsMCk8IyElQCQ+</ExpressionVal>
+						<ExpectedType>A</ExpectedType>
+						<Direction>I</Direction>
+					</DataExp>
+					<isUnicode>true</isUnicode>
+					<Append>false</Append>
+				</Template>
+													</Schema>
+		
+				
+		
+		</DestinationSchemas>
+			
+				<Connections>
+														<ConnectionData>
+						<SourceIdentifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/TIS_COMPCODE</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/IF_VenderCode</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/DEALER_CODE</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/Delear_Code</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/DOC_NUM</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/DOC_NUM</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/DOC_TYPE</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/DOC_TYPE</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+																			<ConnectionData>
+						<SourceIdentifier>ZCNDN01/IDOC/ZSARINVOICE_HEADER/TIS_COMPCODE</SourceIdentifier>
+						<SourceSchemaID>3</SourceSchemaID>
+						<DestinationIdentifier>Root/Repeat1/VenderCode</DestinationIdentifier>
+						<DestinationSchemaID>6</DestinationSchemaID>
+					</ConnectionData>
+												</Connections>
+	  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>
